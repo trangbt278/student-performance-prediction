@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> State Analysis </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  
+    <!-- eCharts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js.map"></script>
+    <script type="text/javascript" src="static/js/echarts.js"></script>
+
+    <!-- AnyChart -->
+    <link href="https://playground.anychart.com/geodata/countries/United_States_Of_America/iframe" rel="canonical">
+    <meta content="Choropleth Map,Geo Chart,Geo Visualization" name="keywords">
+    <meta content="AnyChart - JavaScript Charts designed to be embedded and integrated" name="description">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/scoreRing_style.css">
+
+</head>
+
+<body>
+<header>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="homepage.html"> Educational Analysis </a> <br>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html"> Motivation </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" 
+                        aria-haspopup="true" aria-expanded="false"> State Education </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nationwide Analysis </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="math4Grade.html"> 4th Grade Math </a>
+                            <a class="dropdown-item" href="math8Grade.html"> 8th Grade Math </a>
+                            <a class="dropdown-item" href="read4Grade.html"> 4th Grade Reading </a>
+                            <a class="dropdown-item" href="read8Grade.html"> 8th Grade Reading </a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+<div class="container" style="padding-top: 100px;">
+    <!-- <h4 class="title"> 4th Grade Math Score vs X</h4>
+    <hr> -->
+    <!-- <div class="box align-items-start" style="padding-top:50px; padding-bottom:30px;">
+        
+        
+        <div class="container" style="padding-bottom: 10px"> -->
+    <div class="row" style="padding-top: 10px; padding-bottom: 60px;">
+        <div class="col-lg-6">
+            <!-- ** dropdown to select State ** -->
+            <!-- <div class="well mb-4" style="background-color: rgb(213, 225, 214);">
+                <h5>Select State:</h5>
+                <select id="selState" onchange="optionChanged(this.value)"></select> -->
+            <!-- </div> -->
+            <!-- ** USA map ** -->
+            <div id="mapState" style="position: relative; width: 500px; height: 300px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"> 
+            </div>
+            <script src="static/js/proj4.js"></script>
+            <script src="static/js/anychart-base.min.js"></script>
+            <script src="static/js/anychart-map.min.js"></script>
+            <script src="static/js/anychart-exports.min.js"></script>
+            <script src="static/js/anychart-ui.min.js"></script>
+            <script src="static/js/united_states_of_america.js"></script>
+            <script type="text/javascript">anychart.onDocumentReady(function() {
+            // create map
+            var map = anychart.map();
+          
+            // create data set
+            var dataSet = anychart.data.set(
+                [{"id":"US.MA","value":0},
+                      {"id":"US.MN","value":1},
+                      {"id":"US.MT","value":2},
+                      {"id":"US.ND","value":3},
+                      {"id":"US.HI","value":4},
+                      {"id":"US.ID","value":5},
+                      {"id":"US.WA","value":6},
+                      {"id":"US.AZ","value":7},
+                      {"id":"US.CA","value":8},
+                      {"id":"US.CO","value":9},
+                      {"id":"US.NV","value":10},
+                      {"id":"US.NM","value":11},
+                      {"id":"US.OR","value":12},
+                      {"id":"US.UT","value":13},
+                      {"id":"US.WY","value":14},
+                      {"id":"US.AR","value":15},
+                      {"id":"US.IA","value":16},
+                      {"id":"US.KS","value":17},
+                      {"id":"US.MO","value":18},
+                      {"id":"US.NE","value":19},
+                      {"id":"US.OK","value":20},
+                      {"id":"US.SD","value":21},
+                      {"id":"US.LA","value":22},
+                      {"id":"US.TX","value":23},
+                      {"id":"US.CT","value":24},
+                      {"id":"US.NH","value":25},
+                      {"id":"US.RI","value":26},
+                      {"id":"US.VT","value":27},
+                      {"id":"US.AL","value":28},
+                      {"id":"US.FL","value":29},
+                      {"id":"US.GA","value":30},
+                      {"id":"US.MS","value":31},
+                      {"id":"US.SC","value":32},
+                      {"id":"US.IL","value":33},
+                      {"id":"US.IN","value":34},
+                      {"id":"US.KY","value":35},
+                      {"id":"US.NC","value":36},
+                      {"id":"US.OH","value":37},
+                      {"id":"US.TN","value":38},
+                      {"id":"US.VA","value":39},
+                      {"id":"US.WI","value":40},
+                      {"id":"US.WV","value":41},
+                      {"id":"US.DE","value":42},
+                      {"id":"US.MD","value":43},
+                      {"id":"US.NJ","value":44},
+                      {"id":"US.NY","value":45},
+                      {"id":"US.PA","value":46},
+                      {"id":"US.ME","value":47},
+                      {"id":"US.MI","value":48},
+                      {"id":"US.AK","value":49},
+                      {"id":"US.DC","value":50}]
+            );
+          
+            // create choropleth series
+            series = map.choropleth(dataSet);
+          
+            // set geoIdField to 'id', this field contains in geo data meta properties
+            series.geoIdField('id');
+          
+            // set map color settings
+            series.colorScale(anychart.scales.linearColor('#deebf7', '#3182bd'));
+            series.hovered().fill('#addd8e');
+          
+            // set geo data, you can find this map in our geo maps collection
+            // https://cdn.anychart.com/#maps-collection
+            map.geoData(anychart.maps['united_states_of_america']);
+          
+            //set map container id (div)
+            map.container('mapState');
+          
+            //initiate map drawing
+            map.draw();
+          });</script>
+        </div>
+
+        <div class="col-lg-6">
+            <table>
+
+            </table>
+            <!-- <div class="container">  -->
+
+            <!-- </div> -->
+    
+        </div>
+    </div>
+    <hr>
+    <div class="row" style="padding-top: 10px; padding-bottom: 60px;">
+        <div class="col-lg-6">
+            <div class="title"> Performance - Average Scores </div>
+            <div id="StateAvgScore" style="position: relative; width: 500px; height: 300px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;"></div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="title"> Instructional Expenditure Percentage</div>
+            <div id="ExpRevRatio">
+        </div>
+    </div>
+    <hr>   
+</div>
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+    <!-- D3 JavaScript -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- API key -->
+    <!-- <script type="text/javascript" src="static/js/config.js"></script> -->
+
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/mapState.js"></script>
+    <script type="text/javascript" src="https://echarts.apache.org/en/js/common.js?_v_=9c455b5db4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/element-ui@2.13.2/lib/index.js"></script>
+    <script src="https://echarts.apache.org/examples/js/example-bundle.js?_v_=e16f55e6cc"></script>
+    
+    <footer> Copyright © The Miner League 2022</footer>
+
+</body>
+</html>
