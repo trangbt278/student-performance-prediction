@@ -1,3 +1,4 @@
+console.loglog('JS connect sucessful.')
 
 var queryurl = "https://echarts.apache.org/examples/data/asset/geo/USA.json"
 
