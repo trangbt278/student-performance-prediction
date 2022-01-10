@@ -16,13 +16,34 @@
     crossorigin="" />
   
     <!-- eCharts -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js.map"></script>
-    <script type="text/javascript" src="static/js/echarts.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/charts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/features.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/index.blank.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/index.common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/index.simple.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/renderers.js"></script>
+     -->
     <!-- AnyChart -->
     <link href="https://playground.anychart.com/geodata/countries/United_States_Of_America/iframe" rel="canonical">
     <meta content="Choropleth Map,Geo Chart,Geo Visualization" name="keywords">
     <meta content="AnyChart - JavaScript Charts designed to be embedded and integrated" name="description">
+    <script src="https://cdn.anychart.com/geodata/latest/countries/united_states_of_america/united_states_of_america.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-circular-gauge.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-map.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-table.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/v8/js/anychart-data-adapter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4.js"></script>
+    <link href="https://cdn.anychart.com/playground-css/maps_in_dashboard/USA_dashboard_multiselect/style.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript"></script>
 
@@ -73,6 +94,12 @@
 </header>
 
 <div class="container" style="padding-top: 100px;">
+    <!-- <h4 class="title"> 4th Grade Math Score vs X</h4>
+    <hr> -->
+    <!-- <div class="box align-items-start" style="padding-top:50px; padding-bottom:30px;">
+        
+        
+        <div class="container" style="padding-bottom: 10px"> -->
     <div class="row" style="padding-top: 10px; padding-bottom: 60px;">
         <div class="col-lg-6">
             <!-- ** dropdown to select State ** -->
@@ -185,25 +212,25 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th id="revenue" scope="row">Revenue</th>
+                    <th scope="row">Revenue</th>
                     <td>{2013 Rev}</td>
                     <td>{2015 Rev}</td>
                     <td>{2017 Rev}</td>
                   </tr>
                   <tr>
-                    <th id="expenditure" scope="row">Instructional<br>Expenditure</th>
+                    <th scope="row">Instructional<br>Expenditure</th>
                     <td>{2013 Exp}</td>
                     <td>{2015 Exp}</td>
                     <td>{2017 Exp}</td>
                   </tr>
                   <tr>
-                    <th scope="income">Median<br>Household Income</th>
+                    <th scope="row">Median<br>Household<br>Income</th>
                     <td>{2013 Inc}</td>
                     <td>{2015 Inc}</td>
                     <td>{2017 Inc}</td>
                   </tr>
                   <tr>
-                    <th scope="poverty">Poverty Rate</th>
+                    <th scope="row">Poverty Rate</th>
                     <td>{2013 Pov}</td>
                     <td>{2015 Pov}</td>
                     <td>{2017 Pov}</td>
