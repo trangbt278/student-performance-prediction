@@ -4,7 +4,8 @@ var input_data = "data/input_data.json"
 console.log
 var menu = d3.select("#selDataset")
 
-var mybarChart = echarts.init(document.getElementById('StateAvgScore'));
+var myBarChart4 = echarts.init(document.getElementById('StateAvgScore4'));
+var myBarChart8 = echarts.init(document.getElementById('StateAvgScore8'));
 var myGaugeChart = echarts.init(document.getElementById('ExpRevRatio'));
 
 
@@ -89,68 +90,286 @@ function charting(stateName){
         // *************** //
         // ** Bar graph ** //
         // *************** //
-        //get avg score by grade and format it like number
+        
+        // get avg score by grade and format it like number
+        // ** retrieve data for the "series" section below ** //
         var grade4 = stateData.filter(x => x.grade == '4');
         console.log(grade4);
         var grade8 = stateData.filter(x => x.grade == '8');
         console.log(grade8);
 
+        // ** retrieve data above for the "series" section of the barchart ** //
 
-        var option_bar;
+
+        // ************************ //
+        // ** 4th Grade barchart ** //
+        // ************************ //
+
+        var option_bar4;
         
-        option_bar = {
-          title: {
-            text: ''
-          },
-          tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-              type: 'shadow'
-            }
-          },
-          legend: {},
-          grid: {
-            left: '3%',
-            right: '4%',
-            bottom: '3%',
-            containLabel: true
-          },
-          yAxis: {
-            type: 'value',
-            boundaryGap: [0, 0.01]
-          },
-          xAxis: {
-            type: 'category',
-            data: ['2013', '2015', '2017']
-          },
-          series: [
-            {
-                name: '4th Grade Math',
-                type: 'bar',
-                data: [250, 303, 205]
+        // set colors for the plotting: Math, Reading, Median Income, Poverty, chart lable
+        const colors = ['#6baed6', '#fc9272', '#002EFF', '#FF0000', '#000000'];
+
+        option_bar4 = {
+            color: colors,
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                type: 'cross'
+                }
             },
-            {
-                name: '8th Grade Math',
-                type: 'bar',
-                data: [220, 258, 295]
+            grid: {
+                right: '20%'
             },
-            {
-                name: '4th Grade Reading',
+
+            legend: {
+                data: ['Math', 'Reading', 'Median Income', 'Poverty Rate']
+            },
+            xAxis: [
+                {
+                type: 'category',
+                axisTick: {
+                    alignWithLabel: true
+                },
+                // prettier-ignore
+                data: ['2013', '2015', '2017']
+                }
+            ],
+            yAxis: [
+                {
+                type: 'value',
+                name: 'Avg Scores',
+                min: 0,
+                max: 320,
+                position: 'right',
+                offset: 80,
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                    color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+                },
+                {
+                type: 'value',
+                name: '',
+                min: 0,
+                max: 320,
+                position: '',
+                offset: 80,
+                axisLine: {
+                    show: false,
+                    lineStyle: {
+                    color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+                },
+                {
+                type: 'value',
+                name: 'Median Income',
+                min: 0,
+                max: 150000,
+                position: 'left',
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                    color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+                },
+                {
+                    type: 'value',
+                    name: 'Poverty Rate',
+                    min: 0,
+                    max: 100,
+                    position: 'right',
+                    offset: 0,
+                    axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: colors[4]
+                    }
+                    },
+                    axisLabel: {
+                    formatter: '{value}%'
+                    }
+                }
+            ],
+            series: [
+                {
+                name: 'Math',
                 type: 'bar',
-                data: [250, 303, 205]
-              },
-              {
-                name: '8th Grade Reading',
+                yAxisIndex: 1,
+                data: [235, 262, 243]
+                },
+                {
+                name: 'Reading',
                 type: 'bar',
-                data: [220, 258, 295]
-              }
-          ]
+                yAxisIndex: 1,
+                data: [205, 256, 237]
+                },
+                {
+                name: 'Median Income',
+                type: 'line',
+                yAxisIndex: 2,
+                data: [98000, 107000, 100000]
+                },
+                {
+                name: 'Poverty Rate',
+                type: 'line',
+                yAxisIndex: 3,
+                data: [23, 12.7, 31]
+                } 
+            ] 
         };
         
-        option_bar && mybarChart.setOption(option_bar);
+        option_bar4 && myBarChart4.setOption(option_bar4);
 
-    });
 
+
+        // ************************ //
+        // ** 8th Grade barchart ** //
+        // ************************ //
+
+        var option_bar8;
+        
+        option_bar8 = {
+            color: colors,
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                type: 'cross'
+                }
+            },
+            grid: {
+                right: '20%'
+            },
+
+            legend: {
+                data: ['Math', 'Reading', 'Median Income', 'Poverty Rate']
+            },
+            xAxis: [
+                {
+                type: 'category',
+                axisTick: {
+                    alignWithLabel: true
+                },
+                // prettier-ignore
+                data: ['2013', '2015', '2017']
+                }
+            ],
+            yAxis: [
+                {
+                type: 'value',
+                name: 'Avg Scores',
+                min: 0,
+                max: 320,
+                position: 'right',
+                offset: 80,
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                    color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+                },
+                {
+                type: 'value',
+                name: '',
+                min: 0,
+                max: 320,
+                position: '',
+                offset: 80,
+                axisLine: {
+                    show: false,
+                    lineStyle: {
+                    color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+                },
+                {
+                type: 'value',
+                name: 'Median Income',
+                min: 0,
+                max: 150000,
+                position: 'left',
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                    color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+                },
+                {
+                    type: 'value',
+                    name: 'Poverty Rate',
+                    min: 0,
+                    max: 100,
+                    position: 'right',
+                    axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: colors[4]
+                    }
+                    },
+                    axisLabel: {
+                    formatter: '{value}%'
+                    }
+                }
+            ],
+            series: [
+                {
+                name: 'Math',
+                type: 'bar',
+                yAxisIndex: 1,
+                data: [235, 262, 243]
+                },
+                {
+                name: 'Reading',
+                type: 'bar',
+                yAxisIndex: 1,
+                data: [205, 256, 237]
+                },
+                {
+                name: 'Median Income',
+                type: 'line',
+                yAxisIndex: 2,
+                data: [98000, 107000, 100000]
+                },
+                {
+                name: 'Poverty Rate',
+                type: 'line',
+                yAxisIndex: 3,
+                data: [23, 12.7, 31]
+                } 
+            ] 
+        };
+        
+        option_bar8 && myBarChart8.setOption(option_bar8);
+
+
+
+        // ***************** //
+        // ** Gauge Chart ** //
+        // ***************** //
 
         var option_gauge;
 
@@ -334,6 +553,8 @@ function charting(stateName){
         }, 3000);
 
         option_gauge && myGaugeChart.setOption(option_gauge);
+
+    });
 
 };
 
