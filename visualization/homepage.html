@@ -18,10 +18,8 @@
       crossorigin="" />
   
     <!-- eCharts -->
-    <script type="javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
-    <script type="javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js.map"></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js" integrity="sha256-RySf951sAEWQzKl5M+wHL5OQrVfQu/FmEfbSbBpP740=" crossorigin="anonymous"></script>
-    <script type="javascript" src="static/js/echarts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js" 
+    integrity="sha256-RySf951sAEWQzKl5M+wHL5OQrVfQu/FmEfbSbBpP740=" crossorigin="anonymous"></script>
 
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
@@ -46,7 +44,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="stateData.html"
-                        role="button" aria-haspopup="true" aria-expanded="false"> State Education </a>
+                        role="button" aria-haspopup="true" aria-expanded="false"> State Analysis </a>
 
                 </li>
 
@@ -73,10 +71,10 @@
     
     <div class="row">
         <h4 class="title"> Motivation </h4>
-        <hr>
+            <hr>
         <div class="col-lg-4 col-sm-12">
-            <div class="box" style="padding-bottom: 10px;">
-                <img style="position:initial;" src="https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/light.gif">
+            <div class="box" style="padding-top: 10px;">
+                <img style="position:initial;" style="position: relative;background-repeat:round; " src="static/images/lightbulb.gif">
             </div>
         </div>
         <div class="col-lg-8 col-sm-12">
@@ -103,21 +101,18 @@
 </div>
 
 <!-- ** Placeholder for the morph map/bar chart ** -->
-<!-- <div class="container">
+<div class="container">
     
-    <div id="main" style="position: relative; width: 268px; height: 574px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
-        <script type="javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js.map"></script>
-        <script type="javascript" src="static/js/homepage.js"></script>
-
+    <div id="morphMap" style="position: relative; width: 100%; height: 600px; padding: 0px; margin: 0px; border-width: 0px; cursor: default;">
     </div>
 
-</div> -->
+</div>
 
 <!-- ** Team introduction ** -->
 <div class="container" style="padding-top: 50px; padding-bottom: 50px;">
     <!-- <div class="col-12"> -->
     <div class="row" style="padding-bottom: 0px;">
-        <h4 class="title">The Miner League</h4>
+        <h4 class="title"> The Miner League </h4>
 
         <div class="box" style="padding-bottom: 0px;">
             <p> Our team has decided to further our research on factors influencing educational outcomes 
@@ -129,7 +124,7 @@
                 visualize what we have found about various factors impacting educational outcomes including 
                 federal revenue, instructional expenditure per student, poverty rates, and household income 
                 by state over three separate years.
-            </p><hr>
+            </p>
         </div>
         <!-- <hr> -->
         <h4 class="title">Team Players </h4>
@@ -172,16 +167,15 @@
     crossorigin=""></script>
 
   <!-- D3 JavaScript -->
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
 
   <!-- API key -->
   <!-- <script type="text/javascript" src="static/js/config.js"></script> -->
 
   <!-- Our JavaScript -->
-  <script type="javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
-  <script type="javascript" src="static/js/homepage.js"></script>
+  <script type="text/javascript" src="static/js/morphMap.js"></script>
 
-  
+
   <footer> Copyright © The Miner League 2022 </footer>
 
 </body>
