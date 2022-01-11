@@ -1,3 +1,38 @@
+#morphMap {
+    position: initial;
+    width: 100%; 
+    height: 500px; 
+    border-width: 3px; 
+    cursor: default;
+
+}
+
+#ExpRevRatio {
+    position: initial; 
+    width: 500px; 
+    height: 500px; 
+    padding-top: 0px;
+    padding-left: 15%;
+}
+
+#StateAvgScore4 {
+    position: initial; 
+    width: 600px; 
+    height: 500px; 
+    padding-top: 20px;
+
+}
+
+#StateAvgScore8 {
+    position: initial; 
+    width: 600px; 
+    height: 500px; 
+    padding-top: 20px;
+
+}
+
+
+
 body {
 
   background-color:rgb(213, 225, 214, 0.6);
@@ -194,9 +229,12 @@ header {
   }
 }
 
-/** *********** **/
-/** ECharts MAP **/
-/** *********** **/
+
+
+/***********************/
+/** ECharts Morph MAP **/
+/***********************/
+
 .ace-editor-main {
   font-family: 'Source Code Pro', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
   font-size: 12px;
