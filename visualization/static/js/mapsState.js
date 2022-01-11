@@ -9,8 +9,6 @@ var myBarChart8 = echarts.init(document.getElementById('StateAvgScore8'));
 var myGaugeChart = echarts.init(document.getElementById('ExpRevRatio'));
 
 
-// var gauge_chart = d3.select("#ExpRevRatio");
-
 // ************************* //
 // ** State Dropdown Menu ** //
 // ************************* //
@@ -65,6 +63,9 @@ function charting(stateName){
         var pov2013 = d3.select("#pov_13");
         var pov2015 = d3.select("#pov_15");
         var pov2017 = d3.select("#pov_17");
+        var ratio2013 = d3.select("#ratio_13");
+        var ratio2015 = d3.select("#ratio_15");
+        var ratio2017 = d3.select("#ratio_17");
         //get revenue by year and format it like number
         rev2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         rev2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
@@ -83,23 +84,16 @@ function charting(stateName){
         pov2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
 
-
+        
         // ************************ //
-        // ** Bar and line graph ** //
+        // ** 4th Grade barchart ** //
         // ************************ //
         
         // get avg score by grade and format it like number
         var grade4 = stateData.filter(x => x.grade == '4');
-        console.log(grade4);
+        // console.log(grade4);
         var grade8 = stateData.filter(x => x.grade == '8');
-        console.log(grade8);
-
-        // ** retrieve data above for the "series" section of the barchart ** //
-
-
-        // ************************ //
-        // ** 4th Grade barchart ** //
-        // ************************ //
+        // console.log(grade8);
 
         var option_bar4;
         
@@ -210,25 +204,25 @@ function charting(stateName){
                 name: 'Math',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [235, 262, 243]
+                data: [235, 262, 243]    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Reading',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [205, 256, 237]
+                data: [205, 256, 237]    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Median Income',
                 type: 'line',
                 yAxisIndex: 2,
-                data: [98000, 107000, 100000]
+                data: [98000, 107000, 100000]  // ** [2013 med income, 2015 med income, 2017 med income] **//
                 },
                 {
                 name: 'Poverty Rate',
                 type: 'line',
                 yAxisIndex: 3,
-                data: [23, 12.7, 31]
+                data: [23, 12.7, 31]   // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
                 } 
             ] 
         };
@@ -341,25 +335,25 @@ function charting(stateName){
                 name: 'Math',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [235, 262, 243]
+                data: [235, 262, 243]  // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Reading',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [205, 256, 237]
+                data: [205, 256, 237]  // ** [2015 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Median Income',
                 type: 'line',
                 yAxisIndex: 2,
-                data: [98000, 107000, 100000]
+                data: [98000, 107000, 100000]  // ** [2013 med income, 2015 med income, 2017 med income] **//
                 },
                 {
                 name: 'Poverty Rate',
                 type: 'line',
                 yAxisIndex: 3,
-                data: [23, 12.7, 31]
+                data: [23, 12.7, 31]  // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
                 } 
             ] 
         };
@@ -384,7 +378,7 @@ function charting(stateName){
         var _animationDuration = 1000;
         var _animationDurationUpdate = 1000;
         var _animationEasingUpdate = 'quarticInOut';
-        var _valOnRadianMax = 100;  // ** _valOnRadianMax = Total REV by selected state ** //
+        var _valOnRadianMax = 100;
         var _outerRadius = 200;
         var _innerRadius = 170;
         var _pointerInnerRadius = 40;
@@ -392,7 +386,7 @@ function charting(stateName){
         var _currentDataIndex = 0;
 
         function renderItem(params, api) {
-        var valOnRadian = api.value(1);  // ** valOnRadian = Instruction Exp by selected state ** //
+        var valOnRadian = api.value(1);
         var coords = api.coord([api.value(0), valOnRadian]);
         var polarEndRadian = coords[3];
         var imageStyle = {
@@ -508,20 +502,12 @@ function charting(stateName){
         ];
         }
 
-
-        // *********************************************************************** //
-        // ** VARIABLES:                                                        ** //
-        // ** _valOnRadianMax should be the revenue of the selected state       ** //
-        // ** valOnRadian should be the instructional exp of the selected state ** //
-        // *********************************************************************** //
-
-
         function makeText(valOnRadian) {
         // Validate additive animation calc.
         if (valOnRadian < -10) {
             alert('illegal during val: ' + valOnRadian);
         }
-        return ((valOnRadian / _valOnRadianMax) * 100).toFixed(0) + '%';
+        return ((valOnRadian / _valOnRadianMax) * 100).toFixed(2) + '%';
         }
 
 
@@ -537,7 +523,7 @@ function charting(stateName){
         // ************************* //
 
         dataset: {
-            source: [[1, 65]] 
+            source: [[1, 52.4]] 
         },
         tooltip: {},
         angleAxis: {
