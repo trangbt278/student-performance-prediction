@@ -84,15 +84,11 @@ function charting(stateName){
         pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
 
 
-
-
-
-        // *************** //
-        // ** Bar graph ** //
-        // *************** //
+        // ************************ //
+        // ** Bar and line graph ** //
+        // ************************ //
         
         // get avg score by grade and format it like number
-        // ** retrieve data for the "series" section below ** //
         var grade4 = stateData.filter(x => x.grade == '4');
         console.log(grade4);
         var grade8 = stateData.filter(x => x.grade == '8');
@@ -204,6 +200,11 @@ function charting(stateName){
                     }
                 }
             ],
+
+            // ************************************* //
+            // ** Get data to put in the "series" ** //
+            // ************************************* //
+
             series: [
                 {
                 name: 'Math',
@@ -373,11 +374,17 @@ function charting(stateName){
 
         var option_gauge;
 
+        // *********************************************************************** //
+        // ** VARIABLES:                                                        ** //
+        // ** _valOnRadianMax should be the revenue of the selected state       ** //
+        // ** valOnRadian should be the instructional exp of the selected state ** //
+        // *********************************************************************** //
+        
         var _panelImageURL = 'static/images/custom-gauge-panel.png';
         var _animationDuration = 1000;
         var _animationDurationUpdate = 1000;
         var _animationEasingUpdate = 'quarticInOut';
-        var _valOnRadianMax = 200;  // ** _valOnRadianMax = Total REV by selected state ** //
+        var _valOnRadianMax = 100;  // ** _valOnRadianMax = Total REV by selected state ** //
         var _outerRadius = 200;
         var _innerRadius = 170;
         var _pointerInnerRadius = 40;
@@ -502,6 +509,13 @@ function charting(stateName){
         }
 
 
+        // *********************************************************************** //
+        // ** VARIABLES:                                                        ** //
+        // ** _valOnRadianMax should be the revenue of the selected state       ** //
+        // ** valOnRadian should be the instructional exp of the selected state ** //
+        // *********************************************************************** //
+
+
         function makeText(valOnRadian) {
         // Validate additive animation calc.
         if (valOnRadian < -10) {
@@ -516,8 +530,14 @@ function charting(stateName){
         animationDuration: _animationDuration,
         animationDurationUpdate: _animationDurationUpdate,
         animationEasingUpdate: _animationEasingUpdate,
+
+        // ************************* //
+        // ** The data to display ** //
+        // ** Currently set 65%   ** //
+        // ************************* //
+
         dataset: {
-            source: [[1, 156]]
+            source: [[1, 65]] 
         },
         tooltip: {},
         angleAxis: {
@@ -543,14 +563,14 @@ function charting(stateName){
 
 
         // ** Interval for the gauge to change randomly, we don't need this section ** //
-        setInterval(function () {
-        var nextSource = [[1, Math.round(Math.random() * _valOnRadianMax)]];
-        myGaugeChart.setOption({
-            dataset: {
-            source: nextSource
-            }
-        });
-        }, 3000);
+        // setInterval(function () {
+        // var nextSource = [[1, Math.round(Math.random() * _valOnRadianMax)]];
+        // myGaugeChart.setOption({
+        //     dataset: {
+        //     source: nextSource
+        //     }
+        // });
+        // }, 3000);
 
         option_gauge && myGaugeChart.setOption(option_gauge);
 
