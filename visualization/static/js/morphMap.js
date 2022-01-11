@@ -10,8 +10,8 @@ var option_morph;
 
 myMorphChart.showLoading();
 
-d3.json(geoUSAurl, function (usaJson) {
-    // myMorphChart.hideLoading();
+$.get(geoUSAurl, function (usaJson) {
+    myMorphChart.hideLoading();
     echarts.registerMap('USA', usaJson, {
         Alaska: {
             left: -131,
@@ -20,67 +20,67 @@ d3.json(geoUSAurl, function (usaJson) {
         },
         Hawaii: {
             left: -110,
-            top: 28,
+            top: 26,
             width: 5
         }
     });
 
-  // ** *************************************************************** ** //
-  // ** Need to replace with 2015 Revenue data if the map shows on site ** //
-  // ** *************************************************************** ** //
+  // ************************************* //
+  // ** Replaced with 2015 Revenue data ** //
+  // ************************************* //
 
     var revData = [
-        { name: 'Alabama', value: 4822023 },
-        { name: 'Alaska', value: 731449 },
-        { name: 'Arizona', value: 6553255 },
-        { name: 'Arkansas', value: 2949131 },
-        { name: 'California', value: 38041430 },
-        { name: 'Colorado', value: 5187582 },
-        { name: 'Connecticut', value: 3590347 },
-        { name: 'Delaware', value: 917092 },
-        { name: 'District of Columbia', value: 632323 },
-        { name: 'Florida', value: 19317568 },
-        { name: 'Georgia', value: 9919945 },
-        { name: 'Hawaii', value: 1392313 },
-        { name: 'Idaho', value: 1595728 },
-        { name: 'Illinois', value: 12875255 },
-        { name: 'Indiana', value: 6537334 },
-        { name: 'Iowa', value: 3074186 },
-        { name: 'Kansas', value: 2885905 },
-        { name: 'Kentucky', value: 4380415 },
-        { name: 'Louisiana', value: 4601893 },
-        { name: 'Maine', value: 1329192 },
-        { name: 'Maryland', value: 5884563 },
-        { name: 'Massachusetts', value: 6646144 },
-        { name: 'Michigan', value: 9883360 },
-        { name: 'Minnesota', value: 5379139 },
-        { name: 'Mississippi', value: 2984926 },
-        { name: 'Missouri', value: 6021988 },
-        { name: 'Montana', value: 1005141 },
-        { name: 'Nebraska', value: 1855525 },
-        { name: 'Nevada', value: 2758931 },
-        { name: 'New Hampshire', value: 1320718 },
-        { name: 'New Jersey', value: 8864590 },
-        { name: 'New Mexico', value: 2085538 },
-        { name: 'New York', value: 19570261 },
-        { name: 'North Carolina', value: 9752073 },
-        { name: 'North Dakota', value: 699628 },
-        { name: 'Ohio', value: 11544225 },
-        { name: 'Oklahoma', value: 3814820 },
-        { name: 'Oregon', value: 3899353 },
-        { name: 'Pennsylvania', value: 12763536 },
-        { name: 'Rhode Island', value: 1050292 },
-        { name: 'South Carolina', value: 4723723 },
-        { name: 'South Dakota', value: 833354 },
-        { name: 'Tennessee', value: 6456243 },
-        { name: 'Texas', value: 26059203 },
-        { name: 'Utah', value: 2855287 },
-        { name: 'Vermont', value: 626011 },
-        { name: 'Virginia', value: 8185867 },
-        { name: 'Washington', value: 6897012 },
-        { name: 'West Virginia', value: 1855413 },
-        { name: 'Wisconsin', value: 5726398 },
-        { name: 'Wyoming', value: 576412 }
+        { name: 'Alabama', value: 7360222},
+        { name: 'Alaska', value: 2920986},
+        { name: 'Arizona', value: 8230507},
+        { name: 'Arkansas', value: 5308625},
+        { name: 'California', value: 78248042},
+        { name: 'Colorado', value: 9648297},
+        { name: 'Connecticut', value: 11099837},
+        { name: 'Delaware', value: 2017075},
+        { name: 'District of Columbia', value: 1382282},
+        { name: 'Florida', value: 26971491},
+        { name: 'Georgia', value: 18584666},
+        { name: 'Hawaii', value: 2703683},
+        { name: 'Idaho', value: 2167967},
+        { name: 'Illinois', value: 32096832},
+        { name: 'Indiana', value: 12456571},
+        { name: 'Iowa', value: 6714410},
+        { name: 'Kansas', value: 5991731},
+        { name: 'Kentucky', value: 7548871},
+        { name: 'Louisiana', value: 8448743},
+        { name: 'Maine', value: 2739589},
+        { name: 'Maryland', value: 14491642},
+        { name: 'Massachusetts', value: 16985185},
+        { name: 'Michigan', value: 19025996},
+        { name: 'Minnesota', value: 11684249},
+        { name: 'Mississippi', value: 4592343},
+        { name: 'Missouri', value: 10623391},
+        { name: 'Montana', value: 1804339},
+        { name: 'Nebraska', value: 4248695},
+        { name: 'Nevada', value: 4345419},
+        { name: 'New Hampshire', value: 3093061},
+        { name: 'New Jersey', value: 29335237},
+        { name: 'New Mexico', value: 3789651},
+        { name: 'New York', value: 63712218},
+        { name: 'North Carolina', value: 13146934},
+        { name: 'North Dakota', value: 1644533},
+        { name: 'Ohio', value: 24378660},
+        { name: 'Oklahoma', value: 6121188},
+        { name: 'Oregon', value: 7111710},
+        { name: 'Pennsylvania', value: 29967185},
+        { name: 'Rhode Island', value: 2367068},
+        { name: 'South Carolina', value: 8759944},
+        { name: 'South Dakota', value: 1415149},
+        { name: 'Tennessee', value: 9455920},
+        { name: 'Texas', value: 55582029},
+        { name: 'Utah', value: 4705084},
+        { name: 'Vermont', value: 1996795},
+        { name: 'Virginia', value: 15857524},
+        { name: 'Washington', value: 13709442},
+        { name: 'West Virginia', value: 3478401},
+        { name: 'Wisconsin', value: 11637376},
+        { name: 'Wyoming', value: 1962874},
     ];
 
     revData.sort(function (a, b) {
@@ -91,8 +91,8 @@ d3.json(geoUSAurl, function (usaJson) {
     const mapOption = {
         visualMap: {
             left: 'right',
-            min: 500000,
-            max: 38000000,
+            min: 1000000,
+            max: 80000000,
             inRange: {
                 // prettier-ignore
                 color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
@@ -101,13 +101,27 @@ d3.json(geoUSAurl, function (usaJson) {
             calculable: true
         },
 
+        tooltip: {
+            trigger: 'item',
+            showDelay: 0,
+            transitionDuration: 0.2,
+            formatter: function (params) {
+              const value = (params.value + '').split('.');
+              const valueStr = value[0].replace(
+                /(\d{1,3})(?=(?:\d{3})+(?!\d))/g,
+                '$1,'
+              );
+              return params.name + ' Revenue : ' + valueStr;
+            }
+          },
+
         series: [
             {
-                id: 'population',
+                id: 'revenue',
                 type: 'map',
                 roam: true,
                 map: 'USA',
-                animationDurationUpdate: 1000,
+                animationDurationUpdate: 2000,
                 universalTransition: true,
                 data: revData
             }
@@ -122,16 +136,17 @@ d3.json(geoUSAurl, function (usaJson) {
         yAxis: {
         type: 'category',
         axisLabel: {
-            rotate: 30
+            rotate: 0
         },
         data: revData.map(function (item) {
             return item.name;
         })
         },
-        animationDurationUpdate: 1000,
+        animationDurationUpdate: 2000,
         series: {
         type: 'bar',
-        id: 'population',
+        id: 'revenue',
+        color: 'rgba(174, 66, 196, 0.8)',
         data: revData.map(function (item) {
             return item.value;
         }),
@@ -147,7 +162,7 @@ d3.json(geoUSAurl, function (usaJson) {
     setInterval(function () {
         currentOption = currentOption === mapOption ? barOption : mapOption;
         myMorphChart.setOption(currentOption, true);
-    }, 2000);
+    }, 3000);
 });
 
 
