@@ -6,7 +6,9 @@ var menu = d3.select("#selDataset")
 
 var myBarChart4 = echarts.init(document.getElementById('StateAvgScore4'));
 var myBarChart8 = echarts.init(document.getElementById('StateAvgScore8'));
-var myGaugeChart = echarts.init(document.getElementById('ExpRevRatio'));
+var myGaugeChart13 = echarts.init(document.getElementById('ExpRevRatio13'));
+var myGaugeChart15 = echarts.init(document.getElementById('ExpRevRatio15'));
+var myGaugeChart17 = echarts.init(document.getElementById('ExpRevRatio17'));
 
 
 // ************************* //
@@ -74,15 +76,27 @@ function charting(stateName){
         exp2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         exp2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         exp2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        
+        ratio2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        ratio2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        ratio2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+
         //get median income by year and format it like number
         inc2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         inc2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         inc2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         //get poverty rate by year and format it like number
-        // ** Should we do RE to %? ** //
         pov2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+
+
+        // ***************** //
+        // ** Gauge Chart ** //
+        // ***************** //
+        drawGauge(myGaugeChart13, finDataByYear.filter(x => x.year == '2013')[0].percent_spending_of_revenue);
+        drawGauge(myGaugeChart15, finDataByYear.filter(x => x.year == '2015')[0].percent_spending_of_revenue);
+        drawGauge(myGaugeChart17, finDataByYear.filter(x => x.year == '2017')[0].percent_spending_of_revenue)
 
         
         // ************************ //
@@ -130,476 +144,347 @@ function charting(stateName){
         {
                 read8.push(grade8[i].avg_score);
         }
-
-        var option_bar4;
-        
-        // set colors for the plotting: Math, Reading, Median Income, Poverty, chart lable
-        const colors = ['#6baed6', '#fc9272', '#002EFF', '#FF0000', '#000000'];
-
-        option_bar4 = {
-            color: colors,
-            tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                type: 'cross'
-                }
-            },
-            grid: {
-                right: '20%'
-            },
-
-            legend: {
-                data: ['Math', 'Reading', 'Median Income', 'Poverty Rate']
-            },
-            xAxis: [
-                {
-                type: 'category',
-                axisTick: {
-                    alignWithLabel: true
-                },
-                // prettier-ignore
-                data: ['2013', '2015', '2017']
-                }
-            ],
-            yAxis: [
-                {
-                type: 'value',
-                name: 'Avg Scores',
-                min: 0,
-                max: 320,
-                position: 'right',
-                offset: 80,
-                axisLine: {
-                    show: true,
-                    lineStyle: {
-                    color: colors[4]
-                    }
-                },
-                axisLabel: {
-                    formatter: '{value}'
-                }
-                },
-                {
-                type: 'value',
-                name: '',
-                min: 0,
-                max: 320,
-                position: '',
-                offset: 80,
-                axisLine: {
-                    show: false,
-                    lineStyle: {
-                    color: colors[4]
-                    }
-                },
-                axisLabel: {
-                    formatter: '{value}'
-                }
-                },
-                {
-                type: 'value',
-                name: 'Median Income',
-                min: 0,
-                max: 150000,
-                position: 'left',
-                axisLine: {
-                    show: true,
-                    lineStyle: {
-                    color: colors[4]
-                    }
-                },
-                axisLabel: {
-                    formatter: '{value}'
-                }
-                },
-                {
-                    type: 'value',
-                    name: 'Poverty Rate',
-                    min: 0,
-                    max: 100,
-                    position: 'right',
-                    offset: 0,
-                    axisLine: {
-                    show: true,
-                    lineStyle: {
-                        color: colors[4]
-                    }
-                    },
-                    axisLabel: {
-                    formatter: '{value}%'
-                    }
-                }
-            ],
-
-            // ************************************* //
-            // ** Get data to put in the "series" ** //
-            // ************************************* //
-
-            series: [
-                {
-                name: 'Math',
-                type: 'bar',
-                yAxisIndex: 1,
-                data: math4   // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
-                },
-                {
-                name: 'Reading',
-                type: 'bar',
-                yAxisIndex: 1,
-                data: read4    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
-                },
-                {
-                name: 'Median Income',
-                type: 'line',
-                yAxisIndex: 2,
-                data: med4  // ** [2013 med income, 2015 med income, 2017 med income] **//
-                },
-                {
-                name: 'Poverty Rate',
-                type: 'line',
-                yAxisIndex: 3,
-                data: pov4   // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
-                } 
-            ] 
-        };
-        
-        option_bar4 && myBarChart4.setOption(option_bar4);
-
-
-
-        // ************************ //
-        // ** 8th Grade barchart ** //
-        // ************************ //
-
-        var option_bar8;
-        
-        option_bar8 = {
-            color: colors,
-            tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                type: 'cross'
-                }
-            },
-            grid: {
-                right: '20%'
-            },
-
-            legend: {
-                data: ['Math', 'Reading', 'Median Income', 'Poverty Rate']
-            },
-            xAxis: [
-                {
-                type: 'category',
-                axisTick: {
-                    alignWithLabel: true
-                },
-                // prettier-ignore
-                data: ['2013', '2015', '2017']
-                }
-            ],
-            yAxis: [
-                {
-                type: 'value',
-                name: 'Avg Scores',
-                min: 0,
-                max: 320,
-                position: 'right',
-                offset: 80,
-                axisLine: {
-                    show: true,
-                    lineStyle: {
-                    color: colors[4]
-                    }
-                },
-                axisLabel: {
-                    formatter: '{value}'
-                }
-                },
-                {
-                type: 'value',
-                name: '',
-                min: 0,
-                max: 320,
-                position: '',
-                offset: 80,
-                axisLine: {
-                    show: false,
-                    lineStyle: {
-                    color: colors[4]
-                    }
-                },
-                axisLabel: {
-                    formatter: '{value}'
-                }
-                },
-                {
-                type: 'value',
-                name: 'Median Income',
-                min: 0,
-                max: 150000,
-                position: 'left',
-                axisLine: {
-                    show: true,
-                    lineStyle: {
-                    color: colors[4]
-                    }
-                },
-                axisLabel: {
-                    formatter: '{value}'
-                }
-                },
-                {
-                    type: 'value',
-                    name: 'Poverty Rate',
-                    min: 0,
-                    max: 100,
-                    position: 'right',
-                    axisLine: {
-                    show: true,
-                    lineStyle: {
-                        color: colors[4]
-                    }
-                    },
-                    axisLabel: {
-                    formatter: '{value}%'
-                    }
-                }
-            ],
-            series: [
-                {
-                name: 'Math',
-                type: 'bar',
-                yAxisIndex: 1,
-                data: math8  // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
-                },
-                {
-                name: 'Reading',
-                type: 'bar',
-                yAxisIndex: 1,
-                data: read8  // ** [2015 avg score, 2015 avg score, 2017 avg score] **//
-                },
-                {
-                name: 'Median Income',
-                type: 'line',
-                yAxisIndex: 2,
-                data: med8  // ** [2013 med income, 2015 med income, 2017 med income] **//
-                },
-                {
-                name: 'Poverty Rate',
-                type: 'line',
-                yAxisIndex: 3,
-                data: pov8  // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
-                } 
-            ] 
-        };
-        
-        option_bar8 && myBarChart8.setOption(option_bar8);
-
-
-
-        // ***************** //
-        // ** Gauge Chart ** //
-        // ***************** //
-
-        var option_gauge;
-
-        // *********************************************************************** //
-        // ** VARIABLES:                                                        ** //
-        // ** _valOnRadianMax should be the revenue of the selected state       ** //
-        // ** valOnRadian should be the instructional exp of the selected state ** //
-        // *********************************************************************** //
-        
-        var _panelImageURL = 'static/images/custom-gauge-panel.png';
-        var _animationDuration = 1000;
-        var _animationDurationUpdate = 1000;
-        var _animationEasingUpdate = 'quarticInOut';
-        var _valOnRadianMax = 100;
-        var _outerRadius = 200;
-        var _innerRadius = 170;
-        var _pointerInnerRadius = 40;
-        var _insidePanelRadius = 140;
-        var _currentDataIndex = 0;
-
-        function renderItem(params, api) {
-        var valOnRadian = api.value(1);
-        var coords = api.coord([api.value(0), valOnRadian]);
-        var polarEndRadian = coords[3];
-        var imageStyle = {
-            image: _panelImageURL,
-            x: params.coordSys.cx - _outerRadius,
-            y: params.coordSys.cy - _outerRadius,
-            width: _outerRadius * 2,
-            height: _outerRadius * 2
-        };
-        return {
-            type: 'group',
-            children: [
-            {
-                type: 'image',
-                style: imageStyle,
-                clipPath: {
-                type: 'sector',
-                shape: {
-                    cx: params.coordSys.cx,
-                    cy: params.coordSys.cy,
-                    r: _outerRadius,
-                    r0: _innerRadius,
-                    startAngle: 0,
-                    endAngle: -polarEndRadian,
-                    transition: 'endAngle',
-                    enterFrom: { endAngle: 0 }
-                }
-                }
-            },
-            {
-                type: 'image',
-                style: imageStyle,
-                clipPath: {
-                type: 'polygon',
-                shape: {
-                    points: makePionterPoints(params, polarEndRadian)
-                },
-                extra: {
-                    polarEndRadian: polarEndRadian,
-                    transition: 'polarEndRadian',
-                    enterFrom: { polarEndRadian: 0 }
-                },
-                during: function (apiDuring) {
-                    apiDuring.setShape(
-                    'points',
-                    makePionterPoints(params, apiDuring.getExtra('polarEndRadian'))
-                    );
-                }
-                }
-            },
-            {
-                type: 'circle',
-                shape: {
-                cx: params.coordSys.cx,
-                cy: params.coordSys.cy,
-                r: _insidePanelRadius
-                },
-                style: {
-                fill: '#fff',
-                shadowBlur: 25,
-                shadowOffsetX: 0,
-                shadowOffsetY: 0,
-                shadowColor: 'rgba(76,107,167,0.4)'
-                }
-            },
-            {
-                type: 'text',
-                extra: {
-                valOnRadian: valOnRadian,
-                transition: 'valOnRadian',
-                enterFrom: { valOnRadian: 0 }
-                },
-                style: {
-                text: makeText(valOnRadian),
-                fontSize: 50,
-                fontWeight: 700,
-                x: params.coordSys.cx,
-                y: params.coordSys.cy,
-                fill: 'rgb(0,50,190)',
-                align: 'center',
-                verticalAlign: 'middle',
-                enterFrom: { opacity: 0 }
-                },
-                during: function (apiDuring) {
-                apiDuring.setStyle(
-                    'text',
-                    makeText(apiDuring.getExtra('valOnRadian'))
-                );
-                }
-            }
-            ]
-        };
-        }
-
-
-        function convertToPolarPoint(renderItemParams, radius, radian) {
-        return [
-            Math.cos(radian) * radius + renderItemParams.coordSys.cx,
-            -Math.sin(radian) * radius + renderItemParams.coordSys.cy
-        ];
-        }
-
-
-        function makePionterPoints(renderItemParams, polarEndRadian) {
-        return [
-            convertToPolarPoint(renderItemParams, _outerRadius, polarEndRadian),
-            convertToPolarPoint(
-            renderItemParams,
-            _outerRadius,
-            polarEndRadian + Math.PI * 0.03
-            ),
-            convertToPolarPoint(renderItemParams, _pointerInnerRadius, polarEndRadian)
-        ];
-        }
-
-        function makeText(valOnRadian) {
-        // Validate additive animation calc.
-        if (valOnRadian < -10) {
-            alert('illegal during val: ' + valOnRadian);
-        }
-        return ((valOnRadian / _valOnRadianMax) * 100).toFixed(2) + '%';
-        }
-
-
-        option_gauge = {
-        animationEasing: _animationEasingUpdate,
-        animationDuration: _animationDuration,
-        animationDurationUpdate: _animationDurationUpdate,
-        animationEasingUpdate: _animationEasingUpdate,
-
-        // ************************* //
-        // ** The data to display ** //
-        // ** Currently set 65%   ** //
-        // ************************* //
-
-        dataset: {
-            source: [[1, 52.4]] 
-        },
-        tooltip: {},
-        angleAxis: {
-            type: 'value',
-            startAngle: 0,
-            show: false,
-            min: 0,
-            max: _valOnRadianMax
-        },
-        radiusAxis: {
-            type: 'value',
-            show: false
-        },
-        polar: {},
-        series: [
-            {
-            type: 'custom',
-            coordinateSystem: 'polar',
-            renderItem: renderItem
-            }
-        ]
-        };
-
-
-        // ** Interval for the gauge to change randomly, we don't need this section ** //
-        // setInterval(function () {
-        // var nextSource = [[1, Math.round(Math.random() * _valOnRadianMax)]];
-        // myGaugeChart.setOption({
-        //     dataset: {
-        //     source: nextSource
-        //     }
-        // });
-        // }, 3000);
-
-        option_gauge && myGaugeChart.setOption(option_gauge);
+        //Bar Charts for 4th and 8th grade
+        drawBarChart(myBarChart4, math4, read4, med4, pov4);
+        drawBarChart(myBarChart8, math8, read8, med8, pov8);
 
     });
 
 };
 
+function drawBarChart(barChart, math, read, med, pov){
+    var option_bar;
+        
+    // set colors for the plotting: Math, Reading, Median Income, Poverty, chart lable
+    const colors = ['#6baed6', '#fc9272', '#002EFF', '#FF0000', '#000000'];
 
+    option_bar = {
+        color: colors,
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+            type: 'cross'
+            }
+        },
+        grid: {
+            right: '20%'
+        },
+
+        legend: {
+            data: ['Math', 'Reading', 'Median Income', 'Poverty Rate']
+        },
+        xAxis: [
+            {
+            type: 'category',
+            axisTick: {
+                alignWithLabel: true
+            },
+            // prettier-ignore
+            data: ['2013', '2015', '2017']
+            }
+        ],
+        yAxis: [
+            {
+            type: 'value',
+            name: 'Avg Scores',
+            min: 0,
+            max: 320,
+            position: 'right',
+            offset: 80,
+            axisLine: {
+                show: true,
+                lineStyle: {
+                color: colors[4]
+                }
+            },
+            axisLabel: {
+                formatter: '{value}'
+            }
+            },
+            {
+            type: 'value',
+            name: '',
+            min: 0,
+            max: 320,
+            position: '',
+            offset: 80,
+            axisLine: {
+                show: false,
+                lineStyle: {
+                color: colors[4]
+                }
+            },
+            axisLabel: {
+                formatter: '{value}'
+            }
+            },
+            {
+            type: 'value',
+            name: 'Median Income',
+            min: 0,
+            max: 150000,
+            position: 'left',
+            axisLine: {
+                show: true,
+                lineStyle: {
+                color: colors[4]
+                }
+            },
+            axisLabel: {
+                formatter: '{value}'
+            }
+            },
+            {
+                type: 'value',
+                name: 'Poverty Rate',
+                min: 0,
+                max: 100,
+                position: 'right',
+                offset: 0,
+                axisLine: {
+                show: true,
+                lineStyle: {
+                    color: colors[4]
+                }
+                },
+                axisLabel: {
+                formatter: '{value}%'
+                }
+            }
+        ],
+
+        // ************************************* //
+        // ** Get data to put in the "series" ** //
+        // ************************************* //
+
+        series: [
+            {
+            name: 'Math',
+            type: 'bar',
+            yAxisIndex: 1,
+            data: math   // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
+            },
+            {
+            name: 'Reading',
+            type: 'bar',
+            yAxisIndex: 1,
+            data: read    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
+            },
+            {
+            name: 'Median Income',
+            type: 'line',
+            yAxisIndex: 2,
+            data: med  // ** [2013 med income, 2015 med income, 2017 med income] **//
+            },
+            {
+            name: 'Poverty Rate',
+            type: 'line',
+            yAxisIndex: 3,
+            data: pov   // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
+            } 
+        ] 
+    };
+    
+    option_bar && barChart.setOption(option_bar);
+
+
+}
+
+function drawGauge(gaugeChart, ratio){
+    var option_gauge;
+
+    // *********************************************************************** //
+    // ** VARIABLES:                                                        ** //
+    // ** _valOnRadianMax should be the revenue of the selected state       ** //
+    // ** valOnRadian should be the instructional exp of the selected state ** //
+    // *********************************************************************** //
+    
+    var _panelImageURL = 'static/images/custom-gauge-panel.png';
+    var _animationDuration = 1000;
+    var _animationDurationUpdate = 1000;
+    var _animationEasingUpdate = 'quarticInOut';
+    var _valOnRadianMax = 100;
+    var _outerRadius = 200;
+    var _innerRadius = 170;
+    var _pointerInnerRadius = 40;
+    var _insidePanelRadius = 140;
+    var _currentDataIndex = 0;
+
+    function renderItem(params, api) {
+    var valOnRadian = api.value(1);
+    var coords = api.coord([api.value(0), valOnRadian]);
+    var polarEndRadian = coords[3];
+    var imageStyle = {
+        image: _panelImageURL,
+        x: params.coordSys.cx - _outerRadius,
+        y: params.coordSys.cy - _outerRadius,
+        width: _outerRadius * 2,
+        height: _outerRadius * 2
+    };
+    return {
+        type: 'group',
+        children: [
+        {
+            type: 'image',
+            style: imageStyle,
+            clipPath: {
+            type: 'sector',
+            shape: {
+                cx: params.coordSys.cx,
+                cy: params.coordSys.cy,
+                r: _outerRadius,
+                r0: _innerRadius,
+                startAngle: 0,
+                endAngle: -polarEndRadian,
+                transition: 'endAngle',
+                enterFrom: { endAngle: 0 }
+            }
+            }
+        },
+        {
+            type: 'image',
+            style: imageStyle,
+            clipPath: {
+            type: 'polygon',
+            shape: {
+                points: makePionterPoints(params, polarEndRadian)
+            },
+            extra: {
+                polarEndRadian: polarEndRadian,
+                transition: 'polarEndRadian',
+                enterFrom: { polarEndRadian: 0 }
+            },
+            during: function (apiDuring) {
+                apiDuring.setShape(
+                'points',
+                makePionterPoints(params, apiDuring.getExtra('polarEndRadian'))
+                );
+            }
+            }
+        },
+        {
+            type: 'circle',
+            shape: {
+            cx: params.coordSys.cx,
+            cy: params.coordSys.cy,
+            r: _insidePanelRadius
+            },
+            style: {
+            fill: '#fff',
+            shadowBlur: 25,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowColor: 'rgba(76,107,167,0.4)'
+            }
+        },
+        {
+            type: 'text',
+            extra: {
+            valOnRadian: valOnRadian,
+            transition: 'valOnRadian',
+            enterFrom: { valOnRadian: 0 }
+            },
+            style: {
+            text: makeText(valOnRadian),
+            fontSize: 50,
+            fontWeight: 700,
+            x: params.coordSys.cx,
+            y: params.coordSys.cy,
+            fill: 'rgb(0,50,190)',
+            align: 'center',
+            verticalAlign: 'middle',
+            enterFrom: { opacity: 0 }
+            },
+            during: function (apiDuring) {
+            apiDuring.setStyle(
+                'text',
+                makeText(apiDuring.getExtra('valOnRadian'))
+            );
+            }
+        }
+        ]
+    };
+    }
+
+
+    function convertToPolarPoint(renderItemParams, radius, radian) {
+    return [
+        Math.cos(radian) * radius + renderItemParams.coordSys.cx,
+        -Math.sin(radian) * radius + renderItemParams.coordSys.cy
+    ];
+    }
+
+
+    function makePionterPoints(renderItemParams, polarEndRadian) {
+    return [
+        convertToPolarPoint(renderItemParams, _outerRadius, polarEndRadian),
+        convertToPolarPoint(
+        renderItemParams,
+        _outerRadius,
+        polarEndRadian + Math.PI * 0.03
+        ),
+        convertToPolarPoint(renderItemParams, _pointerInnerRadius, polarEndRadian)
+    ];
+    }
+
+    function makeText(valOnRadian) {
+    // Validate additive animation calc.
+    if (valOnRadian < -10) {
+        alert('illegal during val: ' + valOnRadian);
+    }
+    return ((valOnRadian / _valOnRadianMax) * 100).toFixed(2) + '%';
+    }
+
+
+    option_gauge = {
+    animationEasing: _animationEasingUpdate,
+    animationDuration: _animationDuration,
+    animationDurationUpdate: _animationDurationUpdate,
+    animationEasingUpdate: _animationEasingUpdate,
+
+    // ************************* //
+    // ** The data to display ** //
+    // ** Currently set 65%   ** //
+    // ************************* //
+
+    dataset: {
+        source: [[1, ratio]] 
+    },
+    tooltip: {},
+    angleAxis: {
+        type: 'value',
+        startAngle: 0,
+        show: false,
+        min: 0,
+        max: _valOnRadianMax
+    },
+    radiusAxis: {
+        type: 'value',
+        show: false
+    },
+    polar: {},
+    series: [
+        {
+        type: 'custom',
+        coordinateSystem: 'polar',
+        renderItem: renderItem
+        }
+    ]
+    };
+
+
+    // ** Interval for the gauge to change randomly, we don't need this section ** //
+    // setInterval(function () {
+    // var nextSource = [[1, Math.round(Math.random() * _valOnRadianMax)]];
+    // myGaugeChart.setOption({
+    //     dataset: {
+    //     source: nextSource
+    //     }
+    // });
+    // }, 3000);
+
+    option_gauge && gaugeChart.setOption(option_gauge);
+
+}
 //initialize Dashboard
 dropDownMenu();
