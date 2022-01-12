@@ -67,58 +67,75 @@
 
 <div class="container" style="padding-top: 100px;">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <!-- ** dropdown to select State ** -->
             <div class="well mb-4" style="background-color: rgb(213, 225, 214, 0.0);">
                 <h5 class="title"> Select a State:</h5>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
-                <table class="table table-striped table-hover">
-                    <thead style="text-align: center;">
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <table class="table table-striped table-hover">
+                <thead style="text-align: center;">
                     <tr>
                         <th scope="col">Year</th>
                         <th scope="col">2013</th>
                         <th scope="col">2015</th>
                         <th scope="col">2017</th>
                     </tr>
-                    </thead>
-                    <tbody style="text-align: right;">
-                        <tr>
-                            <th id="revenue" scope="row" style="text-align: center;">Revenue</th>
-                            <td id="rev_13"></td>
-                            <td id="rev_15"></td>
-                            <td id="rev_17"></td>
-                        </tr>
-                        <tr>
-                            <th id="expenditure" scope="row" style="text-align: center;">Instructional<br>Expenditure</th>
-                            <td id="exp_13"></td>
-                            <td id="exp_15"></td>
-                            <td id="exp_17"></td>
-                        </tr>
-                        <tr>
-                            <th id="income" scope="raw" style="text-align: center;">Instructional<br>Expenditure/Revenue<br>Ratio (%)</th>
-                            <td id="ratio_13"></td>
-                            <td id="ratio_15"></td>
-                            <td id="ratio_17"></td>
-                        </tr>
-                        <tr>
-                            <th id="income" scope="raw" style="text-align: center;">Median<br>Household<br>Income</th>
-                            <td id="inc_13"></td>
-                            <td id="inc_15"></td>
-                            <td id="inc_17"></td>
-                        </tr>
-                        <tr>
-                            <th id="poverty" scope="raw" style="text-align: center;">Poverty<br>Rate (%)</th>
-                            <td id="pov_13"></td>
-                            <td id="pov_15"></td>
-                            <td id="pov_17"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                </thead>
+                <tbody style="text-align: right;">
+                    <tr>
+                        <th id="revenue" scope="row" style="text-align: center;">Total Revenue</th>
+                        <td id="rev_13"></td>
+                        <td id="rev_15"></td>
+                        <td id="rev_17"></td>
+                    </tr>
+                    <tr>
+                        <th id="expenditure" scope="row" style="text-align: center;">Instructional<br>Spending</th>
+                        <td id="exp_13"></td>
+                        <td id="exp_15"></td>
+                        <td id="exp_17"></td>
+                    </tr>
+                    <tr>
+                        <th id="income" scope="raw" style="text-align: center;">Percentage of<br>Instructional Spending</th>
+                        <td id="ratio_13"></td>
+                        <td id="ratio_15"></td>
+                        <td id="ratio_17"></td>
+                    </tr>
+                    <tr>
+                        <th id="income" scope="raw" style="text-align: center;">Median<br>Household<br>Income</th>
+                        <td id="inc_13"></td>
+                        <td id="inc_15"></td>
+                        <td id="inc_17"></td>
+                    </tr>
+                    <tr>
+                        <th id="poverty" scope="raw" style="text-align: center;">Poverty<br>Rate (%)</th>
+                        <td id="pov_13"></td>
+                        <td id="pov_15"></td>
+                        <td id="pov_17"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div><h5 class="title"> Expenditure/Revenue Ratio </h5>
+        </div>
+        <div class="col-lg-4">
+            <h6 class="title"> 2013 </h6>
+            <div id="ExpRevRatio13">
             </div>
         </div>
-        <div class="col-lg-6">
-            <h5 class="title"> Instructional Expenditure/Revenue Ratio </h5>
-            <div id="ExpRevRatio">
+        <div class="col-lg-4">
+            <h6 class="title"> 2015 </h6>
+            <div id="ExpRevRatio15">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <h6 class="title"> 2017 </h6>
+            <div id="ExpRevRatio17">
             </div>
         </div>
     </div>

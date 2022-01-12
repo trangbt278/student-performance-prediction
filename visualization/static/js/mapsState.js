@@ -6,7 +6,7 @@ var menu = d3.select("#selDataset")
 
 var myBarChart4 = echarts.init(document.getElementById('StateAvgScore4'));
 var myBarChart8 = echarts.init(document.getElementById('StateAvgScore8'));
-var myGaugeChart = echarts.init(document.getElementById('ExpRevRatio'));
+var myGaugeChart13 = echarts.init(document.getElementById('ExpRevRatio13'));
 
 
 // ************************* //
@@ -375,10 +375,10 @@ function charting(stateName){
         var _animationDurationUpdate = 1000;
         var _animationEasingUpdate = 'quarticInOut';
         var _valOnRadianMax = 100;
-        var _outerRadius = 200;
-        var _innerRadius = 170;
-        var _pointerInnerRadius = 40;
-        var _insidePanelRadius = 140;
+        var _outerRadius = 175;
+        var _innerRadius = 155;
+        var _pointerInnerRadius = 30;
+        var _insidePanelRadius = 130;
         var _currentDataIndex = 0;
 
         function renderItem(params, api) {
@@ -554,7 +554,7 @@ function charting(stateName){
         // });
         // }, 3000);
 
-        option_gauge && myGaugeChart.setOption(option_gauge);
+        option_gauge && myGaugeChart13.setOption(option_gauge);
 
     });
 
