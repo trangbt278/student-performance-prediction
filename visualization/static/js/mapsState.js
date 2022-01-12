@@ -79,10 +79,11 @@ function charting(stateName){
         inc2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         inc2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         //get poverty rate by year and format it like number
-        // ** Should we do RE to %? ** //
         pov2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+
+        //  calculation: ratio2013, ratio2015, ratio2017 
 
         
         // ************************ //
@@ -204,13 +205,13 @@ function charting(stateName){
                 name: 'Math',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [235, 262, 243]    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
+                data: [235, 262, 243]    // ** [4th grade Math 2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Reading',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [205, 256, 237]    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
+                data: [205, 256, 237]    // ** [4th grade reading 2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Median Income',
@@ -335,13 +336,13 @@ function charting(stateName){
                 name: 'Math',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [235, 262, 243]  // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
+                data: [235, 262, 243]  // ** [8th grade Math 2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Reading',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [205, 256, 237]  // ** [2015 avg score, 2015 avg score, 2017 avg score] **//
+                data: [205, 256, 237]  // ** [8th grade Reading 2015 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Median Income',
@@ -368,12 +369,7 @@ function charting(stateName){
 
         var option_gauge;
 
-        // *********************************************************************** //
-        // ** VARIABLES:                                                        ** //
-        // ** _valOnRadianMax should be the revenue of the selected state       ** //
-        // ** valOnRadian should be the instructional exp of the selected state ** //
-        // *********************************************************************** //
-        
+       
         var _panelImageURL = 'static/images/custom-gauge-panel.png';
         var _animationDuration = 1000;
         var _animationDurationUpdate = 1000;
@@ -523,7 +519,7 @@ function charting(stateName){
         // ************************* //
 
         dataset: {
-            source: [[1, 52.4]] 
+            source: [[1, 78]]  //[1, ${year ratio}]
         },
         tooltip: {},
         angleAxis: {
