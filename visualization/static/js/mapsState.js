@@ -79,22 +79,57 @@ function charting(stateName){
         inc2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         inc2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         //get poverty rate by year and format it like number
+        // ** Should we do RE to %? ** //
         pov2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-
-        //  calculation: ratio2013, ratio2015, ratio2017 
 
         
         // ************************ //
         // ** 4th Grade barchart ** //
         // ************************ //
+        // get math score, reading score, med_income and poverty_percentage for grade 4
+        // filter data for grade 4 and math
+        var grade4 = stateData.filter(x => (x.grade == '4') && (x.subject == 'Mathematics'));
+        var math4 = [];
+        var read4 = [];
+        var med4 = [];
+        var pov4 =[];
+        var i = 0;
+        //add data to arrays of math score, med_income and poverty_percentage for all years
+        for (i = 0; i <grade4.length; i++)
+        {
+                math4.push(grade4[i].avg_score);
+                med4.push(grade4[i].med_income);
+                pov4.push(grade4[i].poverty_percentage);
+        }
+        grade4 = stateData.filter(x => (x.grade == '4') && (x.subject == 'Reading'));
+        //add data to arrays of reading score for all years
+        for (i = 0; i <grade4.length; i++)
+        {
+                read4.push(grade4[i].avg_score);
+        }
         
-        // get avg score by grade and format it like number
-        var grade4 = stateData.filter(x => x.grade == '4');
-        // console.log(grade4);
-        var grade8 = stateData.filter(x => x.grade == '8');
-        // console.log(grade8);
+        // get math score, reading score, med_income and poverty_percentage for grade 8
+        // filter data for grade 8 and math
+        var grade8 = stateData.filter(x => (x.grade == '8') && (x.subject == 'Mathematics'));
+        var math8 = [];
+        var read8 = [];
+        var med8 = [];
+        var pov8 =[];
+        //add data to arrays of math score, med_income and poverty_percentage for all years
+        for (i = 0; i <grade8.length; i++)
+        {
+                math8.push(grade8[i].avg_score);
+                med8.push(grade8[i].med_income);
+                pov8.push(grade8[i].poverty_percentage);
+        }
+        grade8 = stateData.filter(x => (x.grade == '8') && (x.subject == 'Reading'));
+        //add data to arrays of reading score for all years
+        for (i = 0; i <grade8.length; i++)
+        {
+                read8.push(grade8[i].avg_score);
+        }
 
         var option_bar4;
         
@@ -205,25 +240,25 @@ function charting(stateName){
                 name: 'Math',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [235, 262, 243]    // ** [4th grade Math 2013 avg score, 2015 avg score, 2017 avg score] **//
+                data: math4   // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Reading',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [205, 256, 237]    // ** [4th grade reading 2013 avg score, 2015 avg score, 2017 avg score] **//
+                data: read4    // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Median Income',
                 type: 'line',
                 yAxisIndex: 2,
-                data: [98000, 107000, 100000]  // ** [2013 med income, 2015 med income, 2017 med income] **//
+                data: med4  // ** [2013 med income, 2015 med income, 2017 med income] **//
                 },
                 {
                 name: 'Poverty Rate',
                 type: 'line',
                 yAxisIndex: 3,
-                data: [23, 12.7, 31]   // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
+                data: pov4   // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
                 } 
             ] 
         };
@@ -336,25 +371,25 @@ function charting(stateName){
                 name: 'Math',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [235, 262, 243]  // ** [8th grade Math 2013 avg score, 2015 avg score, 2017 avg score] **//
+                data: math8  // ** [2013 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Reading',
                 type: 'bar',
                 yAxisIndex: 1,
-                data: [205, 256, 237]  // ** [8th grade Reading 2015 avg score, 2015 avg score, 2017 avg score] **//
+                data: read8  // ** [2015 avg score, 2015 avg score, 2017 avg score] **//
                 },
                 {
                 name: 'Median Income',
                 type: 'line',
                 yAxisIndex: 2,
-                data: [98000, 107000, 100000]  // ** [2013 med income, 2015 med income, 2017 med income] **//
+                data: med8  // ** [2013 med income, 2015 med income, 2017 med income] **//
                 },
                 {
                 name: 'Poverty Rate',
                 type: 'line',
                 yAxisIndex: 3,
-                data: [23, 12.7, 31]  // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
+                data: pov8  // ** [2013 Poverty, 2015 Poverty, 2017 Poverty] **//
                 } 
             ] 
         };
@@ -369,7 +404,12 @@ function charting(stateName){
 
         var option_gauge;
 
-       
+        // *********************************************************************** //
+        // ** VARIABLES:                                                        ** //
+        // ** _valOnRadianMax should be the revenue of the selected state       ** //
+        // ** valOnRadian should be the instructional exp of the selected state ** //
+        // *********************************************************************** //
+        
         var _panelImageURL = 'static/images/custom-gauge-panel.png';
         var _animationDuration = 1000;
         var _animationDurationUpdate = 1000;
@@ -519,7 +559,7 @@ function charting(stateName){
         // ************************* //
 
         dataset: {
-            source: [[1, 78]]  //[1, ${year ratio}]
+            source: [[1, 52.4]] 
         },
         tooltip: {},
         angleAxis: {
