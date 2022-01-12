@@ -41,7 +41,7 @@ function optionChanged(stateName) {
 };
 
 
-// Get financial data for the table
+// Get data for the table and charts
 function charting(stateName){
     //get all data from json file
     d3.json("data/input_data.json").then((data) => {
@@ -156,14 +156,14 @@ function drawBarChart(barChart, math, read, med, pov){
     var option_bar;
         
     // set colors for the plotting: Math, Reading, Median Income, Poverty, chart lable
-    const colors = ['#6baed6', '#fc9272', '#002EFF', '#FF0000', '#000000'];
+    const colors = ['#6baed6', '#fc9272', '#002EFF', '#FF0000', '#000000','rgb(213, 225, 214)'];
 
     option_bar = {
         color: colors,
         tooltip: {
             trigger: 'axis',
             axisPointer: {
-            type: 'cross'
+                type: 'cross'
             }
         },
         grid: {
@@ -171,7 +171,8 @@ function drawBarChart(barChart, math, read, med, pov){
         },
 
         legend: {
-            data: ['Math', 'Reading', 'Median Income', 'Poverty Rate']
+            data: ['Math', 'Reading', 'Median Income', 'Poverty Rate'],
+            height: 12,
         },
         xAxis: [
             {
@@ -185,70 +186,71 @@ function drawBarChart(barChart, math, read, med, pov){
         ],
         yAxis: [
             {
-            type: 'value',
-            name: 'Avg Scores',
-            min: 0,
-            max: 320,
-            position: 'right',
-            offset: 80,
-            axisLine: {
-                show: true,
-                lineStyle: {
-                color: colors[4]
+                type: 'value',
+                name: 'Avg Scores',
+                min: 0,
+                max: 320,
+                position: 'left',
+                offset: 0,
+                axisLine: {
+                    show: true,
+                    lineStyle: {
+                        color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
                 }
-            },
-            axisLabel: {
-                formatter: '{value}'
-            }
-            },
-            {
-            type: 'value',
-            name: '',
-            min: 0,
-            max: 320,
-            position: '',
-            offset: 80,
-            axisLine: {
-                show: false,
-                lineStyle: {
-                color: colors[4]
-                }
-            },
-            axisLabel: {
-                formatter: '{value}'
-            }
-            },
-            {
-            type: 'value',
-            name: 'Median Income',
-            min: 0,
-            max: 150000,
-            position: 'left',
-            axisLine: {
-                show: true,
-                lineStyle: {
-                color: colors[4]
-                }
-            },
-            axisLabel: {
-                formatter: '{value}'
-            }
             },
             {
                 type: 'value',
-                name: 'Poverty Rate',
+                name: '',
+                min: 0,
+                max: 320,
+                position: 'left',
+                offset: 0,
+                axisLine: {
+                    show: false,
+                    lineStyle: {
+                        color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    show: false,
+                    formatter: '',
+                }
+            },
+            {
+                type: 'value',
+                name: '',
+                min: 0,
+                max: 100000,
+                position: 'right',
+                axisLine: {
+                    show: false,
+                    lineStyle: {
+                        color: colors[4]
+                    }
+                },
+                axisLabel: {
+                    formatter: ''
+                }
+            },
+            {
+                type: 'value',
+                name: '',
                 min: 0,
                 max: 100,
                 position: 'right',
-                offset: 0,
+                offset: 100,
                 axisLine: {
-                show: true,
-                lineStyle: {
-                    color: colors[4]
-                }
+                    show: false,
+                    lineStyle: {
+                        color: colors[4]
+                    }
                 },
                 axisLabel: {
-                formatter: '{value}%'
+                    formatter: ''
                 }
             }
         ],
@@ -292,22 +294,16 @@ function drawBarChart(barChart, math, read, med, pov){
 
 function drawGauge(gaugeChart, ratio){
     var option_gauge;
-
-    // *********************************************************************** //
-    // ** VARIABLES:                                                        ** //
-    // ** _valOnRadianMax should be the revenue of the selected state       ** //
-    // ** valOnRadian should be the instructional exp of the selected state ** //
-    // *********************************************************************** //
-    
+  
     var _panelImageURL = 'static/images/custom-gauge-panel.png';
     var _animationDuration = 1000;
     var _animationDurationUpdate = 1000;
     var _animationEasingUpdate = 'quarticInOut';
     var _valOnRadianMax = 100;
-    var _outerRadius = 200;
-    var _innerRadius = 170;
-    var _pointerInnerRadius = 40;
-    var _insidePanelRadius = 140;
+    var _outerRadius = 175;
+    var _innerRadius = 155;
+    var _pointerInnerRadius = 30;
+    var _insidePanelRadius = 130;
     var _currentDataIndex = 0;
 
     function renderItem(params, api) {
@@ -441,11 +437,6 @@ function drawGauge(gaugeChart, ratio){
     animationDuration: _animationDuration,
     animationDurationUpdate: _animationDurationUpdate,
     animationEasingUpdate: _animationEasingUpdate,
-
-    // ************************* //
-    // ** The data to display ** //
-    // ** Currently set 65%   ** //
-    // ************************* //
 
     dataset: {
         source: [[1, ratio]] 
