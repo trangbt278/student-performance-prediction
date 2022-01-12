@@ -9,65 +9,75 @@
 
 #ExpRevRatio13 {
     position: initial; 
-    width: 500px; 
-    height: 500px; 
-    padding-top: 0px;
-    padding-left: 15%;
-}
-
-#ExpRevRatio15 {
-    position: initial; 
-    width: 500px; 
-    height: 500px; 
-    padding-top: 0px;
-    padding-left: 15%;
-}
-
-#ExpRevRatio17 {
-    position: initial; 
     width: 480px; 
-    height: 480px; 
-    padding-top: 0px;
+    height: 360px; 
+    /* padding-top: 0px; */
     padding-left: 0%;
 }
 
 #ExpRevRatio15 {
     position: initial; 
     width: 480px; 
-    height: 480px; 
-    padding-top: 0px;
+    height: 360px; 
+    /* padding-top: 0px; */
     padding-left: 0%;
 }
 
 #ExpRevRatio17 {
     position: initial; 
     width: 480px; 
-    height: 480px; 
-    padding-top: 0px;
+    height: 360px; 
+    /* padding-top: 0px; */
     padding-left: 0%;
 }
 
 #StateAvgScore4 {
     position: initial; 
-    width: 600px; 
-    height: 500px; 
+    width: 620px; 
+    height: 480px; 
     padding-top: 20px;
 
 }
 
 #StateAvgScore8 {
     position: initial; 
-    width: 600px; 
-    height: 500px; 
+    width: 620px; 
+    height: 480px; 
     padding-top: 20px;
 
 }
 
+#allRev {
+    position: initial; 
+    width: 560px; 
+    height: 500px; 
+    padding-top: 10px;
+}
 
+#allExp {
+    position: initial; 
+    width: 560px; 
+    height: 500px; 
+    padding-top: 10px;
+}
+
+#allInc {
+    position: initial; 
+    width: 560px; 
+    height: 500px; 
+    padding-top: 10px;
+}
+
+#allPov {
+    position: initial; 
+    width: 560px; 
+    height: 500px; 
+    padding-top: 10px;
+}
 
 body {
 
-  background-color:rgb(213, 225, 214, 0.6);
+  background-color:rgba(213, 225, 214, 0.6);
   height: 600px;
   background-size: cover;
   background-position: center;
@@ -87,18 +97,34 @@ body {
 
 img {
 
-  width: 100%;
-  height: 100%;
-  background:rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 100%;
+    background:rgba(255, 255, 255, 0);
+}
+
+th {
+
+    font-size: 14px;
+}
+
+td {
+
+    font-size: 12px;
+    vertical-align: middle ;
 }
 
 hr {
-  color: rgb(140, 140, 140);
+    color: rgb(140, 140, 140);
 }
 
+/* for gauge chart */
 h6 {
     text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-shadow: 2px 3px #ffffff;
 }
+
 .nav-item {
 
   font-family: verdana;
@@ -158,7 +184,7 @@ color: rgb(45, 158, 175);
 
 a {
 
-  color: rgb(231, 231, 231);
+  /* color: rgb(231, 231, 231); */
   font-size: 15px;
   font-family: verdana;
 }
