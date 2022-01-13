@@ -15,6 +15,8 @@ Our mission: to find a correlation, or lack thereof, between these financial var
 
 # Data Visualiztion Website
 
-![Homepage.png]()
-![Dashboard_1.png]()
-![Dashboard_2.png]()
+Check our website: 
+
+![Homepage.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/homepage.png)
+![Dashboard_1.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/dashboard_1.png)
+![Dashboard_3.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/dashboard_3.png)
