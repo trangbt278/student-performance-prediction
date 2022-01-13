@@ -17,12 +17,12 @@ option_Rev = {
     },
     grid: {
         left: '3%',
-        right: '7%',
+        right: '12%',
         bottom: '7%',
         containLabel: true
     },
     tooltip: {
-        // trigger: 'axis',
+        // trigger: 'item',
         showDelay: 0,
         axisPointer: {
             show: true,
@@ -43,23 +43,23 @@ option_Rev = {
     xAxis: [
         {
         type: 'value',
-        name: 'Revenue',
+        name: 'Avg Score',
         scale: true,
         axisLabel: {
-            formatter: '${value}'
+            formatter: '{value}'
         },
         splitLine: {
-            show: false
+            show: true,
         }
         }
     ],
     yAxis: [
         {
         type: 'value',
-        name: 'Avg Score',
+        // name: 'Revenue',
         scale: true,
         axisLabel: {
-            formatter: '{value}'
+            formatter: '${value}'
         },
         splitLine: {
             show: false
@@ -171,12 +171,12 @@ option_Exp = {
     },
     grid: {
         left: '3%',
-        right: '7%',
+        right: '12%',
         bottom: '7%',
         containLabel: true
     },
     tooltip: {
-        // trigger: 'axis',
+        // trigger: 'item',
         showDelay: 0,
         axisPointer: {
             show: true,
@@ -197,10 +197,10 @@ option_Exp = {
     xAxis: [
         {
             type: 'value',
-            name: 'Spending',
+            name: 'Avg Score',
             scale: true,
             axisLabel: {
-                formatter: '${value}'
+                formatter: '{value}'
             },
             splitLine: {
                 show: false
@@ -210,10 +210,10 @@ option_Exp = {
     yAxis: [
         {
             type: 'value',
-            name: 'Avg Score',
+            // name: 'Spending',
             scale: true,
             axisLabel: {
-                formatter: '{value}'
+                formatter: '${value}'
             },
             splitLine: {
                 show: false
@@ -326,12 +326,12 @@ option_Inc = {
     },
     grid: {
         left: '3%',
-        right: '7%',
+        right: '12%',
         bottom: '7%',
         containLabel: true
     },
     tooltip: {
-        // trigger: 'axis',
+        // trigger: 'item',
         showDelay: 0,
         axisPointer: {
             show: true,
@@ -352,10 +352,10 @@ option_Inc = {
     xAxis: [
         {
             type: 'value',
-            name: 'Median Houshold Income',
+            name: 'Avg Score',
             scale: true,
             axisLabel: {
-                formatter: '${value}'
+                formatter: '{value}'
             },
             splitLine: {
                 show: false
@@ -365,10 +365,10 @@ option_Inc = {
     yAxis: [
         {
             type: 'value',
-            name: 'Avg Score',
+            // name: 'Median Houshold Income',
             scale: true,
             axisLabel: {
-                formatter: '{value}'
+                formatter: '${value}'
             },
             splitLine: {
                 show: false
@@ -472,17 +472,17 @@ option_Inc = {
 
 option_Pov = {
     title: {
-        // text: 'Poverty Rate',
+        // text: 'Poverty Rate (%)',
         padding: ['0','10','10','0'],
     },
     grid: {
         left: '3%',
-        right: '7%',
+        right: '12%',
         bottom: '7%',
         containLabel: true
     },
     tooltip: {
-        // trigger: 'axis',
+        // trigger: 'item',
         showDelay: 0,
         axisPointer: {
             show: true,
@@ -503,10 +503,10 @@ option_Pov = {
     xAxis: [
         {
             type: 'value',
-            name: 'Poverty Rate(%)',
+            name: 'Avg Score',
             scale: true,
             axisLabel: {
-                formatter: '{value}%'
+                formatter: '{value}'
             },
             splitLine: {
                 show: false
@@ -516,10 +516,10 @@ option_Pov = {
     yAxis: [
         {
             type: 'value',
-            name: 'Avg Score',
+            // name: 'Poverty Rate(%)',
             scale: true,
             axisLabel: {
-                formatter: '{value}'
+                formatter: '{value}%'
             },
             splitLine: {
                 show: false
@@ -622,4 +622,3 @@ option_Rev && myRevChart.setOption(option_Rev);
 option_Exp && myExpChart.setOption(option_Exp);
 option_Inc && myIncChart.setOption(option_Inc);
 option_Pov && myPovChart.setOption(option_Pov);
-
