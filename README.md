@@ -12,3 +12,9 @@ Our mission: to find a correlation, or lack thereof, between these financial var
 * [NAEP Website](https://nces.ed.gov/nationsreportcard/about/)
 * [US Education Department](https://eddataexpress.ed.gov/)
 * [US Census Bureau](https://data.census.gov/cedsci/)
+
+# Data Visualiztion Website
+
+![Homepage.png]()
+![Dashboard_1.png]()
+![Dashboard_2.png]()
