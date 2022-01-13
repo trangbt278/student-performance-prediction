@@ -79,10 +79,6 @@
     padding-top: 10px;
 }
 
-p {
-    font-size: 15px;
-}
-
 body {
 
     background-color:rgba(213, 225, 214, 0.6);
@@ -91,6 +87,7 @@ body {
     background-position: center;
     background-repeat: repeat;
     
+
 }
 
 .title {
@@ -128,10 +125,9 @@ hr {
 /* for gauge chart */
 h6 {
     text-align: center;
-    font-size: 22px;
     padding-bottom: 0px;
     padding-top: 0px;
-    text-shadow: 3px 3px #ffffff;
+    text-shadow: 2px 3px #ffffff;
 }
 
 .nav-item {
@@ -145,7 +141,7 @@ h6 {
   color: rgb(0, 0, 0);
   margin-left: 70px;
   padding: inherit;
-  font-size: 36px;
+  font-size:30px;
   font-weight: bold;
   background-color: rgb(255, 255, 255, 0);
   font-family: verdana;
@@ -156,14 +152,14 @@ h6 {
 
   max-height: 80px;
   background-color: rgba(53, 53, 53, 0.755);
-  font-size: 36px; 
+  font-size: 28px; 
 }
 
 .navbar-collapse {
 
   position: absolute;
   right: 5%;
-  font-size:large;
+  font-size: small;
 
 }
 
@@ -193,7 +189,8 @@ color: rgb(45, 158, 175);
 
 a {
 
-  color: rgb(0, 0, 237);
+  /* color: rgb(231, 231, 231); */
+  font-size: 15px;
   font-family: verdana;
 }
 
@@ -229,7 +226,7 @@ text-align: justify;
 
 .table {
 
-  font-size: 14px;
+  font-size: 12px;
   font-family: verdana;
   border-top-color: rgb(255, 255, 255);
 }

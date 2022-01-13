@@ -1,9 +1,8 @@
 console.log("mapStateJS success.")
 
 var input_data = "data/input_data.json"
-console.log
-var menu = d3.select("#selDataset")
 
+var menu = d3.select("#selDataset")
 var myBarChart4 = echarts.init(document.getElementById('StateAvgScore4'));
 var myBarChart8 = echarts.init(document.getElementById('StateAvgScore8'));
 var myGaugeChart13 = echarts.init(document.getElementById('ExpRevRatio13'));
@@ -29,7 +28,7 @@ function dropDownMenu() {
         //set default
         const defaultState = stateName[0];
         // demoTable(defaultState);
-        charting(defaultState);
+        fecthData(defaultState);
     });
 };
 
@@ -37,14 +36,14 @@ function dropDownMenu() {
 // When the dropdown change //
 // ************************ //
 function optionChanged(stateName) {
-    charting(stateName);
+    fecthData(stateName);
 };
 
 
 // Get data for the table and charts
-function charting(stateName){
+function fecthData(stateName){
     //get all data from json file
-    d3.json("data/input_data.json").then((data) => {
+    d3.json(input_data).then((data) => {
         var allData = data.alldata;
         //filter data by the selected state
         var stateData = allData.filter(x => x.state == stateName);
@@ -69,26 +68,26 @@ function charting(stateName){
         var ratio2015 = d3.select("#ratio_15");
         var ratio2017 = d3.select("#ratio_17");
         //get revenue by year and format it like number
-        rev2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        rev2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        rev2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        rev2013.text(`$`+ String(finDataByYear.filter(x => x.year == '2013')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        rev2015.text(`$`+ String(finDataByYear.filter(x => x.year == '2015')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        rev2017.text(`$`+ String(finDataByYear.filter(x => x.year == '2017')[0].total_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         //get instructional expenditure by year and format it like number
-        exp2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        exp2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        exp2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        exp2013.text(`$`+ String(finDataByYear.filter(x => x.year == '2013')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        exp2015.text(`$`+ String(finDataByYear.filter(x => x.year == '2015')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        exp2017.text(`$`+ String(finDataByYear.filter(x => x.year == '2017')[0].total_instructional_spending).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         
-        ratio2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        ratio2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        ratio2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        ratio2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,') + `%`);
+        ratio2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,') + `%`);
+        ratio2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].percent_spending_of_revenue).replace(/(.)(?=(\d{3})+$)/g,'$1,') + `%`);
 
         //get median income by year and format it like number
-        inc2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        inc2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        inc2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        inc2013.text(`$`+ String(finDataByYear.filter(x => x.year == '2013')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        inc2015.text(`$`+ String(finDataByYear.filter(x => x.year == '2015')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        inc2017.text(`$`+ String(finDataByYear.filter(x => x.year == '2017')[0].med_income).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
         //get poverty rate by year and format it like number
-        pov2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        pov2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
-        pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,'));
+        pov2013.text(String(finDataByYear.filter(x => x.year == '2013')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,') + `%`);
+        pov2015.text(String(finDataByYear.filter(x => x.year == '2015')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,') + `%`);
+        pov2017.text(String(finDataByYear.filter(x => x.year == '2017')[0].poverty_percentage).replace(/(.)(?=(\d{3})+$)/g,'$1,') + `%`);
 
 
         // ***************** //
@@ -254,10 +253,6 @@ function drawBarChart(barChart, math, read, med, pov){
                 }
             }
         ],
-
-        // ************************************* //
-        // ** Get data to put in the "series" ** //
-        // ************************************* //
 
         series: [
             {
@@ -477,5 +472,6 @@ function drawGauge(gaugeChart, ratio){
     option_gauge && gaugeChart.setOption(option_gauge);
 
 }
+
 //initialize Dashboard
 dropDownMenu();
