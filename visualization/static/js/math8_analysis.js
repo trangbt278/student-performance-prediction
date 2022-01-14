@@ -45,15 +45,6 @@ d3.json(input_data).then((data) => {
   
 })
 
-// ** Data format: [['avg score', ' ']]**
-
-/* const data = [
-  [0.067732, 3.176513],
-  [0.42781, 3.816464],
-  [0.995731, 4.550095]
-];
- */
-
 function drawRegScatter(data, regChart)
 {
   echarts.registerTransform(ecStat.transform.regression);
@@ -64,21 +55,15 @@ function drawRegScatter(data, regChart)
       },
       {
         transform: {
-          type: 'ecStat:regression'
+          type: 'ecStat:regression',
           // 'linear' by default.
-          // config: { method: 'linear', formulaOn: 'end'}
+          config: { method: 'linear', formulaOn: 'end'}
         }
       }
     ],
-  //   title: {
-  //     text: 'Linear Regression',
-  //     subtext: 'By ecStat.regression',
-  //     sublink: 'https://github.com/ecomfe/echarts-stat',
-  //     left: 'center'
-  //   },
-
     legend: {
-      bottom: 5
+      // bottom: 5,
+      show: false,
     },
     tooltip: {
       trigger: 'axis',
@@ -113,14 +98,16 @@ function drawRegScatter(data, regChart)
       {
         name: 'line',
         type: 'line',
+        colorBy: 'data',  
         datasetIndex: 1,
         symbolSize: 0.1,
         symbol: 'circle',
         label: { show: true, fontSize: 16 },
-        labelLayout: { dx: -20 },
+        labelLayout: { dx: 50 },
         encode: { label: 2, tooltip: 1 }
       }
-    ]
+    ],
+    color: ['#ee6666','#5100FF' ]
   };
 
   option_Reg && regChart.setOption(option_Reg);
