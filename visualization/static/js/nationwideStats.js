@@ -11,6 +11,7 @@ var option_Inc;
 var option_Pov;
 
 option_Rev = {
+    
     title: {
         // text: 'Total Revenue per Student',
         padding: ['0','10','10','0'],
