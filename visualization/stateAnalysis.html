@@ -52,8 +52,10 @@
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nationwide Analysis </a>
                         
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="nationwideStats.html"> Statistical Analysis </a>
-                            <a class="dropdown-item" href="comingSoon.html"> Under Construction </a>
+                            <a class="dropdown-item" href="nationwideStats.html"> 8th Grade Math </a>
+                            <a class="dropdown-item" href="comingSoon.html"> 8th Grade Reading </a>
+                            <a class="dropdown-item" href="comingSoon.html"> 4th Grade Math </a>
+                            <a class="dropdown-item" href="comingSoon.html"> 4th Grade Reading </a>
                         </ul>
                     </li>
                 </ul>
@@ -65,14 +67,14 @@
 
 <div class="container" style="padding-top: 100px; padding-bottom: 20px;">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <!-- ** dropdown to select State ** -->
             <div class="well mb-4" style="background-color: rgb(213, 225, 214, 0.0);">
                 <h4 class="title"> Select a State:</h4>
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-9">
             <table class="table table-striped table-hover">
                 <thead style="text-align: center;">
                     <tr>
@@ -90,19 +92,19 @@
                         <td id="rev_17"></td>
                     </tr>
                     <tr>
-                        <th id="expenditure" scope="row" style="text-align: center;">Instructional<br>Spending</th>
+                        <th id="expenditure" scope="row" style="text-align: center;">Instructional Spending</th>
                         <td id="exp_13"></td>
                         <td id="exp_15"></td>
                         <td id="exp_17"></td>
                     </tr>
                     <tr>
-                        <th id="ratio" scope="raw" style="text-align: center;">Percentage Spending<br>of<br>Total Revenue</th>
+                        <th id="ratio" scope="raw" style="text-align: center;">Percentage Spending of Total Revenue</th>
                         <td id="ratio_13"></td>
                         <td id="ratio_15"></td>
                         <td id="ratio_17"></td>
                     </tr>
                     <tr>
-                        <th id="income" scope="raw" style="text-align: center;">Median<br>Household Income</th>
+                        <th id="income" scope="raw" style="text-align: center;">Median Household Income</th>
                         <td id="inc_13"></td>
                         <td id="inc_15"></td>
                         <td id="inc_17"></td>
@@ -141,12 +143,12 @@
         <h4 class="title"> Student Performance vs Median Income and Poverty Rate </h4>
         <br>
         <div class="col-lg-6">
-            <h6 class="title">4th Grade </h6>
+            <h6 class="title"> 4th Grade </h6>
             <div id="StateAvgScore4"></div>
         </div>
 
         <div class="col-lg-6">
-            <h6 class="title">8th Grade </h6>
+            <h6 class="title"> 8th Grade </h6>
             <div id="StateAvgScore8"></div>
         </div>
     </div>

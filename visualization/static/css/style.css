@@ -33,7 +33,7 @@
 
 #StateAvgScore4 {
     position: initial; 
-    width: 620px; 
+    width: 660px; 
     height: 480px; 
     padding-top: 10px;
 
@@ -41,14 +41,19 @@
 
 #StateAvgScore8 {
     position: initial; 
-    width: 620px; 
+    width: 660px; 
     height: 480px; 
     padding-top: 10px;
 
 }
 
+/* Team section */
 #players {
     font-size: 20px;
+}
+
+#iconlink {
+    align-items: center;
 }
 
 #allRev {
