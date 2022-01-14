@@ -93,21 +93,22 @@ function drawRegScatter(data, regChart)
     series: [
       {
         name: 'scatter',
-        type: 'scatter'
+        type: 'scatter',
+        symbolSize: 6,
       },
       {
         name: 'line',
         type: 'line',
         colorBy: 'data',  
         datasetIndex: 1,
-        symbolSize: 0.1,
+        symbolSize: 2,
         symbol: 'circle',
-        label: { show: true, fontSize: 16 },
-        labelLayout: { dx: 50 },
+        label: { show: true, fontSize: 22},
+        labelLayout: { dx: 10 },
         encode: { label: 2, tooltip: 1 }
       }
     ],
-    color: ['#ee6666','#5100FF' ]
+    color: ['#077CC7','#FF0000',"#000000" ]
   };
 
   option_Reg && regChart.setOption(option_Reg);
