@@ -1,4 +1,4 @@
-console.log("8 reading JS")
+console.log("Nationawide Stats JS")
 var input_data = "/static/data/input_data.json";
 
 var RevRegChart = echarts.init(document.getElementById('allRev'));
@@ -18,24 +18,24 @@ d3.json(input_data).then((data) => {
   var povData = [];
   var i = 0;
   var allData = data.alldata;
-  mathGrade8 = allData.filter(x => (x.grade == '8') && (x.subject == 'Mathematics'));
-  for (i = 0; i < mathGrade8.length; i++){
+  readGrade8 = allData.filter(x => (x.grade == '8') && (x.subject == 'Reading'));
+  for (i = 0; i < readGrade8.length; i++){
     revData[i] = [];
     expData[i] = [];
     incData[i] = [];
     povData[i] = [];
 
-    revData[i][0] = mathGrade8[i].total_revenue/1000000;
-    revData[i][1] = mathGrade8[i].avg_score;
+    revData[i][0] = readGrade8[i].total_revenue/1000000;
+    revData[i][1] = readGrade8[i].avg_score;
 
-    expData[i][0] = mathGrade8[i].total_instructional_spending/1000000;
-    expData[i][1] = mathGrade8[i].avg_score;
+    expData[i][0] = readGrade8[i].total_instructional_spending/1000000;
+    expData[i][1] = readGrade8[i].avg_score;
     
-    incData[i][0] = mathGrade8[i].med_income;
-    incData[i][1] = mathGrade8[i].avg_score;
+    incData[i][0] = readGrade8[i].med_income;
+    incData[i][1] = readGrade8[i].avg_score;
     
-    povData[i][0] = mathGrade8[i].poverty_percentage;
-    povData[i][1] = mathGrade8[i].avg_score;
+    povData[i][0] = readGrade8[i].poverty_percentage;
+    povData[i][1] = readGrade8[i].avg_score;
   }
   console.log(revData);
   drawRegScatter(revData, RevRegChart);
@@ -51,7 +51,8 @@ function drawRegScatter(data, regChart)
   option_Reg = {
     grid: {
       right: '20%'
-  },
+    },
+    
     dataset: [
       {
         source: data
@@ -95,7 +96,7 @@ function drawRegScatter(data, regChart)
     }],
     series: [
       {
-        name: 'Mathematics',
+        name: 'Reading',
         type: 'scatter',
         symbolSize: 6,
       },
@@ -107,7 +108,7 @@ function drawRegScatter(data, regChart)
         symbolSize: 2,
         symbol: 'circle',
         label: { show: true, fontSize: 22},
-        labelLayout: { dx: 10, d: 20 },
+        labelLayout: { dx: 10, dy: 20 },
         encode: { label: 2, tooltip: 1 }
       }
     ],
