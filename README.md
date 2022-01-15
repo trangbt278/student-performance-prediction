@@ -15,16 +15,16 @@ Our mission: to find a correlation, or lack thereof, between these financial var
 # Data Visualiztion
 
 * Homepage
-![Homepage.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/homepage.png)
+![Homepage.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/homepage.png)
 
-* State Analysis - interactive I
-![Dashboard_1.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/dashboard_1.png)
+* State Analysis - interactive summary table and gauge charts
+![Dashboard_1.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_1.png)
 
-* State Analysis - interactive II
-![Dashboard_2.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/dashboard_2.png)
+* State Analysis - interactive bar/line graphs
+![Dashboard_2.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_2.png)
 
-* National Analysis
-![scatterPlot.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/scatterPlot.png)
+* National Analysis - 8th Grade
+![scatterPlot.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/scatterPlot.png)
 
 
 ## References
