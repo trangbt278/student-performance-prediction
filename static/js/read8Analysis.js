@@ -1,4 +1,5 @@
-console.log("Nationawide Stats JS")
+console.log("8 read Stats JS");
+
 var input_data = "/static/data/input_data.json";
 
 var RevRegChart = echarts.init(document.getElementById('allRev'));

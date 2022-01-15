@@ -1,4 +1,4 @@
-console.log("8 math Stats JS");
+console.log("4 math Stats JS")
 
 var input_data = "/static/data/input_data.json";
 
@@ -19,24 +19,24 @@ d3.json(input_data).then((data) => {
   var povData = [];
   var i = 0;
   var allData = data.alldata;
-  mathGrade8 = allData.filter(x => (x.grade == '8') && (x.subject == 'Mathematics'));
-  for (i = 0; i < mathGrade8.length; i++){
+  mathGrade4 = allData.filter(x => (x.grade == '4') && (x.subject == 'Mathematics'));
+  for (i = 0; i < mathGrade4.length; i++){
     revData[i] = [];
     expData[i] = [];
     incData[i] = [];
     povData[i] = [];
 
-    revData[i][0] = mathGrade8[i].total_revenue/1000000;
-    revData[i][1] = mathGrade8[i].avg_score;
+    revData[i][0] = mathGrade4[i].total_revenue/1000000;
+    revData[i][1] = mathGrade4[i].avg_score;
 
-    expData[i][0] = mathGrade8[i].total_instructional_spending/1000000;
-    expData[i][1] = mathGrade8[i].avg_score;
+    expData[i][0] = mathGrade4[i].total_instructional_spending/1000000;
+    expData[i][1] = mathGrade4[i].avg_score;
     
-    incData[i][0] = mathGrade8[i].med_income;
-    incData[i][1] = mathGrade8[i].avg_score;
+    incData[i][0] = mathGrade4[i].med_income;
+    incData[i][1] = mathGrade4[i].avg_score;
     
-    povData[i][0] = mathGrade8[i].poverty_percentage;
-    povData[i][1] = mathGrade8[i].avg_score;
+    povData[i][0] = mathGrade4[i].poverty_percentage;
+    povData[i][1] = mathGrade4[i].avg_score;
   }
   console.log(revData);
   drawRegScatter(revData, RevRegChart);
@@ -84,7 +84,7 @@ function drawRegScatter(data, regChart)
     },
     yAxis:[
     {
-      min: 250,
+      min: 180,
 
     }, 
     {

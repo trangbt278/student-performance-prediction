@@ -48,6 +48,14 @@ def math8():
 def read8():
     return render_template("read8Analysis.html") 
 
+@app.route("/math4Analysis.html")
+def math4():
+    return render_template("math4Analysis.html") 
+
+@app.route("/read4Analysis.html")
+def read4():
+    return render_template("read4Analysis.html") 
+
 @app.route("/comingSoon.html")
 def comingSoon():
     return render_template("comingSoon.html") 
