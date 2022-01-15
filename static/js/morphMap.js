@@ -1,9 +1,8 @@
 console.log('MorphMap JS sucess.')
 
-var geoUSAurl = "data/geoUSA.json"
+var geoUSAurl = "/static/data/geoUSA.json"
 
 var myMorphChart = echarts.init(document.getElementById("morphMap"));
-var app = {};
 
 var option_morph;
 
@@ -11,6 +10,7 @@ var option_morph;
 myMorphChart.showLoading();
 
 $.get(geoUSAurl, function (usaJson) {
+    // console.log(usaJson)
     myMorphChart.hideLoading();
     echarts.registerMap('USA', usaJson, {
         Alaska: {
@@ -25,9 +25,9 @@ $.get(geoUSAurl, function (usaJson) {
         }
     });
 
-  // *********************** //
+  // ***************************** //
   // ** 2017 Total Revenue data ** //
-  // *********************** //
+  // ***************************** //
 
     var revData = [
         { name: 'Alabama', value: 7909958000},

@@ -1,6 +1,6 @@
 console.log("mapStateJS success.")
 
-var input_data = "data/input_data.json"
+var input_data = "/static/data/input_data.json"
 
 var menu = d3.select("#selDataset")
 var myBarChart4 = echarts.init(document.getElementById('StateAvgScore4'));
