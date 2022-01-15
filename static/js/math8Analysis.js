@@ -68,7 +68,7 @@ function drawRegScatter(data, regChart)
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        type: 'cross'
+        type: 'cross',
       }
     },
     xAxis: {
@@ -92,12 +92,12 @@ function drawRegScatter(data, regChart)
     }],
     series: [
       {
-        name: 'scatter',
+        name: 'Math',
         type: 'scatter',
         symbolSize: 6,
       },
       {
-        name: 'line',
+        // name: 'line',
         type: 'line',
         colorBy: 'data',  
         datasetIndex: 1,

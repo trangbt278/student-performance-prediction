@@ -48,9 +48,14 @@ def math8():
 def comingSoon():
     return render_template("comingSoon.html") 
 
-@app.route("//AssementProcess.html")
+@app.route("/AssementProcess.html")
 def AssementProcess():
     return render_template("/AssementProcess.html")
+
+@app.route("/proj1charts.html")
+def proj1charts():
+    return render_template("/proj1charts.html")
+    
 
 if __name__ == '__main__':
     app.run( debug=True )

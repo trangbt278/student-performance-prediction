@@ -228,7 +228,8 @@ function drawBarChart(barChart, math, read, med, pov){
                 axisLine: {
                     show: false,
                     lineStyle: {
-                        color: colors[4]
+                        color: colors[4],
+                        width: 3,
                     }
                 },
                 axisLabel: {
@@ -245,7 +246,8 @@ function drawBarChart(barChart, math, read, med, pov){
                 axisLine: {
                     show: false,
                     lineStyle: {
-                        color: colors[4]
+                        color: colors[4],
+                        width: 3,
                     }
                 },
                 axisLabel: {
