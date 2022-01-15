@@ -44,6 +44,10 @@ def stateAnalysis():
 def math8():
     return render_template("math8Analysis.html") 
 
+@app.route("/read8Analysis.html")
+def read8():
+    return render_template("read8Analysis.html") 
+
 @app.route("/comingSoon.html")
 def comingSoon():
     return render_template("comingSoon.html") 
