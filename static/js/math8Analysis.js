@@ -1,5 +1,5 @@
 console.log("Nationawide Stats JS")
-var input_data = "data/input_data.json";
+var input_data = "/static/data/input_data.json";
 
 var RevRegChart = echarts.init(document.getElementById('allRev'));
 var ExpRegChart = echarts.init(document.getElementById('allExp'));
