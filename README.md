@@ -20,7 +20,8 @@ Our mission: to find a correlation, or lack thereof, between these financial var
 * State Analysis
 ![Dashboard_1.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_1.png)
 
-![Dashboard_2.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_2.png)
+
+  ![Dashboard_2.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_2.png)
 
 * National Analysis
 ![scatterPlot.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/scatterPlot.png)
