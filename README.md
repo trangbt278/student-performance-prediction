@@ -15,15 +15,15 @@ Our mission: to find a correlation, or lack thereof, between these financial var
 # Data Visualiztion
 
 * Homepage
-![Homepage.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/homepage.png)
+![Homepage.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/homepage.png)
 
 * State Analysis
-![Dashboard_1.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/dashboard_1.png)
+![Dashboard_1.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_1.png)
 
-![Dashboard_2.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/dashboard_2.png)
+![Dashboard_2.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/dashboard_2.png)
 
 * National Analysis
-![scatterPlot.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/visualization/static/images/scatterPlot.png)
+![scatterPlot.png](https://github.com/amylbrunet/Project-3-Data-Visualizations/blob/main/static/images/scatterPlot.png)
 
 # Conclusion
 Through our research and analysis, we were able to conclude that there is a negative correlation between poverty rate and average student test scores. From the linear regression and the scatter plot displaying the relationship between the two, it is evident from the negative slope of the regression line that generally the higher the poverty rate, the lower the average test scores. Although not as strong, we found somewhat of a positive correlation between median household income and average test scores. Additionally, there is no apparent correlation between total revenue, instructional spending and student test scores. 
