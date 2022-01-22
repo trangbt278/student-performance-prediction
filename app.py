@@ -1,26 +1,10 @@
 # import dependencies
-import numpy as np
-import pandas as pd
-import datetime as dt
 
-# Python SQL toolkit and Object Relational Mapper
-import sqlalchemy
+import psycopg2
+import psycopg2.extras
+import json
 import config
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
-
-# import Flask and jsonify
-from flask import Flask, jsonify, render_template, request
-
-# create engine to hawaii.sqlite
-engine = create_engine(f"postgresql://{config.user}:{config.password}@{config.host}:{config.port}/{config.database}")
-
-# reflect an existing database into a new model
-Base = automap_base()
-# # reflect the tables
-Base.prepare(engine, reflect=True)
-# # Save reference to the table
+from flask import Flask, render_template
 
 
 # flask set up
@@ -28,6 +12,7 @@ app = Flask(__name__)
 
 # set up routes
 # home page route
+
 @app.route("/")
 def homepage():
     return render_template("homepage.html")
@@ -68,6 +53,25 @@ def AssementProcess():
 def proj1charts():
     return render_template("/proj1charts.html")
     
+@app.route("/api/get_all_data")
+def get_all_data():
+    conn = psycopg2.connect(host=config.host, port=config.port, dbname=config.database, password=config.password, user=config.user)
+    with conn:
+        cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cursor.execute(config.queryString)
+        rows = cursor.fetchall()
+        return json.dumps(rows, indent=2)
+
+@app.route("/api/get_all_states")
+def get_all_states():
+    conn = psycopg2.connect(host=config.host, port=config.port, dbname=config.database, password=config.password, user=config.user)
+    queryString = "SELECT state FROM state;"
+    with conn:
+        cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+        cursor.execute(queryString)
+        rows = cursor.fetchall()
+        return json.dumps(rows, indent=2)
+    
 
 if __name__ == '__main__':
-    app.run( debug=True )
+    app.run(host='0.0.0.0', port='8000', debug=True)

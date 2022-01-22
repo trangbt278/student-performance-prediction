@@ -12,13 +12,18 @@ var option_ExpReg;
 var option_IncReg;
 var option_PovReg;
 
-d3.json(input_data).then((data) => {
+//get hostname
+var hostname = window.location.origin;
+//set api enpoint
+var url = `${hostname}/api/get_all_data`
+//call api to get all data
+d3.json(url).then((data) => {
   var revData = [];
   var expData = [];
   var incData = [];
   var povData = [];
   var i = 0;
-  var allData = data.alldata;
+  var allData = data;
   readGrade4 = allData.filter(x => (x.grade == '4') && (x.subject == 'Reading'));
   for (i = 0; i < readGrade4.length; i++){
     revData[i] = [];
