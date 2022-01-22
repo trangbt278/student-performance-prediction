@@ -1,6 +1,11 @@
 console.log("mapStateJS success.")
 
-var input_data = "/static/data/input_data.json"
+//get hostname
+var hostname = window.location.origin;
+//set get all states end point
+var getStateURL = `${hostname}/api/get_all_states`;
+//set get all data end point
+var getAllDataURL = `${hostname}/api/get_all_data`;
 
 var menu = d3.select("#selDataset")
 var myBarChart4 = echarts.init(document.getElementById('StateAvgScore4'));
@@ -16,19 +21,19 @@ var myGaugeChart17 = echarts.init(document.getElementById('ExpRevRatio17'));
 
 // read the data, get the first state as the default, plot with the default state
 function dropDownMenu() {
-    d3.json(input_data).then((data) => {
-        var stateName = data.states;
-        // console.log(stateName);
-        stateName.forEach((state) => {
+    //call api to get states
+    d3.json(getStateURL).then((data) => {
+        data.forEach((state) => {
             menu
             .append("option")
-            .text(state)
-            .property("value", state);                
+            .text(state.state)
+            .property("value", state.state);                
         });
         //set default
-        const defaultState = stateName[0];
+        const defaultState = data[0].state;
         // demoTable(defaultState);
         fecthData(defaultState);
+        
     });
 };
 
@@ -42,9 +47,9 @@ function optionChanged(stateName) {
 
 // Get data for the table and charts
 function fecthData(stateName){
-    //get all data from json file
-    d3.json(input_data).then((data) => {
-        var allData = data.alldata;
+    //call api to get all
+    d3.json(getAllDataURL).then((data) => {
+        var allData = data;
         //filter data by the selected state
         var stateData = allData.filter(x => x.state == stateName);
 

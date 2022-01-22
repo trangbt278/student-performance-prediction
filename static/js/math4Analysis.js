@@ -1,7 +1,5 @@
 console.log("4 math Stats JS")
 
-var input_data = "/static/data/input_data.json";
-
 var RevRegChart = echarts.init(document.getElementById('allRev'));
 var ExpRegChart = echarts.init(document.getElementById('allExp'));
 var IncRegChart = echarts.init(document.getElementById('allInc'));
@@ -11,14 +9,18 @@ var option_RevReg;
 var option_ExpReg;
 var option_IncReg;
 var option_PovReg;
-
-d3.json(input_data).then((data) => {
+//get hostname
+var hostname = window.location.origin;
+//set api enpoint
+var url = `${hostname}/api/get_all_data`
+//call api to get all data
+d3.json(url).then((data) => {
   var revData = [];
   var expData = [];
   var incData = [];
   var povData = [];
   var i = 0;
-  var allData = data.alldata;
+  var allData = data;
   mathGrade4 = allData.filter(x => (x.grade == '4') && (x.subject == 'Mathematics'));
   for (i = 0; i < mathGrade4.length; i++){
     revData[i] = [];
@@ -38,7 +40,6 @@ d3.json(input_data).then((data) => {
     povData[i][0] = mathGrade4[i].poverty_percentage;
     povData[i][1] = mathGrade4[i].avg_score;
   }
-  console.log(revData);
   drawRegScatter(revData, RevRegChart);
   drawRegScatter(expData, ExpRegChart);
   drawRegScatter(incData, IncRegChart);

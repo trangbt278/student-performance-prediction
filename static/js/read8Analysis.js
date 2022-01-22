@@ -1,7 +1,5 @@
 console.log("8 read Stats JS");
 
-var input_data = "/static/data/input_data.json";
-
 var RevRegChart = echarts.init(document.getElementById('allRev'));
 var ExpRegChart = echarts.init(document.getElementById('allExp'));
 var IncRegChart = echarts.init(document.getElementById('allInc'));
@@ -12,13 +10,18 @@ var option_ExpReg;
 var option_IncReg;
 var option_PovReg;
 
-d3.json(input_data).then((data) => {
+//get hostname
+var hostname = window.location.origin;
+//set api enpoint
+var url = `${hostname}/api/get_all_data`
+//call api to get all data
+d3.json(url).then((data) => {
   var revData = [];
   var expData = [];
   var incData = [];
   var povData = [];
   var i = 0;
-  var allData = data.alldata;
+  var allData = data;
   readGrade8 = allData.filter(x => (x.grade == '8') && (x.subject == 'Reading'));
   for (i = 0; i < readGrade8.length; i++){
     revData[i] = [];
@@ -38,7 +41,7 @@ d3.json(input_data).then((data) => {
     povData[i][0] = readGrade8[i].poverty_percentage;
     povData[i][1] = readGrade8[i].avg_score;
   }
-  console.log(revData);
+
   drawRegScatter(revData, RevRegChart);
   drawRegScatter(expData, ExpRegChart);
   drawRegScatter(incData, IncRegChart);
