@@ -26,3 +26,12 @@ from poverty_income p
 	join year y on (p.year_id = y.year_id)
 order by s.state, sbj.subject, y.year_id
 ;"""
+county_data_queryString = f"""select z.state_id,
+		z.county_id,
+		z.zip_code,
+		c.poverty_percentage,
+		c.med_income,
+		c.unemployment_rate
+from zip_code z
+join county_data c on (z.county_id = c.county_id and z.state_id = c.state_id)
+;"""
