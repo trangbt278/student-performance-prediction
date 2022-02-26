@@ -5,6 +5,7 @@ import psycopg2.extras
 import json
 import config
 from flask import Flask, render_template
+import pickle
 
 
 # flask set up
@@ -72,6 +73,14 @@ def get_all_states():
         rows = cursor.fetchall()
         return json.dumps(rows, indent=2)
     
+
+@app.route("/final_predict.html")
+def final_predict():
+    return render_template("final_predict.html")
+
+@app.route("/custom_predict.html")
+def custom_predict():
+    return render_template("custom_predict.html")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='8000', debug=True)
