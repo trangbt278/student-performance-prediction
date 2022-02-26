@@ -29,7 +29,7 @@
 2020,Alabama,Etowah County,15.6,47872,7.7
 2020,Alabama,Fayette County,16.5,45937,5
 2020,Alabama,Franklin County,17.2,40448,4.4
-2020,Alabama,Geneva County,21.0,39882,4.1
+2020,Alabama,Geneva County,21,39882,4.1
 2020,Alabama,Greene County,27.9,33609,10.9
 2020,Alabama,Hale County,21.9,41836,9.4
 2020,Alabama,Henry County,16.2,51126,4.8
@@ -57,7 +57,7 @@
 2020,Alabama,Randolph County,17.5,46679,4.7
 2020,Alabama,Russell County,20.3,40821,5.1
 2020,Alabama,St. Clair County,10.5,61973,4.9
-2020,Alabama,Shelby County,7.0,88444,3.9
+2020,Alabama,Shelby County,7,88444,3.9
 2020,Alabama,Sumter County,29.2,32275,7
 2020,Alabama,Talladega County,16.9,44802,7
 2020,Alabama,Tallapoosa County,15.2,46654,6.9
@@ -132,16 +132,16 @@
 2020,Arkansas,Dallas County,19.5,34649,5.3
 2020,Arkansas,Desha County,22.8,37421,7
 2020,Arkansas,Drew County,18.4,46787,6.9
-2020,Arkansas,Faulkner County,12.0,57367,5.4
+2020,Arkansas,Faulkner County,12,57367,5.4
 2020,Arkansas,Franklin County,15.3,47256,5.6
-2020,Arkansas,Fulton County,17.0,39839,5.1
+2020,Arkansas,Fulton County,17,39839,5.1
 2020,Arkansas,Garland County,15.7,46459,8
 2020,Arkansas,Grant County,9.9,62077,5.2
 2020,Arkansas,Greene County,17.1,53821,6
 2020,Arkansas,Hempstead County,18.7,42790,5.2
 2020,Arkansas,Hot Spring County,14.9,49582,5.8
 2020,Arkansas,Howard County,16.7,40566,5
-2020,Arkansas,Independence County,15.0,50834,5.8
+2020,Arkansas,Independence County,15,50834,5.8
 2020,Arkansas,Izard County,20.1,41787,8.4
 2020,Arkansas,Jackson County,23.1,40789,7.1
 2020,Arkansas,Jefferson County,18.9,40588,8
@@ -156,7 +156,7 @@
 2020,Arkansas,Madison County,16.9,45144,3.9
 2020,Arkansas,Marion County,19.1,39888,6.4
 2020,Arkansas,Miller County,19.2,43634,6.9
-2020,Arkansas,Mississippi County,21.0,47892,9
+2020,Arkansas,Mississippi County,21,47892,9
 2020,Arkansas,Monroe County,23.8,35833,6.7
 2020,Arkansas,Montgomery County,18.8,42751,6.8
 2020,Arkansas,Nevada County,19.1,41854,5.9
@@ -205,16 +205,16 @@
 2020,California,Lassen County,15.5,63803,7.1
 2020,California,Los Angeles County,13.2,75624,12.8
 2020,California,Madera County,14.1,68744,10.8
-2020,California,Marin County,6.0,127601,6.7
+2020,California,Marin County,6,127601,6.7
 2020,California,Mariposa County,13.3,56887,10.9
 2020,California,Mendocino County,14.3,53176,8.9
 2020,California,Merced County,16.3,58998,12.2
 2020,California,Modoc County,17.9,46838,8.5
-2020,California,Mono County,9.0,73204,11.8
+2020,California,Mono County,9,73204,11.8
 2020,California,Monterey County,11.6,85031,10.8
 2020,California,Napa County,7.9,92149,8.7
 2020,California,Nevada County,9.2,74158,8
-2020,California,Orange County,9.0,98786,8.8
+2020,California,Orange County,9,98786,8.8
 2020,California,Placer County,6.5,100662,7.3
 2020,California,Plumas County,13.5,58489,10.7
 2020,California,Riverside County,11.2,76409,9.9
@@ -222,7 +222,7 @@
 2020,California,San Benito County,7.9,91185,9.9
 2020,California,San Bernardino County,14.3,65984,9.4
 2020,California,San Diego County,9.5,87126,9.2
-2020,California,San Francisco County,10.0,121722,7.8
+2020,California,San Francisco County,10,121722,7.8
 2020,California,San Joaquin County,13.9,70685,11.3
 2020,California,San Luis Obispo County,10.6,79455,7.7
 2020,California,San Mateo County,5.5,132369,6.9
@@ -234,10 +234,10 @@
 2020,California,Siskiyou County,14.3,49441,9.7
 2020,California,Solano County,9.3,83678,9.5
 2020,California,Sonoma County,7.8,87366,7.9
-2020,California,Stanislaus County,13.0,64501,10.7
+2020,California,Stanislaus County,13,64501,10.7
 2020,California,Sutter County,11.5,65791,11
 2020,California,Tehama County,13.3,61571,8.8
-2020,California,Trinity County,18.0,45113,8
+2020,California,Trinity County,18,45113,8
 2020,California,Tulare County,17.1,62058,13.2
 2020,California,Tuolumne County,12.1,63336,10.4
 2020,California,Ventura County,9.1,90961,8.6
@@ -245,7 +245,7 @@
 2020,California,Yuba County,16.3,56278,10.5
 2020,Colorado,Adams County,9.4,73615,8
 2020,Colorado,Alamosa County,16.7,50390,6.4
-2020,Colorado,Arapahoe County,7.0,82381,7.9
+2020,Colorado,Arapahoe County,7,82381,7.9
 2020,Colorado,Archuleta County,9.4,63961,7.6
 2020,Colorado,Baca County,16.9,42531,2.3
 2020,Colorado,Bent County,26.6,50688,4.4
@@ -261,7 +261,7 @@
 2020,Colorado,Delta County,12.1,53553,6.6
 2020,Colorado,Denver County,12.4,75355,8.2
 2020,Colorado,Dolores County,12.5,50821,6.9
-2020,Colorado,Douglas County,3.0,122290,5.8
+2020,Colorado,Douglas County,3,122290,5.8
 2020,Colorado,Eagle County,6.4,94309,9.5
 2020,Colorado,Elbert County,4.8,107139,4.7
 2020,Colorado,El Paso County,9.1,72459,7.3
@@ -274,10 +274,10 @@
 2020,Colorado,Huerfano County,19.9,49502,9.4
 2020,Colorado,Jackson County,11.6,55430,4.3
 2020,Colorado,Jefferson County,6.1,90097,7.1
-2020,Colorado,Kiowa County,12.0,49179,2.3
+2020,Colorado,Kiowa County,12,49179,2.3
 2020,Colorado,Kit Carson County,10.8,54642,2.8
 2020,Colorado,Lake County,10.6,61518,8.2
-2020,Colorado,La Plata County,10.0,66080,6.8
+2020,Colorado,La Plata County,10,66080,6.8
 2020,Colorado,Larimer County,9.9,80344,6.3
 2020,Colorado,Las Animas County,16.4,46281,7.4
 2020,Colorado,Lincoln County,15.6,50169,4.5
@@ -312,19 +312,19 @@
 2020,Connecticut,Litchfield County,7.4,79512,6.9
 2020,Connecticut,Middlesex County,7.7,89970,6.5
 2020,Connecticut,New Haven County,11.2,72517,8
-2020,Connecticut,New London County,8.0,77202,9.6
+2020,Connecticut,New London County,8,77202,9.6
 2020,Connecticut,Tolland County,6.9,87247,6.2
 2020,Connecticut,Windham County,10.4,66349,7.8
-2020,Delaware,Kent County,13.0,61538,8.6
+2020,Delaware,Kent County,13,61538,8.6
 2020,Delaware,New Castle County,10.1,75145,7.7
-2020,Delaware,Sussex County,11.0,69829,7.5
-2020,District of Columbia,District of Columbia,15.0,91957,8
+2020,Delaware,Sussex County,11,69829,7.5
+2020,District of Columbia,District of Columbia,15,91957,8
 2020,Florida,Alachua County,17.2,51995,5.4
 2020,Florida,Baker County,12.8,61514,4.9
 2020,Florida,Bay County,12.4,61332,6.1
 2020,Florida,Bradford County,17.5,48260,5.9
 2020,Florida,Brevard County,9.9,65871,6.6
-2020,Florida,Broward County,11.0,63901,8.8
+2020,Florida,Broward County,11,63901,8.8
 2020,Florida,Calhoun County,20.3,43994,5.2
 2020,Florida,Charlotte County,9.8,58368,7.3
 2020,Florida,Citrus County,12.6,48574,8.4
@@ -361,14 +361,14 @@
 2020,Florida,Manatee County,10.9,63328,6.8
 2020,Florida,Marion County,15.3,48553,7
 2020,Florida,Martin County,11.1,72736,6.1
-2020,Florida,Miami-Dade County,15.0,59259,8
+2020,Florida,Miami-Dade County,15,59259,8
 2020,Florida,Monroe County,10.2,68584,7.9
 2020,Florida,Nassau County,8.1,75123,5.7
 2020,Florida,Okaloosa County,9.6,65977,5.5
 2020,Florida,Okeechobee County,17.7,48028,5.4
 2020,Florida,Orange County,12.7,69074,10.6
 2020,Florida,Osceola County,11.8,63018,13.5
-2020,Florida,Palm Beach County,12.0,68200,7.6
+2020,Florida,Palm Beach County,12,68200,7.6
 2020,Florida,Pasco County,11.4,52332,7.2
 2020,Florida,Pinellas County,11.1,61532,7
 2020,Florida,Polk County,14.4,54591,9
@@ -377,7 +377,7 @@
 2020,Florida,St. Lucie County,13.8,59023,7.8
 2020,Florida,Santa Rosa County,9.4,71583,5.2
 2020,Florida,Sarasota County,8.7,66138,6.8
-2020,Florida,Seminole County,8.0,71930,7.2
+2020,Florida,Seminole County,8,71930,7.2
 2020,Florida,Sumter County,12.3,60278,7.9
 2020,Florida,Suwannee County,17.7,46264,5.6
 2020,Florida,Taylor County,19.3,45527,6.2
@@ -396,13 +396,13 @@
 2020,Georgia,Bartow County,10.2,64980,6.2
 2020,Georgia,Ben Hill County,22.3,39305,6.9
 2020,Georgia,Berrien County,18.9,45094,5.8
-2020,Georgia,Bibb County,28.0,44467,7.5
+2020,Georgia,Bibb County,28,44467,7.5
 2020,Georgia,Bleckley County,18.5,51448,6.5
 2020,Georgia,Brantley County,17.8,39256,5.4
 2020,Georgia,Brooks County,20.6,42973,5.2
-2020,Georgia,Bryan County,8.0,81890,5.3
+2020,Georgia,Bryan County,8,81890,5.3
 2020,Georgia,Bulloch County,20.7,48629,6.5
-2020,Georgia,Burke County,20.0,44870,7.2
+2020,Georgia,Burke County,20,44870,7.2
 2020,Georgia,Butts County,20.8,52720,6.2
 2020,Georgia,Calhoun County,34.4,37984,5.1
 2020,Georgia,Camden County,9.4,67525,4.7
@@ -426,15 +426,15 @@
 2020,Georgia,Coweta County,8.6,84121,6.2
 2020,Georgia,Crawford County,16.1,48184,5
 2020,Georgia,Crisp County,24.5,36871,7.9
-2020,Georgia,Dade County,13.0,41069,4.1
+2020,Georgia,Dade County,13,41069,4.1
 2020,Georgia,Dawson County,8.7,75081,4.7
 2020,Georgia,Decatur County,25.6,42996,4.8
 2020,Georgia,DeKalb County,15.8,69545,8
 2020,Georgia,Dodge County,21.4,42683,6
-2020,Georgia,Dooly County,27.0,45112,7.7
+2020,Georgia,Dooly County,27,45112,7.7
 2020,Georgia,Dougherty County,27.4,40793,8.6
 2020,Georgia,Douglas County,11.5,65269,7.4
-2020,Georgia,Early County,24.0,39697,5.8
+2020,Georgia,Early County,24,39697,5.8
 2020,Georgia,Echols County,20.6,45378,3.9
 2020,Georgia,Effingham County,8.1,77690,5
 2020,Georgia,Elbert County,23.8,43553,6.9
@@ -445,8 +445,8 @@
 2020,Georgia,Floyd County,18.4,47423,6.3
 2020,Georgia,Forsyth County,5.1,116690,4.6
 2020,Georgia,Franklin County,16.3,47706,5.9
-2020,Georgia,Fulton County,13.0,71504,8
-2020,Georgia,Gilmer County,14.0,66066,4.7
+2020,Georgia,Fulton County,13,71504,8
+2020,Georgia,Gilmer County,14,66066,4.7
 2020,Georgia,Glascock County,15.5,50800,4.1
 2020,Georgia,Glynn County,15.5,59286,6.8
 2020,Georgia,Gordon County,11.8,54915,5.5
@@ -457,17 +457,17 @@
 2020,Georgia,Hall County,12.7,67735,4.7
 2020,Georgia,Hancock County,30.7,36424,8.8
 2020,Georgia,Haralson County,15.5,51431,5.9
-2020,Georgia,Harris County,9.0,81151,4.6
+2020,Georgia,Harris County,9,81151,4.6
 2020,Georgia,Hart County,14.4,52401,5.4
 2020,Georgia,Heard County,16.4,51532,6.5
 2020,Georgia,Henry County,8.7,69620,7.4
 2020,Georgia,Houston County,10.8,69442,5.2
 2020,Georgia,Irwin County,20.9,47492,5.5
 2020,Georgia,Jackson County,9.1,70960,4.4
-2020,Georgia,Jasper County,14.0,57796,4.9
-2020,Georgia,Jeff Davis County,20.0,44417,5.1
+2020,Georgia,Jasper County,14,57796,4.9
+2020,Georgia,Jeff Davis County,20,44417,5.1
 2020,Georgia,Jefferson County,21.1,40333,6.7
-2020,Georgia,Jenkins County,28.0,38306,6.3
+2020,Georgia,Jenkins County,28,38306,6.3
 2020,Georgia,Johnson County,25.9,36358,4.9
 2020,Georgia,Jones County,11.6,64812,4.6
 2020,Georgia,Lamar County,13.8,55024,6.3
@@ -493,7 +493,7 @@
 2020,Georgia,Murray County,15.9,58761,7.6
 2020,Georgia,Muscogee County,21.1,44959,7.8
 2020,Georgia,Newton County,14.4,62183,7.1
-2020,Georgia,Oconee County,6.0,104519,3.8
+2020,Georgia,Oconee County,6,104519,3.8
 2020,Georgia,Oglethorpe County,13.4,55678,4.8
 2020,Georgia,Paulding County,7.3,77755,5.4
 2020,Georgia,Peach County,19.2,51531,6.2
@@ -508,7 +508,7 @@
 2020,Georgia,Randolph County,27.4,36064,5.9
 2020,Georgia,Richmond County,25.5,43942,7.6
 2020,Georgia,Rockdale County,12.7,61332,7.6
-2020,Georgia,Schley County,15.0,53163,4.3
+2020,Georgia,Schley County,15,53163,4.3
 2020,Georgia,Screven County,20.7,44061,8.2
 2020,Georgia,Seminole County,22.9,41778,5
 2020,Georgia,Spalding County,17.9,51019,7.6
@@ -528,25 +528,25 @@
 2020,Georgia,Treutlen County,23.4,40834,6
 2020,Georgia,Troup County,16.4,51799,7.3
 2020,Georgia,Turner County,22.2,46042,7.2
-2020,Georgia,Twiggs County,20.0,46444,7.4
+2020,Georgia,Twiggs County,20,46444,7.4
 2020,Georgia,Union County,12.9,50653,4.4
 2020,Georgia,Upson County,15.2,48233,6.6
 2020,Georgia,Walker County,14.1,49388,4.9
 2020,Georgia,Walton County,11.4,71390,5.4
-2020,Georgia,Ware County,26.0,39994,5.6
+2020,Georgia,Ware County,26,39994,5.6
 2020,Georgia,Warren County,23.4,40422,6.8
 2020,Georgia,Washington County,21.3,43309,6.4
 2020,Georgia,Wayne County,19.7,48885,5.6
 2020,Georgia,Webster County,18.6,45381,5.7
 2020,Georgia,Wheeler County,35.6,36671,7.2
 2020,Georgia,White County,12.5,58831,4.4
-2020,Georgia,Whitfield County,13.0,56249,7.3
+2020,Georgia,Whitfield County,13,56249,7.3
 2020,Georgia,Wilcox County,27.9,40856,5.7
 2020,Georgia,Wilkes County,20.2,42071,6.7
 2020,Georgia,Wilkinson County,20.1,44068,5.4
 2020,Georgia,Worth County,18.2,47907,5.4
 2020,Hawaii,Hawaii County,12.2,70313,11.4
-2020,Hawaii,Honolulu County,8.0,89584,10.2
+2020,Hawaii,Honolulu County,8,89584,10.2
 2020,Hawaii,Kauai County,9.9,80517,16.2
 2020,Hawaii,Maui County,9.5,80763,17.8
 2020,Idaho,Ada County,7.7,73324,5.4
@@ -559,19 +559,19 @@
 2020,Idaho,Boise County,11.5,55583,8
 2020,Idaho,Bonner County,12.6,55241,7.5
 2020,Idaho,Bonneville County,9.7,67294,4
-2020,Idaho,Boundary County,14.0,52193,6.2
+2020,Idaho,Boundary County,14,52193,6.2
 2020,Idaho,Butte County,14.2,52081,3.6
 2020,Idaho,Camas County,8.3,59409,4.8
 2020,Idaho,Canyon County,10.6,57886,5.9
 2020,Idaho,Caribou County,7.9,63719,3.6
 2020,Idaho,Cassia County,10.1,64591,3.7
 2020,Idaho,Clark County,11.6,52182,4
-2020,Idaho,Clearwater County,14.0,45377,8.2
+2020,Idaho,Clearwater County,14,45377,8.2
 2020,Idaho,Custer County,12.7,53278,5
 2020,Idaho,Elmore County,11.7,49450,4.8
 2020,Idaho,Franklin County,7.7,65396,3.6
 2020,Idaho,Fremont County,12.6,58658,3.6
-2020,Idaho,Gem County,11.0,60526,5.9
+2020,Idaho,Gem County,11,60526,5.9
 2020,Idaho,Gooding County,11.2,57728,3.8
 2020,Idaho,Idaho County,13.1,51201,6.7
 2020,Idaho,Jefferson County,8.5,66806,3.4
@@ -582,7 +582,7 @@
 2020,Idaho,Lewis County,12.9,52255,7.7
 2020,Idaho,Lincoln County,11.4,58806,5.8
 2020,Idaho,Madison County,14.3,53727,2.7
-2020,Idaho,Minidoka County,14.0,56022,3.8
+2020,Idaho,Minidoka County,14,56022,3.8
 2020,Idaho,Nez Perce County,11.6,57839,4.9
 2020,Idaho,Oneida County,9.7,69357,4.2
 2020,Idaho,Owyhee County,13.6,53910,6
@@ -598,7 +598,7 @@
 2020,Illinois,Bond County,10.8,58209,6.8
 2020,Illinois,Boone County,6.8,82318,11.2
 2020,Illinois,Brown County,16.7,52277,3.8
-2020,Illinois,Bureau County,10.0,57728,7.6
+2020,Illinois,Bureau County,10,57728,7.6
 2020,Illinois,Calhoun County,9.2,61648,7.6
 2020,Illinois,Carroll County,10.5,53965,7.2
 2020,Illinois,Cass County,12.2,54205,6.7
@@ -609,7 +609,7 @@
 2020,Illinois,Clinton County,7.1,71883,5.8
 2020,Illinois,Coles County,17.5,46900,7.4
 2020,Illinois,Cook County,12.9,71611,11.1
-2020,Illinois,Crawford County,11.0,57632,7
+2020,Illinois,Crawford County,11,57632,7
 2020,Illinois,Cumberland County,8.9,68683,5.7
 2020,Illinois,DeKalb County,10.8,68546,8.2
 2020,Illinois,De Witt County,9.9,65526,6.5
@@ -625,9 +625,9 @@
 2020,Illinois,Gallatin County,15.6,44282,9.2
 2020,Illinois,Greene County,13.3,51242,6.5
 2020,Illinois,Grundy County,5.9,74935,8.8
-2020,Illinois,Hamilton County,13.0,49302,6.7
+2020,Illinois,Hamilton County,13,49302,6.7
 2020,Illinois,Hancock County,11.2,54076,6.9
-2020,Illinois,Hardin County,18.0,39674,9.2
+2020,Illinois,Hardin County,18,39674,9.2
 2020,Illinois,Henderson County,10.6,58577,6.9
 2020,Illinois,Henry County,9.6,63859,7.8
 2020,Illinois,Iroquois County,11.2,53633,6.2
@@ -641,7 +641,7 @@
 2020,Illinois,Kankakee County,13.6,57413,8.8
 2020,Illinois,Kendall County,3.9,97263,8.4
 2020,Illinois,Knox County,13.4,52881,8.6
-2020,Illinois,Lake County,7.0,100325,8.1
+2020,Illinois,Lake County,7,100325,8.1
 2020,Illinois,La Salle County,11.4,62714,9.4
 2020,Illinois,Lawrence County,16.5,47408,8.7
 2020,Illinois,Lee County,10.6,64310,6.8
@@ -652,7 +652,7 @@
 2020,Illinois,McLean County,10.7,71919,6.8
 2020,Illinois,Macon County,12.8,57601,9.9
 2020,Illinois,Macoupin County,10.8,53312,6.9
-2020,Illinois,Madison County,11.0,63903,7.7
+2020,Illinois,Madison County,11,63903,7.7
 2020,Illinois,Marion County,14.2,52019,9.3
 2020,Illinois,Marshall County,9.3,54022,7.4
 2020,Illinois,Mason County,13.4,53503,8
@@ -671,7 +671,7 @@
 2020,Illinois,Pope County,15.6,49071,7.9
 2020,Illinois,Pulaski County,20.4,40481,11.7
 2020,Illinois,Putnam County,7.3,70070,8.3
-2020,Illinois,Randolph County,12.0,56867,7.1
+2020,Illinois,Randolph County,12,56867,7.1
 2020,Illinois,Richland County,11.9,56900,6.8
 2020,Illinois,Rock Island County,13.5,58022,9.4
 2020,Illinois,St. Clair County,13.8,61863,9
@@ -683,7 +683,7 @@
 2020,Illinois,Stark County,10.8,54219,7.3
 2020,Illinois,Stephenson County,11.2,57952,7.3
 2020,Illinois,Tazewell County,7.6,69874,8.1
-2020,Illinois,Union County,14.0,55736,8.1
+2020,Illinois,Union County,14,55736,8.1
 2020,Illinois,Vermilion County,18.6,49678,8.8
 2020,Illinois,Wabash County,11.7,56190,8.3
 2020,Illinois,Warren County,10.7,57964,6.2
@@ -706,11 +706,11 @@
 2020,Indiana,Cass County,10.7,50419,6.8
 2020,Indiana,Clark County,8.6,65555,7.2
 2020,Indiana,Clay County,9.8,56422,6.6
-2020,Indiana,Clinton County,10.0,59503,5.6
+2020,Indiana,Clinton County,10,59503,5.6
 2020,Indiana,Crawford County,15.6,46884,7.1
 2020,Indiana,Daviess County,10.9,53101,3.8
 2020,Indiana,Dearborn County,7.8,73459,6.9
-2020,Indiana,Decatur County,10.0,61561,7.5
+2020,Indiana,Decatur County,10,61561,7.5
 2020,Indiana,De Kalb County,8.8,62411,6.9
 2020,Indiana,Delaware County,19.4,46612,7.3
 2020,Indiana,Dubois County,6.7,64120,4.5
@@ -719,7 +719,7 @@
 2020,Indiana,Floyd County,11.5,70610,6.5
 2020,Indiana,Fountain County,10.9,55627,6.5
 2020,Indiana,Franklin County,7.7,71828,5.9
-2020,Indiana,Fulton County,12.0,55895,6.6
+2020,Indiana,Fulton County,12,55895,6.6
 2020,Indiana,Gibson County,9.3,59074,6.2
 2020,Indiana,Grant County,16.7,49788,6.3
 2020,Indiana,Greene County,11.2,55213,6.2
@@ -753,7 +753,7 @@
 2020,Indiana,Newton County,10.5,59246,6.9
 2020,Indiana,Noble County,9.9,62173,8.4
 2020,Indiana,Ohio County,9.8,63210,7.4
-2020,Indiana,Orange County,13.0,52029,11.1
+2020,Indiana,Orange County,13,52029,11.1
 2020,Indiana,Owen County,11.7,53893,6.3
 2020,Indiana,Parke County,14.3,54125,5.5
 2020,Indiana,Perry County,12.3,44011,6.5
@@ -772,10 +772,10 @@
 2020,Indiana,Starke County,14.2,51996,8
 2020,Indiana,Steuben County,9.6,62273,6.2
 2020,Indiana,Sullivan County,15.5,45227,7
-2020,Indiana,Switzerland County,14.0,55618,8.1
+2020,Indiana,Switzerland County,14,55618,8.1
 2020,Indiana,Tippecanoe County,16.1,52806,6.3
 2020,Indiana,Tipton County,7.3,76368,6.1
-2020,Indiana,Union County,10.0,59098,5.5
+2020,Indiana,Union County,10,59098,5.5
 2020,Indiana,Vanderburgh County,14.6,49482,7.2
 2020,Indiana,Vermillion County,11.9,52433,7.5
 2020,Indiana,Vigo County,20.7,45897,7.9
@@ -785,7 +785,7 @@
 2020,Indiana,Washington County,13.4,49494,6.9
 2020,Indiana,Wayne County,15.1,49798,6.8
 2020,Indiana,Wells County,8.2,66597,5.7
-2020,Indiana,White County,9.0,57787,5
+2020,Indiana,White County,9,57787,5
 2020,Indiana,Whitley County,7.2,61841,5.9
 2020,Iowa,Adair County,10.8,55265,4
 2020,Iowa,Adams County,10.8,56291,3.8
@@ -799,12 +799,12 @@
 2020,Iowa,Buchanan County,8.3,66852,4.6
 2020,Iowa,Buena Vista County,9.1,61189,3.7
 2020,Iowa,Butler County,8.4,54822,4.7
-2020,Iowa,Calhoun County,10.0,62000,4.1
-2020,Iowa,Carroll County,7.0,61701,4
+2020,Iowa,Calhoun County,10,62000,4.1
+2020,Iowa,Carroll County,7,61701,4
 2020,Iowa,Cass County,10.8,55301,3.9
 2020,Iowa,Cedar County,7.3,68592,4.4
 2020,Iowa,Cerro Gordo County,10.6,57659,5.2
-2020,Iowa,Cherokee County,9.0,61360,3.8
+2020,Iowa,Cherokee County,9,61360,3.8
 2020,Iowa,Chickasaw County,8.3,63869,4.7
 2020,Iowa,Clarke County,11.1,69923,5.4
 2020,Iowa,Clay County,8.1,59940,4.5
@@ -815,7 +815,7 @@
 2020,Iowa,Davis County,11.7,57225,4
 2020,Iowa,Decatur County,16.9,46373,3.8
 2020,Iowa,Delaware County,8.4,66364,4
-2020,Iowa,Des Moines County,13.0,55153,7.5
+2020,Iowa,Des Moines County,13,55153,7.5
 2020,Iowa,Dickinson County,6.7,67477,5.1
 2020,Iowa,Dubuque County,8.9,65986,5.9
 2020,Iowa,Emmet County,10.2,57652,5
@@ -841,7 +841,7 @@
 2020,Iowa,Johnson County,14.1,68790,4.8
 2020,Iowa,Jones County,9.9,61736,5.7
 2020,Iowa,Keokuk County,13.7,54790,4.9
-2020,Iowa,Kossuth County,10.0,65006,3.8
+2020,Iowa,Kossuth County,10,65006,3.8
 2020,Iowa,Lee County,11.5,58619,6.5
 2020,Iowa,Linn County,8.1,69559,6.4
 2020,Iowa,Louisa County,9.1,72404,5
@@ -849,11 +849,11 @@
 2020,Iowa,Lyon County,6.3,67280,2.5
 2020,Iowa,Madison County,7.5,75563,5.7
 2020,Iowa,Mahaska County,10.2,59704,4.8
-2020,Iowa,Marion County,8.0,64327,4.2
+2020,Iowa,Marion County,8,64327,4.2
 2020,Iowa,Marshall County,10.1,64341,7.1
 2020,Iowa,Mills County,8.3,76010,3.9
 2020,Iowa,Mitchell County,8.9,67127,3.4
-2020,Iowa,Monona County,11.0,58079,4.8
+2020,Iowa,Monona County,11,58079,4.8
 2020,Iowa,Monroe County,11.4,58297,5.2
 2020,Iowa,Montgomery County,11.6,54767,4.7
 2020,Iowa,Muscatine County,10.2,62877,6
@@ -861,7 +861,7 @@
 2020,Iowa,Osceola County,7.9,63695,2.9
 2020,Iowa,Page County,13.2,52739,5
 2020,Iowa,Palo Alto County,9.5,63164,4.6
-2020,Iowa,Plymouth County,6.0,72261,3.6
+2020,Iowa,Plymouth County,6,72261,3.6
 2020,Iowa,Pocahontas County,10.2,56360,3.5
 2020,Iowa,Polk County,11.5,67821,6
 2020,Iowa,Pottawattamie County,9.2,61607,5.2
@@ -879,7 +879,7 @@
 2020,Iowa,Wapello County,15.5,49060,6
 2020,Iowa,Warren County,4.9,82206,4.6
 2020,Iowa,Washington County,7.1,65061,4.1
-2020,Iowa,Wayne County,13.0,52016,4.5
+2020,Iowa,Wayne County,13,52016,4.5
 2020,Iowa,Webster County,12.4,58355,5.2
 2020,Iowa,Winnebago County,9.3,52706,6.4
 2020,Iowa,Winneshiek County,9.2,61813,4.9
@@ -889,21 +889,21 @@
 2020,Kansas,Allen County,14.5,48616,5.4
 2020,Kansas,Anderson County,12.7,53936,4.1
 2020,Kansas,Atchison County,13.1,56691,6.9
-2020,Kansas,Barber County,12.0,52749,3.4
+2020,Kansas,Barber County,12,52749,3.4
 2020,Kansas,Barton County,12.7,51149,4.6
 2020,Kansas,Bourbon County,14.5,49821,5.6
-2020,Kansas,Brown County,13.0,49483,4.5
+2020,Kansas,Brown County,13,49483,4.5
 2020,Kansas,Butler County,8.7,71827,6.5
 2020,Kansas,Chase County,10.1,57338,5.5
 2020,Kansas,Chautauqua County,18.3,43155,6.1
 2020,Kansas,Cherokee County,14.3,48336,5.2
 2020,Kansas,Cheyenne County,11.8,50623,2.2
-2020,Kansas,Clark County,11.0,58365,2
+2020,Kansas,Clark County,11,58365,2
 2020,Kansas,Clay County,9.8,53119,4.5
 2020,Kansas,Cloud County,12.1,55001,4.1
 2020,Kansas,Coffey County,9.6,59142,5.2
 2020,Kansas,Comanche County,11.2,49314,3.5
-2020,Kansas,Cowley County,14.0,51398,6.5
+2020,Kansas,Cowley County,14,51398,6.5
 2020,Kansas,Crawford County,16.6,46714,5.5
 2020,Kansas,Decatur County,12.4,48189,3.7
 2020,Kansas,Dickinson County,9.8,56755,4.9
@@ -911,7 +911,7 @@
 2020,Kansas,Douglas County,11.8,65149,6.1
 2020,Kansas,Edwards County,10.8,51756,3
 2020,Kansas,Elk County,15.1,45974,4.8
-2020,Kansas,Ellis County,16.0,55505,3.5
+2020,Kansas,Ellis County,16,55505,3.5
 2020,Kansas,Ellsworth County,10.6,53443,3.3
 2020,Kansas,Finney County,12.2,65023,3.5
 2020,Kansas,Ford County,10.3,54442,3.4
@@ -920,8 +920,8 @@
 2020,Kansas,Gove County,10.1,57676,2.9
 2020,Kansas,Graham County,12.5,47104,4.6
 2020,Kansas,Grant County,10.1,67764,4.1
-2020,Kansas,Gray County,7.0,72095,2.2
-2020,Kansas,Greeley County,10.0,66089,1.8
+2020,Kansas,Gray County,7,72095,2.2
+2020,Kansas,Greeley County,10,66089,1.8
 2020,Kansas,Greenwood County,12.7,50399,5.2
 2020,Kansas,Hamilton County,10.4,61342,1.7
 2020,Kansas,Harper County,13.2,48275,4.4
@@ -930,12 +930,12 @@
 2020,Kansas,Hodgeman County,9.1,60414,2.7
 2020,Kansas,Jackson County,9.3,57871,5.4
 2020,Kansas,Jefferson County,7.2,63712,4.9
-2020,Kansas,Jewell County,13.0,46688,3.1
+2020,Kansas,Jewell County,13,46688,3.1
 2020,Kansas,Johnson County,4.6,91799,5.1
 2020,Kansas,Kearny County,9.4,66713,2.7
 2020,Kansas,Kingman County,9.8,58678,5.2
 2020,Kansas,Kiowa County,12.3,56664,3.3
-2020,Kansas,Labette County,14.0,50222,5.6
+2020,Kansas,Labette County,14,50222,5.6
 2020,Kansas,Lane County,9.6,60530,2.9
 2020,Kansas,Leavenworth County,8.5,76429,5.8
 2020,Kansas,Lincoln County,12.7,50231,2.9
@@ -947,7 +947,7 @@
 2020,Kansas,Marshall County,8.7,56429,3.1
 2020,Kansas,Meade County,9.3,52590,2.8
 2020,Kansas,Miami County,7.6,78717,5
-2020,Kansas,Mitchell County,10.0,53745,2.7
+2020,Kansas,Mitchell County,10,53745,2.7
 2020,Kansas,Montgomery County,17.8,44071,7.3
 2020,Kansas,Morris County,10.5,53793,3.9
 2020,Kansas,Morton County,12.1,56878,3
@@ -957,7 +957,7 @@
 2020,Kansas,Norton County,12.9,47512,2.7
 2020,Kansas,Osage County,10.1,55287,5.1
 2020,Kansas,Osborne County,11.7,47811,2.9
-2020,Kansas,Ottawa County,10.0,60560,4.3
+2020,Kansas,Ottawa County,10,60560,4.3
 2020,Kansas,Pawnee County,14.9,53821,3.8
 2020,Kansas,Phillips County,10.9,56047,3.4
 2020,Kansas,Pottawatomie County,6.9,75476,4.3
@@ -976,9 +976,9 @@
 2020,Kansas,Seward County,11.5,54330,4.4
 2020,Kansas,Shawnee County,10.5,56191,5.9
 2020,Kansas,Sheridan County,10.5,58186,2.3
-2020,Kansas,Sherman County,13.0,52718,3.4
+2020,Kansas,Sherman County,13,52718,3.4
 2020,Kansas,Smith County,10.3,49114,2.7
-2020,Kansas,Stafford County,11.0,55004,3.7
+2020,Kansas,Stafford County,11,55004,3.7
 2020,Kansas,Stanton County,10.2,68439,2.4
 2020,Kansas,Stevens County,9.7,66592,2.9
 2020,Kansas,Sumner County,11.3,56609,8.1
@@ -989,11 +989,11 @@
 2020,Kansas,Washington County,9.9,51751,2.5
 2020,Kansas,Wichita County,10.6,61326,2.1
 2020,Kansas,Wilson County,14.3,50472,7.8
-2020,Kansas,Woodson County,14.0,45357,5.9
+2020,Kansas,Woodson County,14,45357,5.9
 2020,Kansas,Wyandotte County,16.9,52223,7.8
 2020,Kentucky,Adair County,22.1,42429,7.2
 2020,Kentucky,Allen County,15.3,49980,5.5
-2020,Kentucky,Anderson County,10.0,65443,6.1
+2020,Kentucky,Anderson County,10,65443,6.1
 2020,Kentucky,Ballard County,14.2,48623,6.6
 2020,Kentucky,Barren County,17.3,45298,7.5
 2020,Kentucky,Bath County,22.5,41778,8.3
@@ -1001,7 +1001,7 @@
 2020,Kentucky,Boone County,6.5,82393,5.4
 2020,Kentucky,Bourbon County,14.1,52368,5.9
 2020,Kentucky,Boyd County,15.8,54694,8.3
-2020,Kentucky,Boyle County,14.0,53374,7.4
+2020,Kentucky,Boyle County,14,53374,7.4
 2020,Kentucky,Bracken County,13.2,55112,6.2
 2020,Kentucky,Breathitt County,27.9,33852,10.2
 2020,Kentucky,Breckinridge County,17.1,50292,7.3
@@ -1019,7 +1019,7 @@
 2020,Kentucky,Clay County,37.3,26866,8.6
 2020,Kentucky,Clinton County,21.5,37428,5.1
 2020,Kentucky,Crittenden County,16.8,46844,5.5
-2020,Kentucky,Cumberland County,21.0,38275,4.9
+2020,Kentucky,Cumberland County,21,38275,4.9
 2020,Kentucky,Daviess County,13.4,54948,6.1
 2020,Kentucky,Edmonson County,15.8,44459,7.7
 2020,Kentucky,Elliott County,28.8,35030,10.1
@@ -1030,26 +1030,26 @@
 2020,Kentucky,Franklin County,12.8,59911,6.6
 2020,Kentucky,Fulton County,25.2,36421,6.5
 2020,Kentucky,Gallatin County,13.3,55650,6
-2020,Kentucky,Garrard County,14.0,54951,6.3
+2020,Kentucky,Garrard County,14,54951,6.3
 2020,Kentucky,Grant County,12.8,56274,7.1
 2020,Kentucky,Graves County,18.2,44475,5.9
 2020,Kentucky,Grayson County,20.5,42297,7.8
 2020,Kentucky,Green County,20.1,41322,5.4
-2020,Kentucky,Greenup County,13.0,55777,8.9
+2020,Kentucky,Greenup County,13,55777,8.9
 2020,Kentucky,Hancock County,14.4,57111,6.1
 2020,Kentucky,Hardin County,11.2,56557,7.1
-2020,Kentucky,Harlan County,28.0,30745,11.9
+2020,Kentucky,Harlan County,28,30745,11.9
 2020,Kentucky,Harrison County,13.5,55934,6.1
 2020,Kentucky,Hart County,22.1,41608,6.4
 2020,Kentucky,Henderson County,13.4,54701,6.1
 2020,Kentucky,Henry County,14.2,53170,5.7
 2020,Kentucky,Hickman County,20.9,46553,5.5
 2020,Kentucky,Hopkins County,18.1,47631,7.4
-2020,Kentucky,Jackson County,24.0,35889,8.7
+2020,Kentucky,Jackson County,24,35889,8.7
 2020,Kentucky,Jefferson County,11.4,62067,6.8
 2020,Kentucky,Jessamine County,10.5,67610,5.6
 2020,Kentucky,Johnson County,22.5,40455,8.7
-2020,Kentucky,Kenton County,11.0,66015,5.8
+2020,Kentucky,Kenton County,11,66015,5.8
 2020,Kentucky,Knott County,27.7,33253,8.5
 2020,Kentucky,Knox County,27.8,31568,8.2
 2020,Kentucky,Larue County,14.7,50980,7.2
@@ -1060,7 +1060,7 @@
 2020,Kentucky,Letcher County,24.4,36259,10.2
 2020,Kentucky,Lewis County,22.2,39288,9.5
 2020,Kentucky,Lincoln County,18.4,43748,7.9
-2020,Kentucky,Livingston County,14.0,52994,7.5
+2020,Kentucky,Livingston County,14,52994,7.5
 2020,Kentucky,Logan County,15.1,51905,5.5
 2020,Kentucky,Lyon County,14.4,51970,5.3
 2020,Kentucky,McCracken County,15.5,50650,7.2
@@ -1082,12 +1082,12 @@
 2020,Kentucky,Muhlenberg County,16.9,45599,8.7
 2020,Kentucky,Nelson County,9.2,68264,6.9
 2020,Kentucky,Nicholas County,16.8,48290,6.8
-2020,Kentucky,Ohio County,15.0,48621,7.2
-2020,Kentucky,Oldham County,5.0,105897,4.8
+2020,Kentucky,Ohio County,15,48621,7.2
+2020,Kentucky,Oldham County,5,105897,4.8
 2020,Kentucky,Owen County,15.1,45177,6.4
 2020,Kentucky,Owsley County,30.6,25997,7.4
 2020,Kentucky,Pendleton County,13.6,60824,5.2
-2020,Kentucky,Perry County,22.0,35555,8.9
+2020,Kentucky,Perry County,22,35555,8.9
 2020,Kentucky,Pike County,23.7,38917,8.4
 2020,Kentucky,Powell County,20.5,40215,7.3
 2020,Kentucky,Pulaski County,19.1,44717,7.3
@@ -1095,9 +1095,9 @@
 2020,Kentucky,Rockcastle County,22.4,42205,7.1
 2020,Kentucky,Rowan County,24.4,46535,7.5
 2020,Kentucky,Russell County,18.1,41088,8.2
-2020,Kentucky,Scott County,8.0,70526,6.3
+2020,Kentucky,Scott County,8,70526,6.3
 2020,Kentucky,Shelby County,8.4,75600,5.5
-2020,Kentucky,Simpson County,12.0,56107,7.2
+2020,Kentucky,Simpson County,12,56107,7.2
 2020,Kentucky,Spencer County,6.8,83583,5.8
 2020,Kentucky,Taylor County,15.9,48384,6
 2020,Kentucky,Todd County,17.3,50393,4.8
@@ -1157,12 +1157,12 @@
 2020,Louisiana,St. Bernard Parish,21.3,50790,10.2
 2020,Louisiana,St. Charles Parish,11.3,69889,7.8
 2020,Louisiana,St. Helena Parish,22.7,40709,11.5
-2020,Louisiana,St. James Parish,13.0,58309,9.7
+2020,Louisiana,St. James Parish,13,58309,9.7
 2020,Louisiana,St. John the Baptist Parish,16.9,56697,11.2
 2020,Louisiana,St. Landry Parish,22.6,39153,8.7
-2020,Louisiana,St. Martin Parish,17.0,48524,8.1
+2020,Louisiana,St. Martin Parish,17,48524,8.1
 2020,Louisiana,St. Mary Parish,19.8,47236,9.2
-2020,Louisiana,St. Tammany Parish,10.0,67462,6.8
+2020,Louisiana,St. Tammany Parish,10,67462,6.8
 2020,Louisiana,Tangipahoa Parish,20.1,47272,9.5
 2020,Louisiana,Tensas Parish,30.8,33294,8.4
 2020,Louisiana,Terrebonne Parish,15.7,55402,7.7
@@ -1183,13 +1183,13 @@
 2020,Maine,Kennebec County,11.2,53876,5
 2020,Maine,Knox County,10.2,66058,5.4
 2020,Maine,Lincoln County,8.8,64825,5.3
-2020,Maine,Oxford County,13.0,47611,6.7
+2020,Maine,Oxford County,13,47611,6.7
 2020,Maine,Penobscot County,12.1,52079,5.4
 2020,Maine,Piscataquis County,14.6,48769,5.5
 2020,Maine,Sagadahoc County,9.2,68433,4.7
 2020,Maine,Somerset County,14.5,43694,6.6
 2020,Maine,Waldo County,11.6,56085,5.2
-2020,Maine,Washington County,12.0,48582,6.2
+2020,Maine,Washington County,12,48582,6.2
 2020,Maine,York County,8.1,67965,5.4
 2020,Maryland,Allegany County,14.7,53023,7.8
 2020,Maryland,Anne Arundel County,5.2,105979,5.8
@@ -1204,7 +1204,7 @@
 2020,Maryland,Garrett County,12.8,56929,6.6
 2020,Maryland,Harford County,6.2,102537,5.8
 2020,Maryland,Howard County,5.5,124042,5.2
-2020,Maryland,Kent County,12.0,64437,6.6
+2020,Maryland,Kent County,12,64437,6.6
 2020,Maryland,Montgomery County,6.7,115394,6.3
 2020,Maryland,Prince George's County,9.5,85246,8.2
 2020,Maryland,Queen Anne's County,6.9,93427,5.5
@@ -1214,12 +1214,12 @@
 2020,Maryland,Washington County,12.3,63237,6.7
 2020,Maryland,Wicomico County,14.2,59387,7.5
 2020,Maryland,Worcester County,11.7,62481,11.2
-2020,Maryland,Baltimore city,20.0,51485,8.8
+2020,Maryland,Baltimore city,20,51485,8.8
 2020,Massachusetts,Barnstable County,7.7,76287,10.2
-2020,Massachusetts,Berkshire County,10.0,65458,9.1
+2020,Massachusetts,Berkshire County,10,65458,9.1
 2020,Massachusetts,Bristol County,10.1,71998,10.2
 2020,Massachusetts,Dukes County,7.5,80459,9.2
-2020,Massachusetts,Essex County,9.0,88269,9.8
+2020,Massachusetts,Essex County,9,88269,9.8
 2020,Massachusetts,Franklin County,10.7,62920,7.4
 2020,Massachusetts,Hampden County,14.3,61600,10.4
 2020,Massachusetts,Hampshire County,9.3,73864,7.2
@@ -1229,7 +1229,7 @@
 2020,Massachusetts,Plymouth County,7.2,88420,9.5
 2020,Massachusetts,Suffolk County,16.5,85221,9.7
 2020,Massachusetts,Worcester County,9.5,77931,8.8
-2020,Michigan,Alcona County,14.0,45573,9.9
+2020,Michigan,Alcona County,14,45573,9.9
 2020,Michigan,Alger County,12.1,51126,10.7
 2020,Michigan,Allegan County,7.3,63732,7.3
 2020,Michigan,Alpena County,15.6,40442,7.7
@@ -1246,7 +1246,7 @@
 2020,Michigan,Charlevoix County,8.7,66728,9.8
 2020,Michigan,Cheboygan County,12.7,50788,14.6
 2020,Michigan,Chippewa County,13.9,52579,8.9
-2020,Michigan,Clare County,18.0,43726,11.5
+2020,Michigan,Clare County,18,43726,11.5
 2020,Michigan,Clinton County,7.9,76367,6.6
 2020,Michigan,Crawford County,13.6,49625,10.4
 2020,Michigan,Delta County,11.3,49414,8.7
@@ -1259,7 +1259,7 @@
 2020,Michigan,Grand Traverse County,8.7,67290,8.4
 2020,Michigan,Gratiot County,13.7,54161,8
 2020,Michigan,Hillsdale County,12.6,54974,9.1
-2020,Michigan,Houghton County,15.0,47399,7.2
+2020,Michigan,Houghton County,15,47399,7.2
 2020,Michigan,Huron County,11.6,53616,8.5
 2020,Michigan,Ingham County,13.8,62711,7.5
 2020,Michigan,Ionia County,9.6,58371,7.9
@@ -1267,8 +1267,8 @@
 2020,Michigan,Iron County,14.2,45098,8.1
 2020,Michigan,Isabella County,17.4,53607,8.4
 2020,Michigan,Jackson County,12.6,57267,9
-2020,Michigan,Kalamazoo County,12.0,63279,7.2
-2020,Michigan,Kalkaska County,12.0,52903,11.1
+2020,Michigan,Kalamazoo County,12,63279,7.2
+2020,Michigan,Kalkaska County,12,52903,11.1
 2020,Michigan,Kent County,11.1,65012,7.6
 2020,Michigan,Keweenaw County,11.2,49890,8.9
 2020,Michigan,Lake County,19.2,39971,10.8
@@ -1303,14 +1303,14 @@
 2020,Michigan,Roscommon County,15.8,43551,12.1
 2020,Michigan,Saginaw County,15.9,51893,9.9
 2020,Michigan,St. Clair County,12.4,59138,12
-2020,Michigan,St. Joseph County,13.0,54896,9.1
+2020,Michigan,St. Joseph County,13,54896,9.1
 2020,Michigan,Sanilac County,15.3,51171,9.7
 2020,Michigan,Schoolcraft County,11.9,49684,9.7
 2020,Michigan,Shiawassee County,11.6,59733,9.2
 2020,Michigan,Tuscola County,11.4,51940,10.1
 2020,Michigan,Van Buren County,14.1,56526,8.3
-2020,Michigan,Washtenaw County,12.0,77019,6.4
-2020,Michigan,Wayne County,20.0,51777,13.8
+2020,Michigan,Washtenaw County,12,77019,6.4
+2020,Michigan,Wayne County,20,51777,13.8
 2020,Michigan,Wexford County,11.4,56550,10.2
 2020,Minnesota,Aitkin County,11.1,49822,8.1
 2020,Minnesota,Anoka County,7.1,84779,6.3
@@ -1318,7 +1318,7 @@
 2020,Minnesota,Beltrami County,12.1,58138,6.3
 2020,Minnesota,Benton County,6.9,70143,6.6
 2020,Minnesota,Big Stone County,10.9,54796,4.7
-2020,Minnesota,Blue Earth County,11.0,67193,5.4
+2020,Minnesota,Blue Earth County,11,67193,5.4
 2020,Minnesota,Brown County,6.8,61978,5.1
 2020,Minnesota,Carlton County,8.7,67695,7.2
 2020,Minnesota,Carver County,3.5,107932,5.2
@@ -1335,7 +1335,7 @@
 2020,Minnesota,Douglas County,7.4,69848,4.8
 2020,Minnesota,Faribault County,10.3,55599,6.2
 2020,Minnesota,Fillmore County,8.2,66204,5
-2020,Minnesota,Freeborn County,10.0,62233,5.6
+2020,Minnesota,Freeborn County,10,62233,5.6
 2020,Minnesota,Goodhue County,7.2,73474,5.9
 2020,Minnesota,Grant County,9.3,66740,5.3
 2020,Minnesota,Hennepin County,9.3,81772,6.6
@@ -1349,7 +1349,7 @@
 2020,Minnesota,Kittson County,10.3,51016,4.6
 2020,Minnesota,Koochiching County,11.6,56870,7.4
 2020,Minnesota,Lac qui Parle County,8.6,65446,4.7
-2020,Minnesota,Lake County,8.0,63741,7.3
+2020,Minnesota,Lake County,8,63741,7.3
 2020,Minnesota,Lake of the Woods County,8.8,57302,6.1
 2020,Minnesota,Le Sueur County,6.7,78559,6.8
 2020,Minnesota,Lincoln County,8.7,57252,4.4
@@ -1396,11 +1396,11 @@
 2020,Minnesota,Washington County,4.4,101409,5.6
 2020,Minnesota,Watonwan County,9.7,60656,4.6
 2020,Minnesota,Wilkin County,8.3,65769,4.1
-2020,Minnesota,Winona County,11.0,65302,4.9
+2020,Minnesota,Winona County,11,65302,4.9
 2020,Minnesota,Wright County,4.6,85855,5.5
 2020,Minnesota,Yellow Medicine County,8.6,62290,4.6
 2020,Mississippi,Adams County,27.2,36519,11
-2020,Mississippi,Alcorn County,17.0,46368,6.2
+2020,Mississippi,Alcorn County,17,46368,6.2
 2020,Mississippi,Amite County,21.7,42649,8.4
 2020,Mississippi,Attala County,18.8,40985,8.3
 2020,Mississippi,Benton County,19.8,38972,8.3
@@ -1438,7 +1438,7 @@
 2020,Mississippi,Lamar County,12.6,62527,6
 2020,Mississippi,Lauderdale County,22.5,44821,7.5
 2020,Mississippi,Lawrence County,19.1,36272,8.7
-2020,Mississippi,Leake County,21.0,43614,7.9
+2020,Mississippi,Leake County,21,43614,7.9
 2020,Mississippi,Lee County,13.3,57936,8.1
 2020,Mississippi,Leflore County,25.3,34818,10.7
 2020,Mississippi,Lincoln County,18.7,44695,7.3
@@ -1452,22 +1452,22 @@
 2020,Mississippi,Newton County,16.3,49925,7.9
 2020,Mississippi,Noxubee County,26.2,35880,11
 2020,Mississippi,Oktibbeha County,23.5,44234,7.6
-2020,Mississippi,Panola County,21.0,41060,9.8
+2020,Mississippi,Panola County,21,41060,9.8
 2020,Mississippi,Pearl River County,15.8,50611,7.3
 2020,Mississippi,Perry County,18.1,47073,8.7
 2020,Mississippi,Pike County,26.5,37054,8.9
 2020,Mississippi,Pontotoc County,12.8,53272,7.8
 2020,Mississippi,Prentiss County,16.5,44543,7
 2020,Mississippi,Quitman County,29.9,31077,10.9
-2020,Mississippi,Rankin County,10.0,68583,5.3
+2020,Mississippi,Rankin County,10,68583,5.3
 2020,Mississippi,Scott County,18.3,42069,5.8
 2020,Mississippi,Sharkey County,30.3,46163,10.9
 2020,Mississippi,Simpson County,21.2,41988,6.8
 2020,Mississippi,Smith County,16.1,48968,5.8
 2020,Mississippi,Stone County,17.4,51493,7.5
 2020,Mississippi,Sunflower County,34.8,35149,11.2
-2020,Mississippi,Tallahatchie County,32.0,35150,7.4
-2020,Mississippi,Tate County,14.0,61751,7.7
+2020,Mississippi,Tallahatchie County,32,35150,7.4
+2020,Mississippi,Tate County,14,61751,7.7
 2020,Mississippi,Tippah County,16.5,45568,7
 2020,Mississippi,Tishomingo County,14.6,48897,6.5
 2020,Mississippi,Tunica County,26.7,36850,14.9
@@ -1480,12 +1480,12 @@
 2020,Mississippi,Wilkinson County,28.4,35394,13.4
 2020,Mississippi,Winston County,21.8,44029,8.7
 2020,Mississippi,Yalobusha County,21.2,42532,7.9
-2020,Mississippi,Yazoo County,31.0,37367,9.7
+2020,Mississippi,Yazoo County,31,37367,9.7
 2020,Missouri,Adair County,17.9,49175,5.1
 2020,Missouri,Andrew County,9.1,69387,4
-2020,Missouri,Atchison County,12.0,53603,4
+2020,Missouri,Atchison County,12,53603,4
 2020,Missouri,Audrain County,17.8,48258,5.9
-2020,Missouri,Barry County,16.0,47853,6.5
+2020,Missouri,Barry County,16,47853,6.5
 2020,Missouri,Barton County,16.6,46353,4.9
 2020,Missouri,Bates County,14.8,52140,5.3
 2020,Missouri,Benton County,16.8,44141,7.3
@@ -1495,13 +1495,13 @@
 2020,Missouri,Butler County,21.2,42099,6.3
 2020,Missouri,Caldwell County,12.4,47870,5.4
 2020,Missouri,Callaway County,11.4,61268,4.5
-2020,Missouri,Camden County,14.0,64357,7
+2020,Missouri,Camden County,14,64357,7
 2020,Missouri,Cape Girardeau County,11.9,57763,5.2
 2020,Missouri,Carroll County,13.4,51891,6
 2020,Missouri,Carter County,20.3,38854,6.5
 2020,Missouri,Cass County,6.8,82068,5.3
 2020,Missouri,Cedar County,18.5,40130,4.5
-2020,Missouri,Chariton County,12.0,60521,4
+2020,Missouri,Chariton County,12,60521,4
 2020,Missouri,Christian County,8.8,67585,4.9
 2020,Missouri,Clark County,12.3,47750,6
 2020,Missouri,Clay County,7.7,74950,6.1
@@ -1518,7 +1518,7 @@
 2020,Missouri,Dunklin County,20.2,42512,7.3
 2020,Missouri,Franklin County,9.1,62781,6.2
 2020,Missouri,Gasconade County,11.2,54487,5.8
-2020,Missouri,Gentry County,13.0,48338,3.4
+2020,Missouri,Gentry County,13,48338,3.4
 2020,Missouri,Greene County,14.3,46934,5.3
 2020,Missouri,Grundy County,15.1,45363,4.6
 2020,Missouri,Harrison County,17.8,43642,4.5
@@ -1541,7 +1541,7 @@
 2020,Missouri,Linn County,14.7,47506,6.1
 2020,Missouri,Livingston County,12.8,51402,3.8
 2020,Missouri,McDonald County,17.6,45446,5
-2020,Missouri,Macon County,13.0,49013,4.8
+2020,Missouri,Macon County,13,49013,4.8
 2020,Missouri,Madison County,16.3,45002,6.5
 2020,Missouri,Maries County,12.9,47698,4.8
 2020,Missouri,Marion County,14.3,54230,4.8
@@ -1549,13 +1549,13 @@
 2020,Missouri,Miller County,13.9,51348,6.2
 2020,Missouri,Mississippi County,19.1,39621,5.3
 2020,Missouri,Moniteau County,11.6,51138,4.2
-2020,Missouri,Monroe County,13.0,48661,5.9
-2020,Missouri,Montgomery County,13.0,56447,5
-2020,Missouri,Morgan County,15.0,51582,6.3
+2020,Missouri,Monroe County,13,48661,5.9
+2020,Missouri,Montgomery County,13,56447,5
+2020,Missouri,Morgan County,15,51582,6.3
 2020,Missouri,New Madrid County,18.9,41553,5.8
 2020,Missouri,Newton County,13.9,52798,5.8
 2020,Missouri,Nodaway County,15.2,55821,4.6
-2020,Missouri,Oregon County,22.0,37835,6.7
+2020,Missouri,Oregon County,22,37835,6.7
 2020,Missouri,Osage County,8.5,62679,3.6
 2020,Missouri,Ozark County,20.3,38606,7.2
 2020,Missouri,Pemiscot County,35.3,34498,8
@@ -1569,12 +1569,12 @@
 2020,Missouri,Putnam County,15.2,46546,4.4
 2020,Missouri,Ralls County,11.4,57061,4.5
 2020,Missouri,Randolph County,12.1,51924,5.9
-2020,Missouri,Ray County,10.0,64014,6.9
+2020,Missouri,Ray County,10,64014,6.9
 2020,Missouri,Reynolds County,19.4,39089,5.7
 2020,Missouri,Ripley County,21.3,37771,7.9
-2020,Missouri,St. Charles County,5.0,90567,5.2
+2020,Missouri,St. Charles County,5,90567,5.2
 2020,Missouri,St. Clair County,18.7,41486,6.1
-2020,Missouri,Ste. Genevieve County,9.0,58618,4.9
+2020,Missouri,Ste. Genevieve County,9,58618,4.9
 2020,Missouri,St. Francois County,16.2,48476,7
 2020,Missouri,St. Louis County,9.1,68964,6.3
 2020,Missouri,Saline County,13.1,52850,4.5
@@ -1588,11 +1588,11 @@
 2020,Missouri,Sullivan County,15.6,43387,4.3
 2020,Missouri,Taney County,15.6,44670,12.9
 2020,Missouri,Texas County,20.3,38985,5.8
-2020,Missouri,Vernon County,15.0,45874,4.4
-2020,Missouri,Warren County,9.0,69678,5.8
+2020,Missouri,Vernon County,15,45874,4.4
+2020,Missouri,Warren County,9,69678,5.8
 2020,Missouri,Washington County,19.4,42683,7.2
 2020,Missouri,Wayne County,23.2,43848,6.1
-2020,Missouri,Webster County,15.0,55431,5.3
+2020,Missouri,Webster County,15,55431,5.3
 2020,Missouri,Worth County,13.8,44361,4.2
 2020,Missouri,Wright County,18.3,39521,7
 2020,Missouri,St. Louis city,20.8,45773,8.5
@@ -1612,7 +1612,7 @@
 2020,Montana,Fergus County,13.6,49576,4.6
 2020,Montana,Flathead County,10.5,58959,7.8
 2020,Montana,Gallatin County,8.8,70029,5
-2020,Montana,Garfield County,15.0,45892,2.7
+2020,Montana,Garfield County,15,45892,2.7
 2020,Montana,Glacier County,24.3,40817,9.8
 2020,Montana,Golden Valley County,18.6,42741,4.7
 2020,Montana,Granite County,12.7,53407,8.2
@@ -1621,7 +1621,7 @@
 2020,Montana,Judith Basin County,15.7,50610,4.9
 2020,Montana,Lake County,18.3,52493,6.2
 2020,Montana,Lewis and Clark County,10.2,60664,5
-2020,Montana,Liberty County,19.0,53415,2.8
+2020,Montana,Liberty County,19,53415,2.8
 2020,Montana,Lincoln County,17.9,42501,10.1
 2020,Montana,McCone County,14.5,46755,2.9
 2020,Montana,Madison County,9.9,58201,5.1
@@ -1630,14 +1630,14 @@
 2020,Montana,Missoula County,11.8,63409,6.3
 2020,Montana,Musselshell County,15.4,50533,6.1
 2020,Montana,Park County,10.9,56657,7.4
-2020,Montana,Petroleum County,15.0,38661,3.4
+2020,Montana,Petroleum County,15,38661,3.4
 2020,Montana,Phillips County,14.9,46821,4.9
 2020,Montana,Pondera County,18.5,49447,4.9
 2020,Montana,Powder River County,12.6,60462,3.1
 2020,Montana,Powell County,16.5,52904,4.6
 2020,Montana,Prairie County,12.8,48577,6.8
 2020,Montana,Ravalli County,11.3,58781,5.8
-2020,Montana,Richland County,8.0,69169,6.4
+2020,Montana,Richland County,8,69169,6.4
 2020,Montana,Roosevelt County,23.8,43256,6
 2020,Montana,Rosebud County,17.5,54991,5.7
 2020,Montana,Sanders County,16.3,45805,7.8
@@ -1668,7 +1668,7 @@
 2020,Nebraska,Cedar County,8.5,61673,2.7
 2020,Nebraska,Chase County,8.2,61282,1.8
 2020,Nebraska,Cherry County,11.4,53483,2.4
-2020,Nebraska,Cheyenne County,10.0,55172,4.4
+2020,Nebraska,Cheyenne County,10,55172,4.4
 2020,Nebraska,Clay County,9.1,63427,3.2
 2020,Nebraska,Colfax County,8.2,63424,2.9
 2020,Nebraska,Cuming County,7.9,54725,2.5
@@ -1683,8 +1683,8 @@
 2020,Nebraska,Dundy County,12.2,50299,2.2
 2020,Nebraska,Fillmore County,8.5,59309,2.8
 2020,Nebraska,Franklin County,10.4,49104,3.5
-2020,Nebraska,Frontier County,13.0,59061,2.9
-2020,Nebraska,Furnas County,10.0,50762,2.8
+2020,Nebraska,Frontier County,13,59061,2.9
+2020,Nebraska,Furnas County,10,50762,2.8
 2020,Nebraska,Gage County,8.5,61283,4
 2020,Nebraska,Garden County,13.9,41221,3.5
 2020,Nebraska,Garfield County,11.6,49951,2
@@ -1695,7 +1695,7 @@
 2020,Nebraska,Hamilton County,6.7,73759,3.7
 2020,Nebraska,Harlan County,9.9,55010,2.9
 2020,Nebraska,Hayes County,14.7,54280,2.2
-2020,Nebraska,Hitchcock County,12.0,48475,3.5
+2020,Nebraska,Hitchcock County,12,48475,3.5
 2020,Nebraska,Holt County,10.9,56777,2.4
 2020,Nebraska,Hooker County,7.9,53234,2.7
 2020,Nebraska,Howard County,8.8,54291,4.4
@@ -1704,7 +1704,7 @@
 2020,Nebraska,Kearney County,7.6,62260,3.2
 2020,Nebraska,Keith County,11.7,57307,3.2
 2020,Nebraska,Keya Paha County,17.3,47053,2
-2020,Nebraska,Kimball County,11.0,46782,3.5
+2020,Nebraska,Kimball County,11,46782,3.5
 2020,Nebraska,Knox County,13.6,51296,3
 2020,Nebraska,Lancaster County,9.4,65819,4.2
 2020,Nebraska,Lincoln County,9.4,62948,3.9
@@ -1719,7 +1719,7 @@
 2020,Nebraska,Nuckolls County,9.8,60636,2.7
 2020,Nebraska,Otoe County,8.4,68443,3.5
 2020,Nebraska,Pawnee County,12.7,49089,2.8
-2020,Nebraska,Perkins County,10.0,58925,1.8
+2020,Nebraska,Perkins County,10,58925,1.8
 2020,Nebraska,Phelps County,11.3,61442,3
 2020,Nebraska,Pierce County,8.2,56484,3.3
 2020,Nebraska,Platte County,6.6,62776,3.7
@@ -1727,7 +1727,7 @@
 2020,Nebraska,Red Willow County,9.5,55657,3.3
 2020,Nebraska,Richardson County,9.5,51874,3.2
 2020,Nebraska,Rock County,13.3,48461,2.1
-2020,Nebraska,Saline County,8.0,63655,3.6
+2020,Nebraska,Saline County,8,63655,3.6
 2020,Nebraska,Sarpy County,4.9,83104,4.1
 2020,Nebraska,Saunders County,5.7,72526,3.7
 2020,Nebraska,Scotts Bluff County,12.4,53956,4.2
@@ -1747,7 +1747,7 @@
 2020,Nebraska,York County,9.3,63249,3.4
 2020,Nevada,Churchill County,10.3,61650,5.6
 2020,Nevada,Clark County,13.2,62496,14.7
-2020,Nevada,Douglas County,8.0,84317,8.6
+2020,Nevada,Douglas County,8,84317,8.6
 2020,Nevada,Elko County,11.2,73914,5.7
 2020,Nevada,Esmeralda County,14.4,35395,5.2
 2020,Nevada,Eureka County,10.3,68806,3.5
@@ -1774,12 +1774,12 @@
 2020,New Hampshire,Sullivan County,8.9,65881,5.4
 2020,New Jersey,Atlantic County,13.8,61377,17.8
 2020,New Jersey,Bergen County,6.4,107114,9.6
-2020,New Jersey,Burlington County,6.0,92471,8.2
+2020,New Jersey,Burlington County,6,92471,8.2
 2020,New Jersey,Camden County,12.4,71718,10.1
 2020,New Jersey,Cape May County,9.6,75829,13.8
 2020,New Jersey,Cumberland County,13.1,60352,10.8
 2020,New Jersey,Essex County,14.3,65528,11.7
-2020,New Jersey,Gloucester County,7.0,87220,9.3
+2020,New Jersey,Gloucester County,7,87220,9.3
 2020,New Jersey,Hudson County,13.1,77323,10.6
 2020,New Jersey,Hunterdon County,4.1,113611,7.2
 2020,New Jersey,Mercer County,9.5,87581,7.4
@@ -1799,10 +1799,10 @@
 2020,New Mexico,Cibola County,25.1,42705,9.2
 2020,New Mexico,Colfax County,17.2,43265,7.1
 2020,New Mexico,Curry County,14.9,53864,5.5
-2020,New Mexico,DeBaca County,17.0,42319,4.9
+2020,New Mexico,DeBaca County,17,42319,4.9
 2020,New Mexico,Dona Ana County,20.5,46547,8.3
 2020,New Mexico,Eddy County,12.8,66199,6.9
-2020,New Mexico,Grant County,20.0,43557,9
+2020,New Mexico,Grant County,20,43557,9
 2020,New Mexico,Guadalupe County,22.8,38903,6.7
 2020,New Mexico,Harding County,15.1,39913,4.3
 2020,New Mexico,Hidalgo County,19.8,41858,5.8
@@ -1810,10 +1810,10 @@
 2020,New Mexico,Lincoln County,16.9,49115,8.8
 2020,New Mexico,Los Alamos County,3.3,111724,3.7
 2020,New Mexico,Luna County,22.3,39233,15.9
-2020,New Mexico,McKinley County,32.0,35659,10.3
+2020,New Mexico,McKinley County,32,35659,10.3
 2020,New Mexico,Mora County,19.8,40618,8
 2020,New Mexico,Otero County,15.5,46735,8.3
-2020,New Mexico,Quay County,22.0,38389,7.4
+2020,New Mexico,Quay County,22,38389,7.4
 2020,New Mexico,Rio Arriba County,19.7,47400,8.1
 2020,New Mexico,Roosevelt County,18.2,46351,6.2
 2020,New Mexico,Sandoval County,10.4,71991,8.6
@@ -1824,7 +1824,7 @@
 2020,New Mexico,Socorro County,25.1,39478,7.1
 2020,New Mexico,Taos County,18.9,43230,11.6
 2020,New Mexico,Torrance County,21.4,47266,9.5
-2020,New Mexico,Union County,19.0,42676,5.1
+2020,New Mexico,Union County,19,42676,5.1
 2020,New Mexico,Valencia County,15.5,51564,8.2
 2020,New York,Albany County,11.3,70629,7.2
 2020,New York,Allegany County,15.1,53371,8.1
@@ -1873,7 +1873,7 @@
 2020,New York,St. Lawrence County,14.7,51526,8.2
 2020,New York,Saratoga County,6.3,83427,6.7
 2020,New York,Schenectady County,10.9,66292,8.1
-2020,New York,Schoharie County,11.0,59744,7.1
+2020,New York,Schoharie County,11,59744,7.1
 2020,New York,Schuyler County,11.8,54269,8.6
 2020,New York,Seneca County,12.1,56929,8.2
 2020,New York,Steuben County,12.1,54794,8.2
@@ -1900,8 +1900,8 @@
 2020,North Carolina,Brunswick County,11.2,64371,8.8
 2020,North Carolina,Buncombe County,13.9,66156,8.3
 2020,North Carolina,Burke County,18.4,48729,7.2
-2020,North Carolina,Cabarrus County,8.0,79736,7
-2020,North Carolina,Caldwell County,13.0,50235,7.9
+2020,North Carolina,Cabarrus County,8,79736,7
+2020,North Carolina,Caldwell County,13,50235,7.9
 2020,North Carolina,Camden County,7.4,72135,5.5
 2020,North Carolina,Carteret County,9.3,63475,6.2
 2020,North Carolina,Caswell County,15.4,48070,7.8
@@ -1910,32 +1910,32 @@
 2020,North Carolina,Cherokee County,15.1,44449,7.9
 2020,North Carolina,Chowan County,17.3,45365,6.1
 2020,North Carolina,Clay County,16.4,44052,7.4
-2020,North Carolina,Cleveland County,15.0,49041,7.8
+2020,North Carolina,Cleveland County,15,49041,7.8
 2020,North Carolina,Columbus County,21.3,40712,8.2
 2020,North Carolina,Craven County,13.2,53960,6.6
 2020,North Carolina,Cumberland County,18.5,49160,9.5
 2020,North Carolina,Currituck County,9.6,73433,6.3
 2020,North Carolina,Dare County,8.8,72962,9.8
-2020,North Carolina,Davidson County,12.0,56067,7.1
+2020,North Carolina,Davidson County,12,56067,7.1
 2020,North Carolina,Davie County,9.6,65418,6.8
 2020,North Carolina,Duplin County,18.3,49755,5.6
 2020,North Carolina,Durham County,11.7,65619,6.5
 2020,North Carolina,Edgecombe County,24.1,45156,10.6
-2020,North Carolina,Forsyth County,13.0,56158,7.4
-2020,North Carolina,Franklin County,12.0,54868,6.8
+2020,North Carolina,Forsyth County,13,56158,7.4
+2020,North Carolina,Franklin County,12,54868,6.8
 2020,North Carolina,Gaston County,11.8,60622,8
 2020,North Carolina,Gates County,13.2,57680,5.7
 2020,North Carolina,Graham County,16.6,42057,9.9
-2020,North Carolina,Granville County,15.0,53112,5.9
+2020,North Carolina,Granville County,15,53112,5.9
 2020,North Carolina,Greene County,21.3,47605,5.6
 2020,North Carolina,Guilford County,13.3,55577,8.6
 2020,North Carolina,Halifax County,23.9,41098,9.2
 2020,North Carolina,Harnett County,14.4,55586,7.5
 2020,North Carolina,Haywood County,13.6,50492,7.5
-2020,North Carolina,Henderson County,11.0,60550,6.9
+2020,North Carolina,Henderson County,11,60550,6.9
 2020,North Carolina,Hertford County,20.7,46632,7
-2020,North Carolina,Hoke County,15.0,53728,8.7
-2020,North Carolina,Hyde County,20.0,45548,10.2
+2020,North Carolina,Hoke County,15,53728,8.7
+2020,North Carolina,Hyde County,20,45548,10.2
 2020,North Carolina,Iredell County,9.7,61892,7.3
 2020,North Carolina,Jackson County,16.6,49488,7.6
 2020,North Carolina,Johnston County,11.4,63882,6.3
@@ -1945,11 +1945,11 @@
 2020,North Carolina,Lincoln County,11.9,56183,6.6
 2020,North Carolina,McDowell County,15.2,47579,7
 2020,North Carolina,Macon County,12.9,51973,6.7
-2020,North Carolina,Madison County,14.0,49373,6.9
+2020,North Carolina,Madison County,14,49373,6.9
 2020,North Carolina,Martin County,20.1,42264,6.9
-2020,North Carolina,Mecklenburg County,11.0,72340,7.8
-2020,North Carolina,Mitchell County,14.0,49236,7.8
-2020,North Carolina,Montgomery County,16.0,48522,6.7
+2020,North Carolina,Mecklenburg County,11,72340,7.8
+2020,North Carolina,Mitchell County,14,49236,7.8
+2020,North Carolina,Montgomery County,16,48522,6.7
 2020,North Carolina,Moore County,9.3,69413,7.2
 2020,North Carolina,Nash County,14.9,49883,8.4
 2020,North Carolina,New Hanover County,10.2,65615,7.3
@@ -1957,12 +1957,12 @@
 2020,North Carolina,Onslow County,12.5,52885,7.2
 2020,North Carolina,Orange County,10.3,82732,5.4
 2020,North Carolina,Pamlico County,14.7,50481,5.6
-2020,North Carolina,Pasquotank County,14.0,56654,7.3
+2020,North Carolina,Pasquotank County,14,56654,7.3
 2020,North Carolina,Pender County,12.3,59812,6.6
 2020,North Carolina,Perquimans County,14.4,50813,6.7
 2020,North Carolina,Person County,13.5,58991,7.4
 2020,North Carolina,Pitt County,17.1,49955,6.8
-2020,North Carolina,Polk County,12.0,58607,6.2
+2020,North Carolina,Polk County,12,58607,6.2
 2020,North Carolina,Randolph County,14.2,48849,7.4
 2020,North Carolina,Richmond County,21.5,42335,9.2
 2020,North Carolina,Robeson County,26.6,39139,8.8
@@ -1977,7 +1977,7 @@
 2020,North Carolina,Swain County,13.9,47559,8.5
 2020,North Carolina,Transylvania County,12.6,56880,6.1
 2020,North Carolina,Tyrrell County,20.8,42260,8.9
-2020,North Carolina,Union County,7.0,90920,6
+2020,North Carolina,Union County,7,90920,6
 2020,North Carolina,Vance County,21.3,41935,10.1
 2020,North Carolina,Wake County,7.4,88763,6.4
 2020,North Carolina,Warren County,22.8,42808,9.8
@@ -1991,7 +1991,7 @@
 2020,North Dakota,Adams County,10.8,50673,3.8
 2020,North Dakota,Barnes County,9.9,52327,3.9
 2020,North Dakota,Benson County,24.2,51189,6.8
-2020,North Dakota,Billings County,10.0,76478,3.7
+2020,North Dakota,Billings County,10,76478,3.7
 2020,North Dakota,Bottineau County,9.7,61841,5.4
 2020,North Dakota,Bowman County,8.9,67067,3.4
 2020,North Dakota,Burke County,7.9,73567,5.3
@@ -2000,11 +2000,11 @@
 2020,North Dakota,Cavalier County,8.5,54270,3.5
 2020,North Dakota,Dickey County,10.2,60682,3.3
 2020,North Dakota,Divide County,10.7,64594,3.2
-2020,North Dakota,Dunn County,10.0,73722,4.6
+2020,North Dakota,Dunn County,10,73722,4.6
 2020,North Dakota,Eddy County,11.2,54285,4.7
 2020,North Dakota,Emmons County,13.7,49972,5
 2020,North Dakota,Foster County,7.9,63234,3.5
-2020,North Dakota,Golden Valley County,11.0,57596,3.2
+2020,North Dakota,Golden Valley County,11,57596,3.2
 2020,North Dakota,Grand Forks County,12.7,55495,4.6
 2020,North Dakota,Grant County,13.5,48063,2.8
 2020,North Dakota,Griggs County,9.6,53751,3.1
@@ -2012,17 +2012,17 @@
 2020,North Dakota,Kidder County,13.5,49386,5.1
 2020,North Dakota,LaMoure County,10.9,58302,2.6
 2020,North Dakota,Logan County,14.5,47908,3.2
-2020,North Dakota,McHenry County,12.0,59052,5.5
+2020,North Dakota,McHenry County,12,59052,5.5
 2020,North Dakota,McIntosh County,12.2,48839,3.3
 2020,North Dakota,McKenzie County,7.5,84705,7.6
 2020,North Dakota,McLean County,8.4,70835,4.5
-2020,North Dakota,Mercer County,8.0,79608,5.8
+2020,North Dakota,Mercer County,8,79608,5.8
 2020,North Dakota,Morton County,8.3,71928,5.1
-2020,North Dakota,Mountrail County,11.0,68465,5.1
+2020,North Dakota,Mountrail County,11,68465,5.1
 2020,North Dakota,Nelson County,9.8,53008,4.5
 2020,North Dakota,Oliver County,10.7,66708,5.2
 2020,North Dakota,Pembina County,7.6,61595,5.8
-2020,North Dakota,Pierce County,11.0,50827,4.3
+2020,North Dakota,Pierce County,11,50827,4.3
 2020,North Dakota,Ramsey County,12.2,57984,4.5
 2020,North Dakota,Ransom County,9.3,65039,4.1
 2020,North Dakota,Renville County,7.7,67054,4.9
@@ -2032,11 +2032,11 @@
 2020,North Dakota,Sheridan County,16.6,46424,6
 2020,North Dakota,Sioux County,28.3,36182,3.9
 2020,North Dakota,Slope County,13.5,53330,3.1
-2020,North Dakota,Stark County,10.0,66105,7.1
+2020,North Dakota,Stark County,10,66105,7.1
 2020,North Dakota,Steele County,7.9,68163,3
 2020,North Dakota,Stutsman County,10.6,59948,3.5
 2020,North Dakota,Towner County,9.8,57509,2.8
-2020,North Dakota,Traill County,7.0,70384,3.6
+2020,North Dakota,Traill County,7,70384,3.6
 2020,North Dakota,Walsh County,10.6,57557,4.5
 2020,North Dakota,Ward County,8.9,64346,6
 2020,North Dakota,Wells County,10.9,56827,4.4
@@ -2045,7 +2045,7 @@
 2020,Ohio,Allen County,12.9,52558,8.5
 2020,Ohio,Ashland County,11.4,55699,6.5
 2020,Ohio,Ashtabula County,16.5,51252,8.3
-2020,Ohio,Athens County,22.0,42215,7.3
+2020,Ohio,Athens County,22,42215,7.3
 2020,Ohio,Auglaize County,5.9,69468,6.9
 2020,Ohio,Belmont County,12.7,50626,10.1
 2020,Ohio,Brown County,13.6,58067,8.2
@@ -2069,13 +2069,13 @@
 2020,Ohio,Fulton County,8.3,60550,7.9
 2020,Ohio,Gallia County,16.1,50642,8
 2020,Ohio,Geauga County,6.2,84510,6.7
-2020,Ohio,Greene County,9.0,71673,6.4
+2020,Ohio,Greene County,9,71673,6.4
 2020,Ohio,Guernsey County,13.5,45808,8.7
 2020,Ohio,Hamilton County,12.7,63919,7.8
 2020,Ohio,Hancock County,9.3,61473,6.8
 2020,Ohio,Hardin County,15.1,45312,8.1
 2020,Ohio,Harrison County,13.7,49088,9.2
-2020,Ohio,Henry County,8.0,64694,8.1
+2020,Ohio,Henry County,8,64694,8.1
 2020,Ohio,Highland County,14.9,57155,8.7
 2020,Ohio,Hocking County,14.7,53838,7.4
 2020,Ohio,Holmes County,8.4,67967,3.9
@@ -2095,13 +2095,13 @@
 2020,Ohio,Medina County,5.9,79504,7.6
 2020,Ohio,Meigs County,18.8,44622,9.6
 2020,Ohio,Mercer County,5.5,69588,5.4
-2020,Ohio,Miami County,8.0,63699,7
+2020,Ohio,Miami County,8,63699,7
 2020,Ohio,Monroe County,14.6,48944,10.6
 2020,Ohio,Montgomery County,14.7,54692,8.6
-2020,Ohio,Morgan County,15.0,45698,9.3
-2020,Ohio,Morrow County,9.0,68159,7.1
-2020,Ohio,Muskingum County,15.0,52457,7.8
-2020,Ohio,Noble County,15.0,52583,9.6
+2020,Ohio,Morgan County,15,45698,9.3
+2020,Ohio,Morrow County,9,68159,7.1
+2020,Ohio,Muskingum County,15,52457,7.8
+2020,Ohio,Noble County,15,52583,9.6
 2020,Ohio,Ottawa County,7.7,65582,9.1
 2020,Ohio,Paulding County,9.3,62062,7.5
 2020,Ohio,Perry County,13.1,56048,8.4
@@ -2111,7 +2111,7 @@
 2020,Ohio,Preble County,8.8,60856,6.7
 2020,Ohio,Putnam County,6.5,72299,5.6
 2020,Ohio,Richland County,12.7,52295,9
-2020,Ohio,Ross County,15.0,49543,8
+2020,Ohio,Ross County,15,49543,8
 2020,Ohio,Sandusky County,10.4,60455,8.1
 2020,Ohio,Scioto County,22.8,44297,8.7
 2020,Ohio,Seneca County,10.4,58129,8.1
@@ -2120,25 +2120,25 @@
 2020,Ohio,Summit County,12.1,60715,8.2
 2020,Ohio,Trumbull County,15.8,48929,10.4
 2020,Ohio,Tuscarawas County,11.6,58256,7.6
-2020,Ohio,Union County,5.0,92198,5.8
+2020,Ohio,Union County,5,92198,5.8
 2020,Ohio,Van Wert County,7.4,57863,7
 2020,Ohio,Vinton County,16.1,49778,9.1
 2020,Ohio,Warren County,5.2,90600,6.4
 2020,Ohio,Washington County,13.4,53450,8.6
-2020,Ohio,Wayne County,9.0,67708,5.9
+2020,Ohio,Wayne County,9,67708,5.9
 2020,Ohio,Williams County,10.3,52458,7.8
 2020,Ohio,Wood County,9.9,67865,7.1
-2020,Ohio,Wyandot County,7.0,63516,7
+2020,Ohio,Wyandot County,7,63516,7
 2020,Oklahoma,Adair County,22.3,36749,5.8
 2020,Oklahoma,Alfalfa County,15.7,51157,3.6
 2020,Oklahoma,Atoka County,18.6,42618,7
-2020,Oklahoma,Beaver County,11.0,61477,2.7
+2020,Oklahoma,Beaver County,11,61477,2.7
 2020,Oklahoma,Beckham County,18.8,47625,7.5
 2020,Oklahoma,Blaine County,14.5,55643,5.9
 2020,Oklahoma,Bryan County,15.9,45213,5.1
 2020,Oklahoma,Caddo County,18.3,48380,5.9
 2020,Oklahoma,Canadian County,7.6,75452,6
-2020,Oklahoma,Carter County,19.0,46781,7
+2020,Oklahoma,Carter County,19,46781,7
 2020,Oklahoma,Cherokee County,19.6,49553,5.4
 2020,Oklahoma,Choctaw County,19.5,41622,7.6
 2020,Oklahoma,Cimarron County,15.1,50804,2
@@ -2154,23 +2154,23 @@
 2020,Oklahoma,Ellis County,11.2,56763,4.5
 2020,Oklahoma,Garfield County,11.8,61501,5.5
 2020,Oklahoma,Garvin County,16.7,47391,6.2
-2020,Oklahoma,Grady County,12.0,58621,6.1
+2020,Oklahoma,Grady County,12,58621,6.1
 2020,Oklahoma,Grant County,11.7,51399,3.3
 2020,Oklahoma,Greer County,22.9,42010,7.4
 2020,Oklahoma,Harmon County,23.3,40246,3.5
 2020,Oklahoma,Harper County,10.5,57833,3.3
 2020,Oklahoma,Haskell County,19.4,41253,7.8
 2020,Oklahoma,Hughes County,21.4,39333,7.5
-2020,Oklahoma,Jackson County,15.0,56779,4.1
+2020,Oklahoma,Jackson County,15,56779,4.1
 2020,Oklahoma,Jefferson County,17.8,43014,6.7
 2020,Oklahoma,Johnston County,18.3,45361,7.7
 2020,Oklahoma,Kay County,15.3,50256,6.7
-2020,Oklahoma,Kingfisher County,9.0,71450,4.3
-2020,Oklahoma,Kiowa County,18.0,40112,5
+2020,Oklahoma,Kingfisher County,9,71450,4.3
+2020,Oklahoma,Kiowa County,18,40112,5
 2020,Oklahoma,Latimer County,15.9,40831,10
 2020,Oklahoma,Le Flore County,18.1,40632,7
 2020,Oklahoma,Lincoln County,13.8,56957,5.6
-2020,Oklahoma,Logan County,11.0,72617,5.1
+2020,Oklahoma,Logan County,11,72617,5.1
 2020,Oklahoma,Love County,11.7,54219,4.2
 2020,Oklahoma,McClain County,10.4,68563,5.5
 2020,Oklahoma,McCurtain County,18.9,45380,6.6
@@ -2185,13 +2185,13 @@
 2020,Oklahoma,Okfuskee County,21.7,45823,6.6
 2020,Oklahoma,Oklahoma County,15.2,55332,6.4
 2020,Oklahoma,Okmulgee County,14.6,50442,7.2
-2020,Oklahoma,Osage County,13.0,50490,6.4
+2020,Oklahoma,Osage County,13,50490,6.4
 2020,Oklahoma,Ottawa County,18.5,40249,5.7
 2020,Oklahoma,Pawnee County,15.7,51960,6.5
 2020,Oklahoma,Payne County,20.1,39681,5.3
 2020,Oklahoma,Pittsburg County,16.5,50416,7.6
 2020,Oklahoma,Pontotoc County,14.4,50587,5.2
-2020,Oklahoma,Pottawatomie County,16.0,50118,6.1
+2020,Oklahoma,Pottawatomie County,16,50118,6.1
 2020,Oklahoma,Pushmataha County,17.4,38912,6.7
 2020,Oklahoma,Roger Mills County,13.5,51279,4.8
 2020,Oklahoma,Rogers County,8.5,67243,5.8
@@ -2240,17 +2240,17 @@
 2020,Oregon,Wallowa County,11.6,51506,7.1
 2020,Oregon,Wasco County,12.4,55519,7.1
 2020,Oregon,Washington County,7.5,85385,6.5
-2020,Oregon,Wheeler County,14.0,43367,4.3
+2020,Oregon,Wheeler County,14,43367,4.3
 2020,Oregon,Yamhill County,8.7,68266,6.8
-2020,Pennsylvania,Adams County,8.0,70470,6.9
+2020,Pennsylvania,Adams County,8,70470,6.9
 2020,Pennsylvania,Allegheny County,10.5,64236,9
 2020,Pennsylvania,Armstrong County,11.7,52958,9.8
 2020,Pennsylvania,Beaver County,9.1,56649,10.3
-2020,Pennsylvania,Bedford County,11.0,52643,9.1
+2020,Pennsylvania,Bedford County,11,52643,9.1
 2020,Pennsylvania,Berks County,10.9,70057,9.5
 2020,Pennsylvania,Blair County,11.6,52177,8.7
 2020,Pennsylvania,Bradford County,10.7,55787,7.5
-2020,Pennsylvania,Bucks County,6.0,92441,8.3
+2020,Pennsylvania,Bucks County,6,92441,8.3
 2020,Pennsylvania,Butler County,7.4,74721,7.9
 2020,Pennsylvania,Cambria County,12.5,48653,9.5
 2020,Pennsylvania,Cameron County,13.5,46151,12.6
@@ -2274,12 +2274,12 @@
 2020,Pennsylvania,Greene County,12.7,59324,9.7
 2020,Pennsylvania,Huntingdon County,10.7,55282,10.4
 2020,Pennsylvania,Indiana County,13.4,53533,9.1
-2020,Pennsylvania,Jefferson County,11.0,52856,8.8
-2020,Pennsylvania,Juniata County,10.0,59591,7.2
+2020,Pennsylvania,Jefferson County,11,52856,8.8
+2020,Pennsylvania,Juniata County,10,59591,7.2
 2020,Pennsylvania,Lackawanna County,12.2,56911,9.6
 2020,Pennsylvania,Lancaster County,7.7,73006,7.5
 2020,Pennsylvania,Lawrence County,12.9,50373,10.3
-2020,Pennsylvania,Lebanon County,9.0,63605,7.9
+2020,Pennsylvania,Lebanon County,9,63605,7.9
 2020,Pennsylvania,Lehigh County,11.7,65733,9.6
 2020,Pennsylvania,Luzerne County,15.1,52281,10.9
 2020,Pennsylvania,Lycoming County,13.2,56751,8.8
@@ -2288,7 +2288,7 @@
 2020,Pennsylvania,Mifflin County,13.2,54517,8.4
 2020,Pennsylvania,Monroe County,10.5,71686,11.5
 2020,Pennsylvania,Montgomery County,5.6,94094,7.6
-2020,Pennsylvania,Montour County,9.0,63341,6.1
+2020,Pennsylvania,Montour County,9,63341,6.1
 2020,Pennsylvania,Northampton County,7.6,73903,9
 2020,Pennsylvania,Northumberland County,12.1,47825,9.4
 2020,Pennsylvania,Perry County,8.5,68991,6.8
@@ -2302,7 +2302,7 @@
 2020,Pennsylvania,Susquehanna County,11.6,55560,7.3
 2020,Pennsylvania,Tioga County,11.5,47683,9
 2020,Pennsylvania,Union County,11.1,62306,6.8
-2020,Pennsylvania,Venango County,14.0,52559,8.9
+2020,Pennsylvania,Venango County,14,52559,8.9
 2020,Pennsylvania,Warren County,11.1,52729,8.1
 2020,Pennsylvania,Washington County,8.6,65808,9.4
 2020,Pennsylvania,Wayne County,10.5,55627,9.2
@@ -2315,10 +2315,10 @@
 2020,Rhode Island,Providence County,12.4,67752,10.2
 2020,Rhode Island,Washington County,7.8,83925,7.8
 2020,South Carolina,Abbeville County,15.3,47219,6.6
-2020,South Carolina,Aiken County,13.0,57128,5
+2020,South Carolina,Aiken County,13,57128,5
 2020,South Carolina,Allendale County,31.6,32701,9.4
-2020,South Carolina,Anderson County,14.0,52667,5.9
-2020,South Carolina,Bamberg County,21.0,39969,9
+2020,South Carolina,Anderson County,14,52667,5.9
+2020,South Carolina,Bamberg County,21,39969,9
 2020,South Carolina,Barnwell County,21.6,41717,7.4
 2020,South Carolina,Beaufort County,9.6,76515,5.4
 2020,South Carolina,Berkeley County,11.1,70371,5.6
@@ -2344,16 +2344,16 @@
 2020,South Carolina,Kershaw County,14.4,60397,5.3
 2020,South Carolina,Lancaster County,11.4,63019,6.9
 2020,South Carolina,Laurens County,18.4,43766,6.9
-2020,South Carolina,Lee County,23.0,40400,7.6
+2020,South Carolina,Lee County,23,40400,7.6
 2020,South Carolina,Lexington County,10.4,62839,4.4
-2020,South Carolina,McCormick County,17.0,50698,6.7
+2020,South Carolina,McCormick County,17,50698,6.7
 2020,South Carolina,Marion County,21.8,38498,7.8
-2020,South Carolina,Marlboro County,26.0,38877,9.8
+2020,South Carolina,Marlboro County,26,38877,9.8
 2020,South Carolina,Newberry County,16.4,52202,4.8
 2020,South Carolina,Oconee County,11.1,58061,5.4
 2020,South Carolina,Orangeburg County,19.1,41335,9
 2020,South Carolina,Pickens County,15.3,54588,5.3
-2020,South Carolina,Richland County,16.0,56993,5.8
+2020,South Carolina,Richland County,16,56993,5.8
 2020,South Carolina,Saluda County,17.4,46216,4.3
 2020,South Carolina,Spartanburg County,14.2,53485,6.6
 2020,South Carolina,Sumter County,20.5,45724,6.8
@@ -2363,17 +2363,17 @@
 2020,South Dakota,Aurora County,10.2,54916,3.2
 2020,South Dakota,Beadle County,12.6,54033,3.9
 2020,South Dakota,Bennett County,28.3,45478,5
-2020,South Dakota,Bon Homme County,15.0,52890,4.1
+2020,South Dakota,Bon Homme County,15,52890,4.1
 2020,South Dakota,Brookings County,9.9,64542,4.4
 2020,South Dakota,Brown County,9.1,64993,4.4
 2020,South Dakota,Brule County,13.7,56691,4.4
 2020,South Dakota,Buffalo County,32.8,22901,8
 2020,South Dakota,Butte County,12.5,52346,5.4
 2020,South Dakota,Campbell County,10.7,52931,3.7
-2020,South Dakota,Charles Mix County,24.0,44865,6.3
+2020,South Dakota,Charles Mix County,24,44865,6.3
 2020,South Dakota,Clark County,12.3,54164,3.9
 2020,South Dakota,Clay County,16.2,49834,4.5
-2020,South Dakota,Codington County,9.0,62123,4.9
+2020,South Dakota,Codington County,9,62123,4.9
 2020,South Dakota,Corson County,37.1,29860,5
 2020,South Dakota,Custer County,9.7,66654,6
 2020,South Dakota,Davison County,10.7,53664,4.2
@@ -2390,7 +2390,7 @@
 2020,South Dakota,Hamlin County,8.9,62651,3.5
 2020,South Dakota,Hand County,9.1,59237,2.7
 2020,South Dakota,Hanson County,10.4,62597,5.2
-2020,South Dakota,Harding County,11.0,58732,3.6
+2020,South Dakota,Harding County,11,58732,3.6
 2020,South Dakota,Hughes County,9.4,70615,3.4
 2020,South Dakota,Hutchinson County,12.8,54669,3.8
 2020,South Dakota,Hyde County,11.5,55510,3.1
@@ -2423,31 +2423,31 @@
 2020,South Dakota,Tripp County,19.3,46162,3.1
 2020,South Dakota,Turner County,8.8,62754,3.9
 2020,South Dakota,Union County,5.9,82574,5.1
-2020,South Dakota,Walworth County,15.0,45288,6.1
+2020,South Dakota,Walworth County,15,45288,6.1
 2020,South Dakota,Yankton County,10.4,57075,4.6
 2020,South Dakota,Ziebach County,43.9,31599,4.8
 2020,Tennessee,Anderson County,13.3,53002,6.7
-2020,Tennessee,Bedford County,13.0,58593,7.9
+2020,Tennessee,Bedford County,13,58593,7.9
 2020,Tennessee,Benton County,16.9,44759,8.2
 2020,Tennessee,Bledsoe County,20.8,45780,8.6
 2020,Tennessee,Blount County,9.2,67576,6.4
 2020,Tennessee,Bradley County,13.8,49802,6.6
-2020,Tennessee,Campbell County,20.0,42331,7.6
+2020,Tennessee,Campbell County,20,42331,7.6
 2020,Tennessee,Cannon County,13.3,50628,6.5
 2020,Tennessee,Carroll County,16.7,47390,7.4
 2020,Tennessee,Carter County,16.1,44786,7
 2020,Tennessee,Cheatham County,8.7,78330,5.6
 2020,Tennessee,Chester County,15.2,42839,5.7
 2020,Tennessee,Claiborne County,18.9,43365,7
-2020,Tennessee,Clay County,21.0,37683,8.1
+2020,Tennessee,Clay County,21,37683,8.1
 2020,Tennessee,Cocke County,19.7,41576,10.2
 2020,Tennessee,Coffee County,13.8,55177,7.8
 2020,Tennessee,Crockett County,15.2,50046,5.9
-2020,Tennessee,Cumberland County,12.0,52529,7.7
+2020,Tennessee,Cumberland County,12,52529,7.7
 2020,Tennessee,Davidson County,12.8,64418,8
 2020,Tennessee,Decatur County,17.1,47232,8.6
 2020,Tennessee,DeKalb County,17.5,51002,9.1
-2020,Tennessee,Dickson County,11.0,60309,5.9
+2020,Tennessee,Dickson County,11,60309,5.9
 2020,Tennessee,Dyer County,16.7,50906,8
 2020,Tennessee,Fayette County,10.2,73132,6.4
 2020,Tennessee,Fentress County,19.4,43931,6.5
@@ -2457,10 +2457,10 @@
 2020,Tennessee,Grainger County,14.2,45056,7.2
 2020,Tennessee,Greene County,16.4,43164,8.3
 2020,Tennessee,Grundy County,18.2,41133,9.8
-2020,Tennessee,Hamblen County,15.0,48047,7.1
+2020,Tennessee,Hamblen County,15,48047,7.1
 2020,Tennessee,Hamilton County,13.3,61478,7.1
 2020,Tennessee,Hancock County,28.6,33109,8.4
-2020,Tennessee,Hardeman County,22.0,44937,8.2
+2020,Tennessee,Hardeman County,22,44937,8.2
 2020,Tennessee,Hardin County,14.8,46776,7.1
 2020,Tennessee,Hawkins County,15.5,52898,7.7
 2020,Tennessee,Haywood County,18.7,43742,8.9
@@ -2479,14 +2479,14 @@
 2020,Tennessee,Lewis County,14.3,48288,7.5
 2020,Tennessee,Lincoln County,12.4,56661,8.6
 2020,Tennessee,Loudon County,10.6,70292,6.4
-2020,Tennessee,McMinn County,14.0,50297,7.8
-2020,Tennessee,McNairy County,15.0,44341,8.7
+2020,Tennessee,McMinn County,14,50297,7.8
+2020,Tennessee,McNairy County,15,44341,8.7
 2020,Tennessee,Macon County,16.7,47031,6.5
 2020,Tennessee,Madison County,22.2,47580,7.5
 2020,Tennessee,Marion County,14.7,50941,7.6
 2020,Tennessee,Marshall County,12.1,58073,9.1
 2020,Tennessee,Maury County,9.9,65942,8.1
-2020,Tennessee,Meigs County,16.0,49242,8.6
+2020,Tennessee,Meigs County,16,49242,8.6
 2020,Tennessee,Monroe County,13.8,50945,8
 2020,Tennessee,Montgomery County,10.8,60779,7.6
 2020,Tennessee,Moore County,9.8,64271,5.4
@@ -2496,8 +2496,8 @@
 2020,Tennessee,Perry County,16.1,46366,9.5
 2020,Tennessee,Pickett County,16.5,40120,6.1
 2020,Tennessee,Polk County,12.4,48184,6.9
-2020,Tennessee,Putnam County,17.0,47120,6.6
-2020,Tennessee,Rhea County,15.0,45724,9.8
+2020,Tennessee,Putnam County,17,47120,6.6
+2020,Tennessee,Rhea County,15,45724,9.8
 2020,Tennessee,Roane County,13.5,58988,6.6
 2020,Tennessee,Robertson County,9.2,63918,6.1
 2020,Tennessee,Rutherford County,8.8,73980,6.9
@@ -2520,29 +2520,29 @@
 2020,Tennessee,Weakley County,16.9,46979,5.8
 2020,Tennessee,White County,13.8,46475,7.1
 2020,Tennessee,Williamson County,4.1,118257,4.8
-2020,Tennessee,Wilson County,8.0,77822,6.3
+2020,Tennessee,Wilson County,8,77822,6.3
 2020,Texas,Anderson County,20.9,50879,5.6
 2020,Texas,Andrews County,9.2,76600,8.2
-2020,Texas,Angelina County,17.0,49943,7.6
+2020,Texas,Angelina County,17,49943,7.6
 2020,Texas,Aransas County,17.1,51461,8.5
 2020,Texas,Archer County,6.9,69566,5.3
 2020,Texas,Armstrong County,9.3,62256,4.3
 2020,Texas,Atascosa County,14.9,60594,8.4
 2020,Texas,Austin County,11.4,60593,6.6
 2020,Texas,Bailey County,14.4,48259,4.8
-2020,Texas,Bandera County,11.0,64389,5.8
+2020,Texas,Bandera County,11,64389,5.8
 2020,Texas,Bastrop County,10.8,74612,6
 2020,Texas,Baylor County,15.3,44392,3.5
 2020,Texas,Bee County,23.1,46316,9.8
 2020,Texas,Bell County,14.7,53639,7
-2020,Texas,Bexar County,15.0,60477,7.5
+2020,Texas,Bexar County,15,60477,7.5
 2020,Texas,Blanco County,9.8,66383,3.8
 2020,Texas,Borden County,7.5,69499,3.3
 2020,Texas,Bosque County,12.5,58056,5.5
 2020,Texas,Bowie County,17.4,50326,7.4
 2020,Texas,Brazoria County,8.3,83576,8.6
 2020,Texas,Brazos County,22.3,53570,5.3
-2020,Texas,Brewster County,14.0,48537,6.7
+2020,Texas,Brewster County,14,48537,6.7
 2020,Texas,Briscoe County,13.4,50062,4.8
 2020,Texas,Brooks County,28.7,33513,10.7
 2020,Texas,Brown County,15.6,48752,6.5
@@ -2562,7 +2562,7 @@
 2020,Texas,Clay County,11.1,62763,5.5
 2020,Texas,Cochran County,19.2,44584,7.1
 2020,Texas,Coke County,11.4,51050,5.5
-2020,Texas,Coleman County,16.0,43623,7.4
+2020,Texas,Coleman County,16,43623,7.4
 2020,Texas,Collin County,6.2,101560,6.3
 2020,Texas,Collingsworth County,16.9,47885,4.3
 2020,Texas,Colorado County,12.7,52726,5.6
@@ -2572,7 +2572,7 @@
 2020,Texas,Cooke County,11.3,66323,7.1
 2020,Texas,Coryell County,12.7,58398,6.6
 2020,Texas,Cottle County,17.9,44430,4.9
-2020,Texas,Crane County,9.0,67547,13.6
+2020,Texas,Crane County,9,67547,13.6
 2020,Texas,Crockett County,12.4,54458,8.9
 2020,Texas,Crosby County,19.8,42804,5.2
 2020,Texas,Culberson County,18.6,47479,6.5
@@ -2586,14 +2586,14 @@
 2020,Texas,Dickens County,18.9,42034,6.3
 2020,Texas,Dimmit County,25.5,42788,6.4
 2020,Texas,Donley County,16.3,57526,4.4
-2020,Texas,Duval County,20.0,40601,12.1
-2020,Texas,Eastland County,17.0,50317,6.7
+2020,Texas,Duval County,20,40601,12.1
+2020,Texas,Eastland County,17,50317,6.7
 2020,Texas,Ector County,13.6,62669,11
 2020,Texas,Edwards County,19.1,45330,3.5
 2020,Texas,Ellis County,7.9,79849,6
 2020,Texas,El Paso County,17.6,48522,8.3
 2020,Texas,Erath County,12.6,61453,5.7
-2020,Texas,Falls County,20.0,44590,6
+2020,Texas,Falls County,20,44590,6
 2020,Texas,Fannin County,15.4,59746,4.7
 2020,Texas,Fayette County,9.4,63713,4.7
 2020,Texas,Fisher County,13.3,52828,4.5
@@ -2619,21 +2619,21 @@
 2020,Texas,Hall County,18.6,36654,5.8
 2020,Texas,Hamilton County,14.7,52840,4.5
 2020,Texas,Hansford County,10.7,61059,3.5
-2020,Texas,Hardeman County,15.0,63479,4.4
+2020,Texas,Hardeman County,15,63479,4.4
 2020,Texas,Hardin County,10.4,69151,9
 2020,Texas,Harris County,15.9,61906,8.9
 2020,Texas,Harrison County,15.6,55198,7.9
 2020,Texas,Hartley County,9.5,74686,2.1
-2020,Texas,Haskell County,20.0,44847,4.3
+2020,Texas,Haskell County,20,44847,4.3
 2020,Texas,Hays County,9.6,77511,6.3
 2020,Texas,Hemphill County,9.5,65718,4.4
 2020,Texas,Henderson County,14.2,52660,6.4
 2020,Texas,Hidalgo County,23.9,46653,11.6
-2020,Texas,Hill County,14.0,56565,6.3
+2020,Texas,Hill County,14,56565,6.3
 2020,Texas,Hockley County,12.9,55469,7.9
 2020,Texas,Hood County,9.4,85449,6.6
 2020,Texas,Hopkins County,12.7,53634,5.1
-2020,Texas,Houston County,20.0,45989,5.3
+2020,Texas,Houston County,20,45989,5.3
 2020,Texas,Howard County,15.7,58445,8.1
 2020,Texas,Hudspeth County,24.2,40666,8
 2020,Texas,Hunt County,12.6,53760,6.5
@@ -2661,28 +2661,28 @@
 2020,Texas,Knox County,16.3,46053,5.6
 2020,Texas,Lamar County,19.6,44688,6.5
 2020,Texas,Lamb County,17.6,48123,5.2
-2020,Texas,Lampasas County,10.0,69051,5.4
-2020,Texas,La Salle County,24.0,45647,6.8
+2020,Texas,Lampasas County,10,69051,5.4
+2020,Texas,La Salle County,24,45647,6.8
 2020,Texas,Lavaca County,10.6,57999,5.2
 2020,Texas,Lee County,10.6,61444,4.9
 2020,Texas,Leon County,13.8,52878,7.8
 2020,Texas,Liberty County,14.4,61230,10.6
 2020,Texas,Limestone County,16.8,53143,7.1
 2020,Texas,Lipscomb County,11.3,67775,4.2
-2020,Texas,Live Oak County,17.0,54031,7.5
+2020,Texas,Live Oak County,17,54031,7.5
 2020,Texas,Llano County,10.9,60706,5.7
 2020,Texas,Loving County,3.9,97491,1.7
 2020,Texas,Lubbock County,15.8,56477,5.7
 2020,Texas,Lynn County,14.4,51003,5.4
 2020,Texas,McCulloch County,16.2,47617,7.5
-2020,Texas,McLennan County,17.0,55148,6.2
+2020,Texas,McLennan County,17,55148,6.2
 2020,Texas,McMullen County,9.7,45927,2.8
 2020,Texas,Madison County,17.4,58674,7.2
-2020,Texas,Marion County,20.0,42024,8.2
+2020,Texas,Marion County,20,42024,8.2
 2020,Texas,Martin County,11.1,73367,6.1
 2020,Texas,Mason County,9.8,63120,5.6
 2020,Texas,Matagorda County,17.3,52241,10.5
-2020,Texas,Maverick County,20.0,41324,15
+2020,Texas,Maverick County,20,41324,15
 2020,Texas,Medina County,11.2,62600,6.3
 2020,Texas,Menard County,19.1,41477,5.2
 2020,Texas,Midland County,9.7,92117,8.1
@@ -2692,7 +2692,7 @@
 2020,Texas,Montague County,12.4,56012,6.6
 2020,Texas,Montgomery County,8.2,85348,7.5
 2020,Texas,Moore County,10.6,53341,3.8
-2020,Texas,Morris County,17.0,45122,11.4
+2020,Texas,Morris County,17,45122,11.4
 2020,Texas,Motley County,16.3,46712,4.6
 2020,Texas,Nacogdoches County,19.5,49375,6.6
 2020,Texas,Navarro County,14.8,50778,6.2
@@ -2700,14 +2700,14 @@
 2020,Texas,Nolan County,17.2,41720,5.3
 2020,Texas,Nueces County,17.5,55727,9
 2020,Texas,Ochiltree County,9.2,71477,5.8
-2020,Texas,Oldham County,14.0,61013,3.9
+2020,Texas,Oldham County,14,61013,3.9
 2020,Texas,Orange County,15.1,61323,10.5
 2020,Texas,Palo Pinto County,13.9,59450,7
 2020,Texas,Panola County,15.3,51936,8.4
-2020,Texas,Parker County,8.0,88617,5.9
+2020,Texas,Parker County,8,88617,5.9
 2020,Texas,Parmer County,12.2,61989,2.6
 2020,Texas,Pecos County,16.5,52792,8.1
-2020,Texas,Polk County,15.0,47535,8.7
+2020,Texas,Polk County,15,47535,8.7
 2020,Texas,Potter County,20.8,45903,5.5
 2020,Texas,Presidio County,19.4,39967,14.7
 2020,Texas,Rains County,13.6,59195,4.7
@@ -2715,14 +2715,14 @@
 2020,Texas,Reagan County,8.3,66711,9.7
 2020,Texas,Real County,16.4,43076,6.7
 2020,Texas,Red River County,15.7,46727,6.4
-2020,Texas,Reeves County,19.0,64863,7.1
+2020,Texas,Reeves County,19,64863,7.1
 2020,Texas,Refugio County,15.3,48433,8.2
 2020,Texas,Roberts County,6.4,69927,4.6
 2020,Texas,Robertson County,14.2,55218,6.4
 2020,Texas,Rockwall County,4.8,106225,6
 2020,Texas,Runnels County,14.3,50972,4.9
 2020,Texas,Rusk County,14.2,56954,7.3
-2020,Texas,Sabine County,16.0,51046,10.8
+2020,Texas,Sabine County,16,51046,10.8
 2020,Texas,San Augustine County,19.6,45781,9.6
 2020,Texas,San Jacinto County,16.1,51575,8.1
 2020,Texas,San Patricio County,14.8,56944,10.3
@@ -2730,7 +2730,7 @@
 2020,Texas,Schleicher County,13.2,54471,6.9
 2020,Texas,Scurry County,13.8,57158,8.2
 2020,Texas,Shackelford County,12.5,64931,5.3
-2020,Texas,Shelby County,18.0,41194,6.8
+2020,Texas,Shelby County,18,41194,6.8
 2020,Texas,Sherman County,11.3,66408,3.1
 2020,Texas,Smith County,12.7,60735,6.8
 2020,Texas,Somervell County,8.3,67984,6.5
@@ -2742,34 +2742,34 @@
 2020,Texas,Swisher County,19.6,39897,5.2
 2020,Texas,Tarrant County,10.5,72064,7.3
 2020,Texas,Taylor County,12.2,52974,5.5
-2020,Texas,Terrell County,14.0,42849,4.6
+2020,Texas,Terrell County,14,42849,4.6
 2020,Texas,Terry County,18.5,47292,7.3
 2020,Texas,Throckmorton County,13.5,46820,4.9
 2020,Texas,Titus County,14.3,52973,6.7
-2020,Texas,Tom Green County,12.0,55990,6.3
+2020,Texas,Tom Green County,12,55990,6.3
 2020,Texas,Travis County,10.2,82605,6.3
 2020,Texas,Trinity County,16.8,47685,8.1
 2020,Texas,Tyler County,18.9,48809,9.9
 2020,Texas,Upshur County,12.6,58231,7.7
 2020,Texas,Upton County,12.1,59593,5.6
-2020,Texas,Uvalde County,19.0,49275,6.4
+2020,Texas,Uvalde County,19,49275,6.4
 2020,Texas,Val Verde County,15.6,54346,7.9
 2020,Texas,Van Zandt County,12.9,57891,6.1
 2020,Texas,Victoria County,16.5,53583,8.3
-2020,Texas,Walker County,18.0,43002,7.2
+2020,Texas,Walker County,18,43002,7.2
 2020,Texas,Waller County,12.6,69460,7.8
 2020,Texas,Ward County,9.8,57257,9.4
 2020,Texas,Washington County,11.7,62667,5.6
 2020,Texas,Webb County,19.9,56588,8.5
 2020,Texas,Wharton County,13.8,55887,6.8
 2020,Texas,Wheeler County,13.5,49838,6
-2020,Texas,Wichita County,16.0,54659,6.7
+2020,Texas,Wichita County,16,54659,6.7
 2020,Texas,Wilbarger County,14.6,51774,5.9
 2020,Texas,Willacy County,24.7,40190,12
 2020,Texas,Williamson County,5.6,91507,5.9
 2020,Texas,Wilson County,9.4,74529,5.7
 2020,Texas,Winkler County,11.8,77960,9.3
-2020,Texas,Wise County,10.0,71636,6.5
+2020,Texas,Wise County,10,71636,6.5
 2020,Texas,Wood County,13.5,61886,6.6
 2020,Texas,Yoakum County,10.8,67132,11.9
 2020,Texas,Young County,14.8,54569,5.3
@@ -2780,22 +2780,22 @@
 2020,Utah,Cache County,9.2,65391,2.9
 2020,Utah,Carbon County,12.8,51902,5.2
 2020,Utah,Daggett County,6.5,63461,4.5
-2020,Utah,Davis County,5.0,92253,4.1
+2020,Utah,Davis County,5,92253,4.1
 2020,Utah,Duchesne County,10.6,61709,7.7
 2020,Utah,Emery County,9.3,64144,4.7
 2020,Utah,Garfield County,9.7,47638,10.2
 2020,Utah,Grand County,10.4,58852,9.5
 2020,Utah,Iron County,13.7,52942,4.5
 2020,Utah,Juab County,7.7,70086,2.9
-2020,Utah,Kane County,9.0,58352,5.4
+2020,Utah,Kane County,9,58352,5.4
 2020,Utah,Millard County,10.7,60316,3.2
 2020,Utah,Morgan County,3.7,103746,3.3
 2020,Utah,Piute County,15.3,47206,6.3
 2020,Utah,Rich County,8.4,75531,3.4
-2020,Utah,Salt Lake County,7.0,79294,5.1
+2020,Utah,Salt Lake County,7,79294,5.1
 2020,Utah,San Juan County,18.6,50686,10.2
 2020,Utah,Sanpete County,14.1,55033,3.7
-2020,Utah,Sevier County,10.0,56318,4.2
+2020,Utah,Sevier County,10,56318,4.2
 2020,Utah,Summit County,4.5,115756,7.2
 2020,Utah,Tooele County,5.7,79101,4.8
 2020,Utah,Uintah County,10.8,63282,9.2
@@ -2806,7 +2806,7 @@
 2020,Utah,Weber County,7.3,72091,4.8
 2020,Vermont,Addison County,8.4,73049,5
 2020,Vermont,Bennington County,10.4,65528,6.6
-2020,Vermont,Caledonia County,11.0,52203,5.8
+2020,Vermont,Caledonia County,11,52203,5.8
 2020,Vermont,Chittenden County,8.5,80539,4.8
 2020,Vermont,Essex County,12.7,50956,6.5
 2020,Vermont,Franklin County,8.9,62763,5.3
@@ -2814,17 +2814,17 @@
 2020,Vermont,Lamoille County,8.1,57909,7.8
 2020,Vermont,Orange County,9.6,60624,4.8
 2020,Vermont,Orleans County,10.6,56721,7.9
-2020,Vermont,Rutland County,12.0,62289,6.9
-2020,Vermont,Washington County,8.0,70061,4.8
+2020,Vermont,Rutland County,12,62289,6.9
+2020,Vermont,Washington County,8,70061,4.8
 2020,Vermont,Windham County,11.3,59017,6.3
 2020,Vermont,Windsor County,8.6,60842,5.3
 2020,Virginia,Accomack County,17.6,44127,6.5
 2020,Virginia,Albemarle County,6.3,79708,5.4
 2020,Virginia,Alleghany County,11.7,52281,6.5
-2020,Virginia,Amelia County,9.0,70511,5.8
+2020,Virginia,Amelia County,9,70511,5.8
 2020,Virginia,Amherst County,11.2,61111,5.6
 2020,Virginia,Appomattox County,12.6,55152,5.8
-2020,Virginia,Arlington County,6.0,125004,4.5
+2020,Virginia,Arlington County,6,125004,4.5
 2020,Virginia,Augusta County,8.3,67698,4.6
 2020,Virginia,Bath County,11.2,56165,9.9
 2020,Virginia,Bedford County,6.8,70004,5.1
@@ -2847,7 +2847,7 @@
 2020,Virginia,Dinwiddie County,11.1,63567,6.4
 2020,Virginia,Essex County,12.3,56134,7
 2020,Virginia,Fairfax County,5.3,132509,5.8
-2020,Virginia,Fauquier County,6.0,106977,4.7
+2020,Virginia,Fauquier County,6,106977,4.7
 2020,Virginia,Floyd County,10.9,54262,5.1
 2020,Virginia,Fluvanna County,6.8,79598,5.3
 2020,Virginia,Franklin County,11.5,61714,5.5
@@ -2859,17 +2859,17 @@
 2020,Virginia,Greene County,8.1,70046,5.2
 2020,Virginia,Greensville County,21.5,48578,6.8
 2020,Virginia,Halifax County,17.8,43386,7
-2020,Virginia,Hanover County,5.0,97717,4.8
+2020,Virginia,Hanover County,5,97717,4.8
 2020,Virginia,Henrico County,8.3,80105,6.5
 2020,Virginia,Henry County,12.9,41706,7.6
 2020,Virginia,Highland County,12.2,52898,3.7
 2020,Virginia,Isle of Wight County,7.6,75481,5.1
 2020,Virginia,James City County,6.5,86501,6.9
 2020,Virginia,King and Queen County,11.1,60133,5.1
-2020,Virginia,King George County,6.0,90786,4.5
+2020,Virginia,King George County,6,90786,4.5
 2020,Virginia,King William County,6.2,79313,5.4
 2020,Virginia,Lancaster County,10.3,55539,7.2
-2020,Virginia,Lee County,26.0,38229,6.4
+2020,Virginia,Lee County,26,38229,6.4
 2020,Virginia,Loudoun County,3.2,155362,5.3
 2020,Virginia,Louisa County,7.9,69907,5.2
 2020,Virginia,Lunenburg County,16.5,47384,5.3
@@ -2886,15 +2886,15 @@
 2020,Virginia,Orange County,9.4,73226,5.6
 2020,Virginia,Page County,11.3,52107,7.3
 2020,Virginia,Patrick County,14.2,46149,6.9
-2020,Virginia,Pittsylvania County,14.0,49124,6.5
+2020,Virginia,Pittsylvania County,14,49124,6.5
 2020,Virginia,Powhatan County,5.3,98465,4.8
 2020,Virginia,Prince Edward County,23.6,47968,6.5
 2020,Virginia,Prince George County,8.2,75717,6.5
 2020,Virginia,Prince William County,4.9,111117,6.5
 2020,Virginia,Pulaski County,12.5,50530,7.9
 2020,Virginia,Rappahannock County,8.9,76634,4.5
-2020,Virginia,Richmond County,16.0,55870,4.9
-2020,Virginia,Roanoke County,6.0,71613,5.1
+2020,Virginia,Richmond County,16,55870,4.9
+2020,Virginia,Roanoke County,6,71613,5.1
 2020,Virginia,Rockbridge County,10.5,55684,5.5
 2020,Virginia,Rockingham County,8.3,62609,4.7
 2020,Virginia,Russell County,16.2,43206,6.6
@@ -2911,11 +2911,11 @@
 2020,Virginia,Washington County,13.2,53785,5.8
 2020,Virginia,Westmoreland County,12.9,59343,5.9
 2020,Virginia,Wise County,20.3,41723,7.6
-2020,Virginia,Wythe County,12.0,54399,7.7
+2020,Virginia,Wythe County,12,54399,7.7
 2020,Virginia,York County,4.7,91711,5.6
-2020,Virginia,Alexandria city,8.0,99763,6
+2020,Virginia,Alexandria city,8,99763,6
 2020,Virginia,Bristol city,17.2,41444,7.7
-2020,Virginia,Buena Vista city,14.0,48837,5.7
+2020,Virginia,Buena Vista city,14,48837,5.7
 2020,Virginia,Charlottesville city,15.8,70501,6.4
 2020,Virginia,Chesapeake city,7.6,80402,6.1
 2020,Virginia,Colonial Heights city,8.7,67339,7.1
@@ -2944,9 +2944,9 @@
 2020,Virginia,Radford city,24.6,42938,6.3
 2020,Virginia,Richmond city,17.9,54815,8.8
 2020,Virginia,Roanoke city,15.9,49313,7.7
-2020,Virginia,Salem city,9.0,70349,5.8
+2020,Virginia,Salem city,9,70349,5.8
 2020,Virginia,Staunton city,12.3,51230,6.3
-2020,Virginia,Suffolk city,9.0,72264,6.5
+2020,Virginia,Suffolk city,9,72264,6.5
 2020,Virginia,Virginia Beach city,8.1,73961,6.2
 2020,Virginia,Waynesboro city,11.3,53635,6.5
 2020,Virginia,Williamsburg city,16.8,60655,8.2
@@ -2970,7 +2970,7 @@
 2020,Washington,King County,7.6,102620,7.5
 2020,Washington,Kitsap County,8.3,76814,7.7
 2020,Washington,Kittitas County,12.9,64727,9
-2020,Washington,Klickitat County,14.0,57476,8.2
+2020,Washington,Klickitat County,14,57476,8.2
 2020,Washington,Lewis County,13.3,54578,9.4
 2020,Washington,Lincoln County,11.4,61332,6.8
 2020,Washington,Mason County,12.6,63785,9.8
@@ -2983,7 +2983,7 @@
 2020,Washington,Skamania County,10.6,68501,9.2
 2020,Washington,Snohomish County,7.1,93589,8.5
 2020,Washington,Spokane County,13.4,60827,8.8
-2020,Washington,Stevens County,15.0,50958,9.4
+2020,Washington,Stevens County,15,50958,9.4
 2020,Washington,Thurston County,9.7,79769,8.3
 2020,Washington,Wahkiakum County,10.7,62099,8.8
 2020,Washington,Walla Walla County,12.9,61281,6.9
@@ -2991,20 +2991,20 @@
 2020,Washington,Whitman County,15.7,52066,5.9
 2020,Washington,Yakima County,14.8,56353,9.7
 2020,West Virginia,Barbour County,20.8,43773,8.3
-2020,West Virginia,Berkeley County,10.0,67163,6.2
+2020,West Virginia,Berkeley County,10,67163,6.2
 2020,West Virginia,Boone County,17.8,49076,10.5
 2020,West Virginia,Braxton County,17.8,47959,10.4
 2020,West Virginia,Brooke County,11.9,50381,9
 2020,West Virginia,Cabell County,19.9,44161,8
-2020,West Virginia,Calhoun County,20.0,41726,16.1
+2020,West Virginia,Calhoun County,20,41726,16.1
 2020,West Virginia,Clay County,23.3,36537,12.5
-2020,West Virginia,Doddridge County,17.0,50445,6.3
+2020,West Virginia,Doddridge County,17,50445,6.3
 2020,West Virginia,Fayette County,20.8,41964,10
-2020,West Virginia,Gilmer County,23.0,41579,10.1
+2020,West Virginia,Gilmer County,23,41579,10.1
 2020,West Virginia,Grant County,13.3,45624,6.5
 2020,West Virginia,Greenbrier County,17.8,40016,8.1
 2020,West Virginia,Hampshire County,13.7,53333,5.5
-2020,West Virginia,Hancock County,12.0,52305,10
+2020,West Virginia,Hancock County,12,52305,10
 2020,West Virginia,Hardy County,13.5,47469,7.2
 2020,West Virginia,Harrison County,13.6,52075,7.9
 2020,West Virginia,Jackson County,14.2,52123,8.6
@@ -3022,11 +3022,11 @@
 2020,West Virginia,Mingo County,24.9,32955,14.3
 2020,West Virginia,Monongalia County,15.2,55836,6.3
 2020,West Virginia,Monroe County,15.3,46879,7.1
-2020,West Virginia,Morgan County,11.0,57432,6
-2020,West Virginia,Nicholas County,19.0,42725,10.3
+2020,West Virginia,Morgan County,11,57432,6
+2020,West Virginia,Nicholas County,19,42725,10.3
 2020,West Virginia,Ohio County,18.1,41312,8.4
 2020,West Virginia,Pendleton County,11.5,47167,4.9
-2020,West Virginia,Pleasants County,13.0,55313,11.1
+2020,West Virginia,Pleasants County,13,55313,11.1
 2020,West Virginia,Pocahontas County,18.1,41173,9.3
 2020,West Virginia,Preston County,15.7,51757,7.3
 2020,West Virginia,Putnam County,9.9,69175,7.4
@@ -3042,15 +3042,15 @@
 2020,West Virginia,Wayne County,17.1,45507,8.4
 2020,West Virginia,Webster County,23.7,34396,9.4
 2020,West Virginia,Wetzel County,15.9,47322,9.8
-2020,West Virginia,Wirt County,18.0,49504,10.7
+2020,West Virginia,Wirt County,18,49504,10.7
 2020,West Virginia,Wood County,14.4,47019,8.8
 2020,West Virginia,Wyoming County,21.3,39143,10.5
 2020,Wisconsin,Adams County,12.3,52060,9.5
 2020,Wisconsin,Ashland County,12.5,52115,8.5
-2020,Wisconsin,Barron County,10.0,54963,6.1
-2020,Wisconsin,Bayfield County,11.0,58218,9.3
+2020,Wisconsin,Barron County,10,54963,6.1
+2020,Wisconsin,Bayfield County,11,58218,9.3
 2020,Wisconsin,Brown County,8.5,64905,6
-2020,Wisconsin,Buffalo County,8.0,56643,7.4
+2020,Wisconsin,Buffalo County,8,56643,7.4
 2020,Wisconsin,Burnett County,10.7,57888,9.1
 2020,Wisconsin,Calumet County,4.5,79046,4.7
 2020,Wisconsin,Chippewa County,9.4,62841,6.2
@@ -3060,13 +3060,13 @@
 2020,Wisconsin,Dane County,9.6,74829,4.8
 2020,Wisconsin,Dodge County,7.2,65540,5.3
 2020,Wisconsin,Door County,7.8,61319,6.8
-2020,Wisconsin,Douglas County,10.0,60898,9.2
+2020,Wisconsin,Douglas County,10,60898,9.2
 2020,Wisconsin,Dunn County,10.1,61880,5.5
 2020,Wisconsin,Eau Claire County,9.8,67409,5.5
 2020,Wisconsin,Florence County,10.6,50420,8
 2020,Wisconsin,Fond du Lac County,7.6,69280,5.9
-2020,Wisconsin,Forest County,12.0,54555,12.4
-2020,Wisconsin,Grant County,12.0,55779,5.3
+2020,Wisconsin,Forest County,12,54555,12.4
+2020,Wisconsin,Grant County,12,55779,5.3
 2020,Wisconsin,Green County,7.4,75666,4.8
 2020,Wisconsin,Green Lake County,9.7,61406,6.9
 2020,Wisconsin,Iowa County,7.2,75075,6.1
@@ -3074,9 +3074,9 @@
 2020,Wisconsin,Jackson County,12.7,57164,9.3
 2020,Wisconsin,Jefferson County,7.3,71772,5.4
 2020,Wisconsin,Juneau County,11.9,56025,7.2
-2020,Wisconsin,Kenosha County,11.0,70368,7.1
+2020,Wisconsin,Kenosha County,11,70368,7.1
 2020,Wisconsin,Kewaunee County,6.7,69077,4.6
-2020,Wisconsin,La Crosse County,10.0,63298,5.4
+2020,Wisconsin,La Crosse County,10,63298,5.4
 2020,Wisconsin,Lafayette County,8.8,65235,4.3
 2020,Wisconsin,Langlade County,10.7,55259,6.5
 2020,Wisconsin,Lincoln County,7.7,61066,5.9
@@ -3085,7 +3085,7 @@
 2020,Wisconsin,Marinette County,9.4,56236,7.8
 2020,Wisconsin,Marquette County,10.3,52450,6.7
 2020,Wisconsin,Menominee County,22.6,41365,15.3
-2020,Wisconsin,Milwaukee County,19.0,52281,8.2
+2020,Wisconsin,Milwaukee County,19,52281,8.2
 2020,Wisconsin,Monroe County,10.5,63671,5.5
 2020,Wisconsin,Oconto County,7.6,65981,6.3
 2020,Wisconsin,Oneida County,7.8,59631,7.3
@@ -3113,7 +3113,7 @@
 2020,Wisconsin,Washburn County,10.4,54132,6.9
 2020,Wisconsin,Washington County,5.1,81659,5.6
 2020,Wisconsin,Waukesha County,4.2,92359,5.6
-2020,Wisconsin,Waupaca County,8.0,67078,5.5
+2020,Wisconsin,Waupaca County,8,67078,5.5
 2020,Wisconsin,Waushara County,10.5,58929,6.3
 2020,Wisconsin,Winnebago County,8.7,64653,5.4
 2020,Wisconsin,Wood County,9.4,54154,6.7
@@ -3123,7 +3123,7 @@
 2020,Wyoming,Carbon County,10.4,66589,4.5
 2020,Wyoming,Converse County,8.2,79304,6
 2020,Wyoming,Crook County,7.3,67443,3.9
-2020,Wyoming,Fremont County,15.0,52010,6.2
+2020,Wyoming,Fremont County,15,52010,6.2
 2020,Wyoming,Goshen County,12.8,51398,4.3
 2020,Wyoming,Hot Springs County,10.9,48864,5
 2020,Wyoming,Johnson County,8.9,62671,5.5
