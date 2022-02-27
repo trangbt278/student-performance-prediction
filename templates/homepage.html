@@ -28,53 +28,54 @@
 
 <body>
 <header>
-<div class="navigation">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="/homepage.html"> Education </a> <br>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="/homepage.html"> Education </a> <br>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/homepage.html"> Motivation </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage.html"> Motivation </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/stateAnalysis.html"
-                        role="button" aria-haspopup="true" aria-expanded="false"> State Analysis </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stateAnalysis.html"
+                            role="button" aria-haspopup="true" aria-expanded="false"> State Analysis </a>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nationwide Analysis </a>
-                
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/math8Analysis.html"> 8th Grade Mathematics </a>
-                        <a class="dropdown-item" href="/read8Analysis.html"> 8th Grade Reading </a>
-                        <a class="dropdown-item" href="/math4Analysis.html"> 4th Grade Mathematics </a>
-                        <a class="dropdown-item" href="/read4Analysis.html"> 4th Grade Reading </a>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/final_predict.html"
-                        role="button" aria-haspopup="true" aria-expanded="false"> Machine Learning </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nationwide Analysis </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/math8Analysis.html"> 8th Grade Mathematics </a>
+                            <a class="dropdown-item" href="/read8Analysis.html"> 8th Grade Reading </a>
+                            <a class="dropdown-item" href="/math4Analysis.html"> 4th Grade Mathematics </a>
+                            <a class="dropdown-item" href="/read4Analysis.html"> 4th Grade Reading </a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/final_predict.html"
+                            role="button" aria-haspopup="true" aria-expanded="false"> Machine Learning </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
+
 <!-- ** Carousel section start ** -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="padding-top: -30px;">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Motivation"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="State"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Nationwide"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Neural Network"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Predicting"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -113,7 +114,7 @@
             <img src="/static/images/slide-4.png" class="d-block w-100" alt="Machine Learning Model" style='opacity: 0.9;'>
             <div class="carousel-caption d-none d-md-block" style='padding-bottom: 300px;'>
                 <h1 class='title'><span style="color: #e96b56">Machine Learning</span> Model</h1>
-                <h3 class='title'> Predicting Student Performance <br> with<span style="color: #e96b56"> Neural Network</span></h3>
+                <h3 class='title'> Predicting Student Performance <br> with<span style="color: #e96b56"> Linear Regression</span></h3>
                 <a href="final_predict.html" class="btn btn-success">Read More</a>
             </div>
         </div>
@@ -216,14 +217,18 @@
         </div>
     </div>
     <br>
-    <div class="col-lg-12" style="padding-bottom: 20px;" >
-        <h4 class="title">References:</h4>
-        <hr>
-        <ul>
-            <h5>&#9998; <a class="link" href="https://eddataexpress.ed.gov/"> US Education Department</a><br>
-            &#9998; <a class="link" href="https://data.census.gov/cedsci/"> US Census Bereau</a><br>
-            &#9998; <a class="link" href="https://nces.ed.gov/nationsreportcard/">National Assesment of Educational Progress</a></h5>
-        </ul>
+    <!-- ** Resoureces ** -->
+    <div class="container">
+        <div class="col-lg-12" style="padding-bottom: 20px;" >
+            <h4 class="title">References:</h4>
+            <hr>
+            <ul>
+                <h5>&#9998; <a class="link" href="https://eddataexpress.ed.gov/"> US Education Department</a><br>
+                &#9998; <a class="link" href="https://data.census.gov/cedsci/"> US Census Bereau</a><br>
+                &#9998; <a class="link" href="https://nces.ed.gov/nationsreportcard/">National Assesment of Educational Progress</a><br>
+                &#9998; <a class="link" href="https://www.bls.gov/">US Bureau of Labor Statistics</a></h5>
+            </ul>
+        </div>
     </div>
 </div>
   
