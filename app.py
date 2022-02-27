@@ -139,13 +139,6 @@ def predict_score(model, X_test):
     y_pred = model.predict(X_test)
     return y_pred
 
-@app.route("/final_predict.html")
-def final_predict():
-    return render_template("final_predict.html")
-
-@app.route("/custom_predict.html")
-def custom_predict():
-    return render_template("custom_predict.html")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='8000', debug=True)
