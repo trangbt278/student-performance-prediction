@@ -98,7 +98,7 @@ $.get(geoUSAurl, function (usaJson) {
                 color: ['#313695', '#4575b4', '#74add1', '#abd9e9', '#e0f3f8', '#ffffbf', '#fee090', '#fdae61', '#f46d43', '#d73027', '#a50026']
             },
             text: ['High', 'Low'],
-            calculable: true
+            calculable: true,
         },
 
         tooltip: {
@@ -119,7 +119,7 @@ $.get(geoUSAurl, function (usaJson) {
             {
                 id: 'revenue',
                 type: 'map',
-                roam: true,
+                roam: false,
                 map: 'USA',
                 animationDurationUpdate: 2000,
                 universalTransition: true,
@@ -142,7 +142,7 @@ $.get(geoUSAurl, function (usaJson) {
             return item.name;
         })
         },
-        animationDurationUpdate: 2000,
+        animationDurationUpdate: 3000,
         series: {
         type: 'bar',
         id: 'revenue',
@@ -162,7 +162,7 @@ $.get(geoUSAurl, function (usaJson) {
     setInterval(function () {
         currentOption = currentOption === mapOption ? barOption : mapOption;
         myMorphChart.setOption(currentOption, true);
-    }, 3000);
+    }, 5000);
 });
 
 

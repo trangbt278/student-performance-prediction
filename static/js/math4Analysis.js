@@ -85,7 +85,7 @@ function drawRegScatter(data, regChart)
     },
     yAxis:[
     {
-      min: 180,
+      min: 220,
 
     }, 
     {

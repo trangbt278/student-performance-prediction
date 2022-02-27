@@ -30,7 +30,7 @@
 <header>
 <div class="navigation">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="/homepage.html"> Educational Analysis </a> <br>
+        <a class="navbar-brand" href="/homepage.html"> Education </a> <br>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,21 +59,80 @@
                         <a class="dropdown-item" href="/read4Analysis.html"> 4th Grade Reading </a>
                     </ul>
                 </li>
-                <!-- ** Project 4 place holder ** -->
                 <li class="nav-item">
-                    <a class="nav-link" href="/comingSoon.html"
-                        role="button" aria-haspopup="true" aria-expanded="false"> Future </a>
+                    <a class="nav-link" href="/final_predict.html"
+                        role="button" aria-haspopup="true" aria-expanded="false"> Machine Learning </a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 </header>
+<!-- ** Carousel section start ** -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Motivation"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="State"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Nationwide"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Neural Network"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/images/slide-1.png" class="d-block w-100" alt="Education is Future" style='opacity: 0.8;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 310px;'>
+                <h1 class='title'>Education is <span style="color: #e96b56">Future</span></h1>
+                <h3 class='title'>Predicting Student Performance <br> Based on <span style="color: #e96b56">Socioeconomic</span> Factors</h3>
+                <a href="#Motivation" class="btn btn-success">Read More</a>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="/static/images/slide-2.png" class="d-block w-100" alt="State Analysis" style='opacity: 0.9;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 310px;'>
+                <h1 class='title'><span style="color: #e96b56">State </span>Analysis</h1>
+                <h3 class='title'> Look into individual States </h3>
+                <a href="stateAnalysis.html" class="btn btn-success">Read More</a>
+
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="/static/images/slide-3.png" class="d-block w-100" alt="Nationwide Analysis." style='opacity: 0.9;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 270px;'>
+                <h1 class='title'><span style="color: #e96b56">Nationwide</span> Analysis</h1>
+                <h3 class='title'> Linear Regression by groups</h3>
+                <a href="read4Analysis.html" class="btn btn-success">4th Grade Reading</a>
+                <a href="math4Analysis.html" class="btn btn-success">4th Grade Math</a><br><br>
+                <a href="read8Analysis.html" class="btn btn-success">8th Grade Reading</a>
+                <a href="math8Analysis.html" class="btn btn-success">8th Grade Math</a>
+
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="/static/images/slide-4.png" class="d-block w-100" alt="Machine Learning Model" style='opacity: 0.9;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 300px;'>
+                <h1 class='title'><span style="color: #e96b56">Machine Learning</span> Model</h1>
+                <h3 class='title'> Predicting Student Performance <br> with<span style="color: #e96b56"> Neural Network</span></h3>
+                <a href="final_predict.html" class="btn btn-success">Read More</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- ** Carousel Section end ** -->
 
 <!-- ** Motivation ** -->
-<div class="container" style="padding-top: 100px;">
+<div class="container" style="padding-top: 60px;">
     <div class="row">
-        <h4 class="title"> Motivation - Education is the Future </h4>
+        <h4 id="Motivation" class="title"> Motivation </h4>
             <hr>
         <div class="col-lg-4 col-sm-12">
             <div class="box" style="padding-top: 30px;">
