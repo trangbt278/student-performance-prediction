@@ -28,138 +28,178 @@
 
 <body>
 <header>
-<div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/homepage.html"> Education</a> <br>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/homepage.html"> Education</a> <br>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/homepage.html"> Motivation </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/homepage.html"> Motivation </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/stateAnalysis.html"
-                        role="button" aria-haspopup="true" aria-expanded="false"> State Analysis </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/stateAnalysis.html"
+                            role="button" aria-haspopup="true" aria-expanded="false"> State Analysis </a>
 
-                </li>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nationwide Analysis </a>
-                
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/math8Analysis.html"> 8th Grade Mathematics </a>
-                        <a class="dropdown-item" href="/read8Analysis.html"> 8th Grade Reading </a>
-                        <a class="dropdown-item" href="/math4Analysis.html"> 4th Grade Mathematics </a>
-                        <a class="dropdown-item" href="/read4Analysis.html"> 4th Grade Reading </a>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/final_predict.html"
-                        role="button" aria-haspopup="true" aria-expanded="false"> Machine Learning </a>
-                </li>                
-            </ul>
-        </div>
-    </nav>
-</div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Nationwide Analysis </a>
+                    
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/math8Analysis.html"> 8th Grade Mathematics </a>
+                            <a class="dropdown-item" href="/read8Analysis.html"> 8th Grade Reading </a>
+                            <a class="dropdown-item" href="/math4Analysis.html"> 4th Grade Mathematics </a>
+                            <a class="dropdown-item" href="/read4Analysis.html"> 4th Grade Reading </a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/final_predict.html"
+                            role="button" aria-haspopup="true" aria-expanded="false"> Machine Learning </a>
+                    </li>                
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
-<body>
 
-
-<div class="container" style="padding-top: 100px;">
-    <div class="container">
-        <h2 class='title'> Machine Learning Model</h2>
-    </div>    
-
-    <div class="container px-4 py-5" id="icon-grid">
-        <h2 class="pb-2 border-bottom"> Model Info </h2>
-          
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-            <div class="col-1 d-flex align-items-start">
-                <img src="static/images/calendar_icon.png" style="width: 2em; height: 2em">
-                <h5 class="fw-bold mb-0"><span style="color: #e96b56; font-size: 36px;"> 9 </span></h5>
-                <h5><strong>years</strong> of data collected from NAEP </h5>
-            </div>
-            <div class="col d-flex align-items-start">
-                <img src="static/images/items_icon.png" style="width: 2em; height: 2em">
-                <h2 class="fw-bold mb-0"><span style="color: #e96b56"> 3 </span></h2>
-                <h5><strong>features</strong> are included to predict student performance</h5>
+<!-- ** Carousel section start ** -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="padding-top: -30px;">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Socioeconomic"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Machine Learning"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Predicting"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/images/slide_ml-2.png" class="d-block w-100" alt="Socioeconomic Factors" style='opacity: 0.9;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 50px ;padding-left: 15% ; text-align: left;'>
+                <h3 class='title' style="color: #e96b56">Socioeconomic Factors</h3>
+                <h5 class='title'><strong>Poverty Rate: </strong></h5><p><strong>The poverty rate is the ratio of the number of people (in a given age group) whose income falls below the poverty line; taken as half the median household income of the total population. </strong></p><br>
+                <h5 class='title'><strong>Median Household Income: </strong></h5><p><strong>The amount which divides the income distribution into two equal groups, half having income above that amount, and half having income below that amount. </strong></p><br>
+                <h5 class='title'><strong>Unemployment Rate: </strong></h5><p><strong>The number of unemployed people as a percentage of the labor force (the labor force is the sum of the employed and unemployed). The unemployment rate is calculated as: (Unemployed ÷ Labor Force) x 100. </strong></p><br>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-            <div class="col d-flex align-items-start">
-                <img src="static/images/laptop_icon.png" style="width: 2em; height: 2em">
-                <h2 class="fw-bold mb-0"><span style="color: #e96b56"> 5 </span></h2>
-                <h5><strong>machine learning models</strong> tested to pick the model</h5>
+
+        <div class="carousel-item">
+            <img src="/static/images/slide_ml-3.png" class="d-block w-100" alt="Nationwide Analysis." style='opacity: 0.1;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 160px; padding-right: 30%; text-align: left;'>
+                <h3 class='title'>About <span style="color: #ffc107"> Machine Learning Model</span></h3>
+                <div class="col d-flex align-items-start">
+                    <img src="static/images/calendar_icon.png" style="width: 2.5em; height: 2.5em;">
+                    <h5 class="fw-bold mb-0" ><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 9 </span>
+                    <strong>years </strong>of data collected from NAEP</h5>
+               </div><br>
+                <div class="col d-flex align-items-start">
+                    <img src="static/images/items_icon.png" style="width: 2.5em; height: 2.5em">
+                    <h5 class="fw-bold mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 3 </span>
+                    <strong>features </strong>are included to predict student performance</h5>
+                </div><br>
+                <div class="col d-flex align-items-start">
+                    <img src="static/images/laptop_icon.png" style="width: 2.5em; height: 2.5em">
+                    <h5 class="fw-bold mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 5 </span>
+                    <strong>machine learning models </strong>tested to pick the best model</h5>
+                </div><br>
+                <div class="col d-flex align-items-start">
+                    <img src="static/images/target_icon.png" style="width: 2.5em; height: 2.5em">
+                    <h5 class="fw-bold mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 82 </span>
+                    <strong>percent </strong>accuracy rate with model selected</h5>
+                </div>
             </div>
-            <div class="col d-flex align-items-start">
-                <img src="static/images/target_icon.png" style="width: 2em; height: 2em">
-                <h2 class="fw-bold mb-0"><span style="color: #e96b56"> 82 </span></h2>
-                <h5><strong>percent</strong> accuracy rate with model selected</h5>
+        </div>
+
+        <div class="carousel-item">
+            <img src="/static/images/slide_ml-4.png" class="d-block w-100" alt="Machine Learning Model" style='opacity: 0.9;'>
+            <div class="carousel-caption d-none d-md-block" style='padding-bottom: 250px;'>
+                <h3 class='title'> Student Performance <span style="color: #e96b56"> Predicting</span></h3>
+                <h5 class='title'> with<span style="color: #e96b56"> Linear Regression Model </span></h5>
+                <a href="#template_pred" class="btn btn-success"> Get Started </a>
             </div>
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+<!-- ** Carousel Section end ** -->  
+
 <!-- ** Create tabs ** -->
-<div class="container" style="padding-top: 20px;">
-    <div class="container">
-		<ul class="nav nav-tabs">
-			<li class="nav-item">
-				<a class="nav-link active border" aria-current="page" href="#template_pred" style="color:#e96b56; font-size: 24px;"><strong>Predicting By County</strong></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="/custom_predict.html" style="color:#e96b56; font-size: 24px;"><strong>Try Your Own</strong></a>
-			</li>
-		</ul>
-	</div>
+<div class="container" style="padding-top: 50px;">
+    <ul class="nav nav-tabs">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active border-success" href="#template_pred" style="background-color: #007E33 ; color:#ffffff; font-size: 24px; text-align: left;"><strong>Predicting By County</strong></a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link border-success" aria-current="page" href="/custom_predict.html#" style="color:#007E33; font-size: 24px; text-align: left;"><strong>Try Your Own</strong></a>
+        </li>
+    </ul>
 </div>
 
 <!-- ** predicting with database OR customized predicting ** -->
-<div id="template_pred" class="container" style="padding-top: 30px; padding-bottom: 50px;">
+<div id="template_pred" class="container">
+    <div class="container" style="padding-top: 15px; padding-bottom: 50px;">
+        <div class="row justify-content-left" data-aos-delay="150">
+            <div class="col-xl-3">
+                <div><h6 style="text-align: left;"><b>Zip Code:</b></h6>
+                    <input class="a" type="string" name ="zipcode" required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></div>
+                    <h6 style="text-align: left;">State:</h6><h5 id="#zip_state">Georgia</h5>
+                    <h6 style="text-align: left;">County:</h6><h5 id="#zip_county">Cobb County</h5>
+                    <button type="submit" value="submit" class="btn btn-success">Predict</button>
+                </div>
+                <div class="col-xl-9">
+                    <div class="b" style="font-size: 20px;"><h6 style="text-align: left;"><b>Predicting Result:</b></h6>
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">4th Grade Math: <p id="#pred_4M"></p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">4th Grade Reading: <p id="#pred_4R"></p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">8th Grade Math: <p id="#pred_8M"></p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 border bg-light">8th Grade Reading: <p id="#pred_8R"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ** Resoureces ** -->
     <div class="container">
-		<div class="row justify-content-left" data-aos-delay="150">
-			<div class="col-xl-3">
-				<div><h6 style="text-align: left;"><b>Zip Code:</b></h6>
-					<input class="a" type="string" name ="zipcode" required="required" style="color:rgb(54, 108, 0)"><p style="color:red"><i>(Required)</i></div>
-					<h6 style="text-align: left;">State:</h6><h5 id="#state_zipcode">Georgia</h5>
-					<h6 style="text-align: left;">County:</h6><h5 id="#county_zipcode">Cobb County</h5>
-					<button type="submit" value="submit" class="btn btn-success">Predict</button>
-				</div>
-				<div class="col-xl-9">
-					<div class="b" style="font-size: 20px;"><h6 style="text-align: left;"><b>Predicting Result:</b></h6>
-						<div class="row g-2">
-							<div class="col-6">
-								<div class="p-3 border bg-light">4th Grade Math: <p id="#pred_4M"></p>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="p-3 border bg-light">4th Grade Reading: <p id="#pred_4R"></p>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="p-3 border bg-light">8th Grade Math: <p id="#pred_8M"></p>
-								</div>
-							</div>
-							<div class="col-6">
-								<div class="p-3 border bg-light">8th Grade Reading: <p id="#pred_8R"></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="col-lg-12" style="padding-bottom: 20px;" >
+            <h4 class="title">References:</h4>
+            <hr>
+            <ul>
+                <h5>&#9998; <a class="link" href="https://eddataexpress.ed.gov/"> US Education Department</a><br>
+                &#9998; <a class="link" href="https://data.census.gov/cedsci/"> US Census Bereau</a><br>
+                &#9998; <a class="link" href="https://nces.ed.gov/nationsreportcard/">National Assesment of Educational Progress</a><br>
+                &#9998; <a class="link" href="https://www.bls.gov/">US Bureau of Labor Statistics</a></h5>
+            </ul>
+        </div>
+    </div>
 </div>
 
-
-      <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -175,7 +215,7 @@
     <!-- <script type="text/javascript" src="static/js/config.js"></script> -->
 
     <!-- Our JavaScript -->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="/static/js/predict.js"></script>
 
     <footer> Copyright © The Miner League 2022 </footer>
 </body>
