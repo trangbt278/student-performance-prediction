@@ -7,16 +7,17 @@ var getCountyDataURL = `${hostname}/api/get_county_data`;
 
 
 // Get the state and county by zipcode entered
-var zip_code = d3.select("#zip_state");
+var zip_code = d3.select("#zip_code");
 var zip_state = d3.select("#zip_state");
 var zip_county = d3.select("#zip_county");
-var zip_poverty_percentage = d3.select("#zip_county");
-var zip_med_income = d3.select("#zip_county");
-var zip_unemployment_rate = d3.select("#zip_county");
+var zip_poverty_percentage = d3.select("#zip_pov_rate");
+var zip_med_income = d3.select("#zip_med_income");
+var zip_unemployment_rate = d3.select("#zip_unemployment_rate");
+
 // input to the model 
-var input_pov_percent = d3.select("#iPov_rate");
-var input_med_income = d3.select("#iMed_inc");
-var input_unemp_rate = d3.select("#iUnemp_rate");
+var input_pov_percent = d3.select("#poverty_rate");
+var input_med_income = d3.select("#med_income");
+var input_unemp_rate = d3.select("#unemployment_rate");
 
 // IDs for return the predicting score
 var pre_4_math = d3.select("#pred_4M");
@@ -25,8 +26,9 @@ var pre_8_math = d3.select("#pred_8M");
 var pre_8_read = d3.select("#pred_8R");
 
 //show county data county data
-function showCountyDataByZip(zipcode){
+function showCountyDataByZip(){
     //call api to get all
+    zipcode = zip_code.node().value;
     d3.json(getCountyDataURL).then((data) => {
         var allData = data;
         //filter data by the selected state
@@ -44,31 +46,47 @@ function predictResult(pov_percent, med_income, unemp_rate){
     var predictURL = `${hostname}/api/get_predicted_score?pov_percent=${pov_percent}&med_income=${med_income}&unemp_rate=${unemp_rate}`;
     d3.json(predictURL).then((data) => {
         predResult = data;
-        pre_4_math = predResult[0].math_4_pred_score;
-        pre_4_read = predResult[0].read_4_pred_score;
-        pre_8_math = predResult[0].math_8_pred_score;
-        pre_8_read = predResult[0].math_4_pred_score;
+        high = predResult.math_4_predicted_score + 4;
+        low = predResult.math_4_predicted_score - 4;
+        pre_4_math.text(`[${low.toFixed(2)} - ${high.toFixed(2)}]`);
+
+        high = predResult.read_4_predicted_score + 4;
+        low = predResult.read_4_predicted_score - 4;
+        pre_4_read.text(`[${low.toFixed(2)} - ${high.toFixed(2)}]`);
+
+        high = predResult.math_8_predicted_score + 4;
+        low = predResult.math_8_predicted_score - 4;
+        pre_8_math.text(`[${low.toFixed(2)} - ${high.toFixed(2)}]`);
+
+        high = predResult.read_8_predicted_score + 4;
+        low = predResult.read_8_predicted_score - 4;
+        pre_8_read.text(`[${low.toFixed(2)} - ${high.toFixed(2)}]`);
     });
 }
 
 //onclick for final predict to show state data and predicted result
 function predictByZip(){
-    showCountyDataByZip(zip_code.text());
-    zip_poverty_percentage = removeStringFormat (zip_poverty_percentage.text())
-    zip_med_income = removeStringFormat (zip_med_income.text())
-    zip_unemployment_rate = removeStringFormat (zip_unemployment_rate.text())
+    zip_poverty_percentage = removeStringFormat(zip_poverty_percentage.text())
+    zip_med_income = removeStringFormat(zip_med_income.text())
+    zip_unemployment_rate = removeStringFormat(zip_unemployment_rate.text())
     predictResult(parseFloat(zip_poverty_percentage), parseFloat(zip_med_income), parseFloat(zip_unemployment_rate));
 }
 
 //onclick for custom predict to show predicted result
 function predictByCustom(){
-    predictResult(parseFloat(input_pov_percent.text()), parseFloat(input_med_income.text()), parseFloat(input_unemp_rate,text()));
+    predictResult(parseFloat(input_pov_percent.node().value), parseFloat(input_med_income.node().value), parseFloat(input_unemp_rate.node().value));
 }
 
 //remove string format (%,$)
 function removeStringFormat(str){
-    return str.replace(/[%$\s]/g,'');
+    return str.replace(/[%$,\s]/g,'');
 }
 
+function addition(number){
+    return number + 4
+}
 
+function subtraction(number){
+    return number - 4
+}
 

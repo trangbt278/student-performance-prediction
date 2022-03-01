@@ -153,31 +153,31 @@
         <div class="row justify-content-left" data-aos-delay="150">
             <div class="col-xl-3">
                 <h6 style="text-align: left;"><b> Poverty Rate: </b></h6>
-                    <input class="a" type="float" name ="poverty_rate" required="required" style="color:#007E33">%<p style="color:red"><i>(Required)</i></p>
+                    <input class="a" type="text" id ="poverty_rate" value required="required" style="color:#007E33">%<p style="color:red"><i>(Required)</i></p>
                 <h6 style="text-align: left;"><b> Median Imcome: </b></h6>
-                    <input class="a" type="number" name ="med_income" required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></p>
+                    <input class="a" type="text" id ="med_income" value required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></p>
                 <h6 style="text-align: left;"><b> Unemployment Rate: </b></h6>
-                    <input class="a" type="float" name ="unemployment_rate" required="required" style="color:#007E33">%<p style="color:red"><i>(Required)</i></p>
+                    <input class="a" type="text" id ="unemployment_rate" value required="required" style="color:#007E33">%<p style="color:red"><i>(Required)</i></p>
                     
-                <button type="submit" value="submit" class="btn btn-success">Predict</button>
+                <button type="button" class="btn btn-success" onclick="predictByCustom()">Predict1</button>
             </div>
             <div class="col-xl-9">
                 <div class="b" style="font-size: 20px; "><h6 style="text-align: left;"><b>Predicting Results:</b></h6>
                     <div class="row g-2">
                         <div class="col-6">
-                            <div class="p-3 border bg-light">4th Grade Math: <p id="#pred_4M"></p>
+                            <div class="p-3 border bg-light">4th Grade Math: <p id="pred_4M"></p>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-3 border bg-light">4th Grade Reading: <p id="#pred_4R"></p>
+                            <div class="p-3 border bg-light">4th Grade Reading: <p id="pred_4R"></p>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-3 border bg-light">8th Grade Math: <p id="#pred_8M"></p>
+                            <div class="p-3 border bg-light">8th Grade Math: <p id="pred_8M"></p>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="p-3 border bg-light">8th Grade Reading: <p id="#pred_8R"></p>
+                            <div class="p-3 border bg-light">8th Grade Reading: <p id="pred_8R"></p>
                             </div>
                         </div>
                     </div>

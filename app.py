@@ -1,19 +1,24 @@
 # import dependencies
 
-from urllib import request
+from ntpath import join
+#from urllib import request
 import psycopg2
 import psycopg2.extras
 import json
 import config
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import pickle
 from sklearn.metrics import accuracy_score
+import os
+import numpy as np
 
 # path to model files
-grade_4_math_model_file = 'grade_4_math_model.sav'
-grade_8_math_model_file = 'grade_8_math_model.sav'
-grade_4_read_model_file = 'grade_4_read_model.sav'
-grade_8_read_model_file = 'grade_8_read_model.sav'
+grade_4_math_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_4_math_model.sav')
+grade_8_math_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_8_math_model.sav')
+grade_4_read_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_4_read_model.sav')
+grade_8_read_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_8_read_model.sav')
+
+
 
 # flask set up
 app = Flask(__name__)
@@ -101,10 +106,12 @@ def get_county_data():
 @app.route("/api/get_predicted_score")
 def get_predicted_score():
     #get the data from query data from api and append to X_test
+    params = []
+    params.append(float(request.args.get('pov_percent')))
+    params.append(float(request.args.get('med_income')))
+    params.append(float(request.args.get('unemp_rate')))
     X_test = []
-    X_test.append(request.args.get('pov_percent'))
-    X_test.append(request.args.get('med_income'))
-    X_test.append(request.args.get('unemp_rate'))
+    X_test.append(params)
 
     #load the models
     math_4_model = load_model(grade_4_math_model_file)
@@ -118,16 +125,17 @@ def get_predicted_score():
     read_4_pred_score = predict_score(read_4_model, X_test)
     read_8_pred_score = predict_score(read_8_model, X_test)
 
-    return jsonify({'math_4_pred_score':math_4_pred_score, 
-                    'math_8_pred_score':math_8_pred_score,
-                    'read_4_pred_score':read_4_pred_score,
-                    'read_8_pred_score':read_8_pred_score
-                    })
+    return jsonify(math_4_predicted_score=math_4_pred_score[0], 
+                math_8_predicted_score=math_8_pred_score[0],
+                read_4_predicted_score=read_4_pred_score[0],
+                read_8_predicted_score=read_8_pred_score[0]
+                    )
 
 #functions
 # load models
 def load_model(filename):
-    loaded_model = pickle.load(filename, 'rb')
+    file = open(filename, 'rb')
+    loaded_model = pickle.load(file)
     return loaded_model
 
 def get_accuracy_score(model, X_test, y_test):
