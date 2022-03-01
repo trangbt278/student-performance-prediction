@@ -153,33 +153,39 @@
         <div class="row justify-content-left" data-aos-delay="150">
             <div class="col-xl-3">
                 <div><h6 style="text-align: left;"><b>Zip Code:</b></h6>
-                    <input class="a" type="string" name ="zipcode" required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></div>
-                    <h6 style="text-align: left;">State:</h6><h5 id="#zip_state">Georgia</h5>
-                    <h6 style="text-align: left;">County:</h6><h5 id="#zip_county">Cobb County</h5>
-                    <button type="submit" value="submit" class="btn btn-success">Predict</button>
+                    <input class="a" type="text" id ="zip_code" value required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></div>
+                    <button type="button" class="btn btn-success" onclick="showCountyDataByZip()">View Data</button>
+                    
+                    <h6 style="text-align: left;">State:</h6><h5 id="zip_state"></h5>
+                    <h6 style="text-align: left;">County:</h6><h5 id="zip_county"></h5>
+                    <h6 style="text-align: left;">Poverty Rate:</h6><h5 id="zip_pov_rate"></h5>
+                    <h6 style="text-align: left;">Median Income:</h6><h5 id="zip_med_income"></h5>
+                    <h6 style="text-align: left;">Unemployment Rate:</h6><h5 id="zip_unemployment_rate"></h5>
                 </div>
                 <div class="col-xl-9">
                     <div class="b" style="font-size: 20px;"><h6 style="text-align: left;"><b>Predicting Result:</b></h6>
                         <div class="row g-2">
                             <div class="col-6">
-                                <div class="p-3 border bg-light">4th Grade Math: <p id="#pred_4M"></p>
+                                <div class="p-3 border bg-light">4th Grade Math: <p id="pred_4M"></p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="p-3 border bg-light">4th Grade Reading: <p id="#pred_4R"></p>
+                                <div class="p-3 border bg-light">4th Grade Reading: <p id="pred_4R"></p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="p-3 border bg-light">8th Grade Math: <p id="#pred_8M"></p>
+                                <div class="p-3 border bg-light">8th Grade Math: <p id="pred_8M"></p>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="p-3 border bg-light">8th Grade Reading: <p id="#pred_8R"></p>
+                                <div class="p-3 border bg-light">8th Grade Reading: <p id="pred_8R"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button type="button" class="btn btn-success" onclick="predictByZip()">Predict</button>
+
             </div>
         </div>
     </div>
