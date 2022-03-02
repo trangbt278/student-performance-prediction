@@ -94,22 +94,22 @@
                 <h3 class='title'>About <span style="color: #ffc107"> Machine Learning Model</span></h3>
                 <div class="col d-flex align-items-start">
                     <img src="static/images/calendar_icon.png" style="width: 2.5em; height: 2.5em;">
-                    <h5 class="fw-bold mb-0" ><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 9 </span>
+                    <h5 class="mb-0" ><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 9 </span>
                     <strong>years </strong>of data collected from NAEP</h5>
                </div><br>
                 <div class="col d-flex align-items-start">
                     <img src="static/images/items_icon.png" style="width: 2.5em; height: 2.5em">
-                    <h5 class="fw-bold mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 3 </span>
+                    <h5 class="mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 3 </span>
                     <strong>features </strong>are included to predict student performance</h5>
                 </div><br>
                 <div class="col d-flex align-items-start">
                     <img src="static/images/laptop_icon.png" style="width: 2.5em; height: 2.5em">
-                    <h5 class="fw-bold mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 5 </span>
+                    <h5 class="mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 20 </span>
                     <strong>machine learning models </strong>tested to pick the best model</h5>
                 </div><br>
                 <div class="col d-flex align-items-start">
                     <img src="static/images/target_icon.png" style="width: 2.5em; height: 2.5em">
-                    <h5 class="fw-bold mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 82 </span>
+                    <h5 class="mb-0"><span style="color: #ffc107; font-size: 48px; padding-left: 15px;"> 82 </span>
                     <strong>percent </strong>accuracy rate with model selected</h5>
                 </div>
             </div>
@@ -157,11 +157,9 @@
                         <h6 style="text-align: left;"><b>Zip Code:</b></h6>
                     </div>
                     <div class="col-1">
-                        <input class="a" type="text" id ="zip_code" value required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></div>
+                        <input class="a" type="text" id ="zip_code" value minlength="5" maxlength="5" required="required" style="color:#007E33"><p style="color:red"><i>(Required)</i></div>
                     </div>
-                    <button type="button" class="btn btn-success" onclick="showCountyDataByZip()">View Data</button>
-                    <br><br>
-                    <!-- ** add a lable for validation ** -->
+                    <button type="button" class="btn btn-success" onclick="showCountyDataByZip()">View Data</button> <p id="zipcode_alert">
                     <div class="row">
                         <div class="col-6">
                             <h6 style="text-align: left;">State:</h6>
@@ -180,7 +178,7 @@
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <h5 style="text-align: left;">Poverty Rate:</h5>
+                            <h6 style="text-align: left;">Poverty Rate:</h6>
                         </div>
                         <div class="col-6">
                             <h5 id="zip_pov_rate"></h5>
@@ -201,7 +199,7 @@
                         <div class="col-6">              
                             <h5 id="zip_unemployment_rate"></h5>
                         </div>
-                    </div>
+                    </div><br>
                     <div>
                         <button type="button" class="btn btn-success" onclick="predictByZip()">Predict</button>
                     </div>
@@ -210,19 +208,19 @@
                     <div class="b" style="font-size: 20px;"><h6 style="text-align: left;"><b>Predicting Result:</b></h6>
                         <div class="row g-2">
                             <div class="col-12">
-                                <div class="p-3 border bg-light">4th Grade Math: <p id="pred_4M"></p>
+                                <div class="p-3 border bg-light">4th Grade Math: <h5 class="fw-bold text-center" style="color: #007E33;" id="pred_4M"></h5>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="p-3 border bg-light">4th Grade Reading: <p id="pred_4R"></p>
+                                <div class="p-3 border bg-light">4th Grade Reading: <h5 class="fw-bold text-center" style="color: #007E33;" id="pred_4R"></h5>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="p-3 border bg-light">8th Grade Math: <p id="pred_8M"></p>
+                                <div class="p-3 border bg-light">8th Grade Math: <h5 class="fw-bold text-center" style="color: #007E33;" id="pred_8M"></h5>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="p-3 border bg-light">8th Grade Reading: <p id="pred_8R"></p>
+                                <div class="p-3 border bg-light">8th Grade Reading: <h5 class="fw-bold text-center" style="color: #007E33;" id="pred_8R"></h5>
                                 </div>
                             </div>
                         </div>

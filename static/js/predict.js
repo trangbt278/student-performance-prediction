@@ -29,6 +29,11 @@ var pre_8_read = d3.select("#pred_8R");
 function showCountyDataByZip(){
     //call api to get all
     zipcode = zip_code.node().value;
+    if (zipcode == "") {
+        alert("Zipcode must be filled out!");
+        return false;
+      }
+
     d3.json(getCountyDataURL).then((data) => {
         var allData = data;
         //filter data by the selected state
