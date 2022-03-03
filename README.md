@@ -11,6 +11,8 @@ After gathering the average score data from the NAEP, total revenue (federal and
 
 Our mission: to find a correlation, or lack thereof, between these financial variables and the impact on student achievement in order to better inform education policy makers and stakeholders in the future.
 
+# Architecture Diagram
+![Architecture_Diagram.png]()
 
 # Data Visualiztion
 
@@ -37,3 +39,4 @@ What we can infer from this data is that a student’s socioeconomic status and 
 * [NAEP Website](https://nces.ed.gov/nationsreportcard/about/)
 * [US Education Department](https://eddataexpress.ed.gov/)
 * [US Census Bureau](https://data.census.gov/cedsci/)
+* [US Bureau of Labor Statistics](https://www.bls.gov/)
