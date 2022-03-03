@@ -13,10 +13,10 @@ import os
 import numpy as np
 
 # path to model files
-grade_4_math_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_4_math_model.sav')
-grade_8_math_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_8_math_model.sav')
-grade_4_read_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_4_read_model.sav')
-grade_8_read_model_file = os.path.join(os.getcwd(),'sav_model_files\grade_8_read_model.sav')
+grade_4_math_model_file = os.path.join(os.getcwd(),'sav_model_files/grade_4_math_model.sav')
+grade_8_math_model_file = os.path.join(os.getcwd(),'sav_model_files/grade_8_math_model.sav')
+grade_4_read_model_file = os.path.join(os.getcwd(),'sav_model_files/grade_4_read_model.sav')
+grade_8_read_model_file = os.path.join(os.getcwd(),'sav_model_files/grade_8_read_model.sav')
 
 
 
@@ -65,6 +65,10 @@ def AssementProcess():
 @app.route("/proj1charts.html")
 def proj1charts():
     return render_template("/proj1charts.html")
+
+@app.route("/Diagram.html")
+def Diagram():
+    return render_template("/Diagram.html")
 
 @app.route("/final_predict.html")
 def final_predict():
