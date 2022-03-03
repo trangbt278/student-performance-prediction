@@ -12,7 +12,7 @@ After gathering the average score data from the NAEP, total revenue (federal and
 Our mission: to find a correlation, or lack thereof, between these financial variables and the impact on student achievement in order to better inform education policy makers and stakeholders in the future.
 
 # Architecture Diagram
-![Architecture_Diagram.png]()
+![Architecture_Diagram.png](https://github.com/trangbt278/student-performance-prediction/blob/main/static/images/Architecture_Diagram.png)
 
 # Data Visualiztion
 
