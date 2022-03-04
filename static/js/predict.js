@@ -10,7 +10,7 @@ var getCountyDataURL = `${hostname}/api/get_county_data`;
 var zip_code = d3.select("#zip_code");
 var zip_state = d3.select("#zip_state");
 var zip_county = d3.select("#zip_county");
-var zip_poverty_percentage = d3.select("#zip_pov_rate");
+var zip_poverty_percentage = d3.select("#zip_poverty_percentage");
 var zip_med_income = d3.select("#zip_med_income");
 var zip_unemployment_rate = d3.select("#zip_unemployment_rate");
 
@@ -30,7 +30,12 @@ function showCountyDataByZip(){
     //call api to get all
     zipcode = zip_code.node().value;
     if (zipcode == "") {
-        alert("Zipcode must be filled out!");
+        alert("Please fill out the zip code.");
+        return false;
+      }
+
+    if (zipcode.length < 5) {
+        alert("Please check the zip code format.");
         return false;
       }
 
